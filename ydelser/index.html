@@ -589,6 +589,9 @@ html.js-reveal .rv.in{opacity:1;transform:none;transition:opacity .9s ease,trans
 .contact-side li b{font-family:var(--f-mono);font-size:.6875rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);min-width:84px;padding-top:.3em;font-weight:400}
 .contact-side li a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line);transition:border-color .2s,color .2s}
 .contact-side li a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.form-err{margin-top:12px;font-size:.875rem;line-height:1.55;color:#8C3B2E;background:#F6E7E2;border:1px solid #E3C7BF;border-radius:3px;padding:12px 14px}
+.form-err a{color:inherit;font-weight:500}
+#audit-form.sending .btn{opacity:.6;pointer-events:none}
 form.audit{background:var(--surface-2);border:1px solid var(--line);border-radius:5px;padding:clamp(22px,3vw,32px);box-shadow:var(--shadow)}
 .field{display:flex;flex-direction:column;gap:7px;margin-bottom:16px}
 .field label{font-family:var(--f-mono);font-size:.6875rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
@@ -1118,6 +1121,7 @@ footer{
 
       <form class="audit" id="audit-form" novalidate>
         <div class="fields">
+          <input type="checkbox" name="botcheck" id="f-bot" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
           <div class="row2">
             <div class="field"><label for="f-name" data-i18n="k.fname">Navn</label><input id="f-name" type="text" autocomplete="name" required></div>
             <div class="field"><label for="f-type" data-i18n="k.ftype">Type af virksomhed</label><div class="sel"><select id="f-type"><option value="" data-i18n="k.o0">Vælg…</option><option data-i18n="k.o1">Webshop</option><option data-i18n="k.o2">Butik eller showroom</option><option data-i18n="k.o3">Restaurant, café eller bar</option><option data-i18n="k.o4">Håndværk og byggeri</option><option data-i18n="k.o5">Klinik eller behandler</option><option data-i18n="k.o6">Service og rådgivning</option><option data-i18n="k.o7">Andet</option></select></div></div>
@@ -1128,12 +1132,13 @@ footer{
             <div class="field"><label for="f-phone" data-i18n="k.fphone">Telefon (valgfri)</label><input id="f-phone" type="tel" autocomplete="tel"></div>
           </div>
           <div class="field"><label for="f-msg" data-i18n="k.fmsg">Hvad vil I gerne have ud af siden?</label><textarea id="f-msg"></textarea></div>
-          <button class="btn" type="submit" style="width:100%" data-i18n="k.submit">Send besked</button>
-          <p class="micro" data-i18n="k.micro">Beskeden sendes fra jeres eget mailprogram. Vi bruger kun oplysningerne til at svare jer — ingen nyhedsbreve.</p>
+          <button class="btn" type="submit" id="f-submit" style="width:100%"><span data-i18n="k.submit">Send besked</span></button>
+          <p class="form-err" id="form-err" hidden data-i18n="k.err">Beskeden kunne ikke sendes lige nu. Skriv i stedet direkte til <a href="mailto:contact@fawa.dk">contact@fawa.dk</a>, så vender vi tilbage inden for 24 timer.</p>
+          <p class="micro" data-i18n="k.micro">Vi bruger kun oplysningerne til at svare jer. Ingen nyhedsbreve.</p>
         </div>
         <div class="done" id="done">
-          <h3 data-i18n="k.doneh">Beskeden er klar til afsendelse.</h3>
-          <p data-i18n="k.donep">Vi har åbnet jeres mailprogram med beskeden udfyldt — tryk send, så har vi den. Sker der ikke noget, kan I skrive direkte til <a href="mailto:contact@fawa.dk">contact@fawa.dk</a>. Vi vender tilbage inden for 24 timer.</p>
+          <h3 data-i18n="k.doneh">Tak — den er modtaget.</h3>
+          <p data-i18n="k.donep">Vi kigger på siden og vender tilbage inden for 24 timer for at finde et tidspunkt til et kort opkald.</p>
         </div>
       </form>
     </div>
@@ -1616,6 +1621,9 @@ for (var __p2 in EN_PRIV) EN[__p2] = EN_PRIV[__p2];
 var EN_NUM = {"y.n1": "4,995", "y.n2": "7,495", "y.n3": "9,995", "y.n4": "1,495"};
 for (var __n in EN_NUM) EN[__n] = EN_NUM[__n];
 
+var EN_FORM2 = {"k.micro": "We only use the details to reply. No newsletters.", "k.doneh": "Thank you — we have it.", "k.donep": "We will look at your site and come back within 24 hours to find a time for a short call.", "k.err": "The message could not be sent right now. Please write to <a href=\"mailto:contact@fawa.dk\">contact@fawa.dk</a> instead and we will come back within 24 hours."};
+for (var __f2 in EN_FORM2) EN[__f2] = EN_FORM2[__f2];
+
 var DA = {};
 document.querySelectorAll("[data-i18n]").forEach(function(el){ DA[el.dataset.i18n] = el.innerHTML; });
 document.querySelectorAll("[data-i18n-ph]").forEach(function(el){ DA["ph:"+el.dataset.i18nPh] = el.getAttribute("placeholder"); });
@@ -1777,11 +1785,17 @@ document.querySelectorAll("[data-ba]").forEach(function(ba){
 });
 
 /* ================= form ================= */
-var FORM_TO = "contact@fawa.dk";
+var FORM_KEY = "c94f11d0-4f47-4fc5-a648-71ee97062bb4";
+var FORM_TO  = "contact@fawa.dk";
+
 document.getElementById("audit-form").addEventListener("submit", function(e){
   e.preventDefault();
   var f = e.currentTarget;
+  if (f.classList.contains("sending")) return;
   var en = document.documentElement.lang === "en";
+  var err = document.getElementById("form-err");
+  var btn = document.getElementById("f-submit");
+  var lab = btn.querySelector("span");
 
   function val(id){ var el = document.getElementById(id); return el ? el.value.trim() : ""; }
   function bad(id){
@@ -1793,6 +1807,7 @@ document.getElementById("audit-form").addEventListener("submit", function(e){
     el.removeAttribute("aria-invalid"); el.style.borderColor = "";
   }
 
+  err.hidden = true;
   var req = ["f-name","f-site","f-mail"];
   for (var i = 0; i < req.length; i++) {
     clear(req[i]);
@@ -1801,32 +1816,56 @@ document.getElementById("audit-form").addEventListener("submit", function(e){
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val("f-mail"))) { bad("f-mail"); return; }
 
   var typeSel = document.getElementById("f-type");
-  var type = typeSel && typeSel.selectedIndex > 0 ? typeSel.options[typeSel.selectedIndex].text : (en ? "Not stated" : "Ikke angivet");
+  var none = en ? "Not stated" : "Ikke angivet";
+  var type = typeSel && typeSel.selectedIndex > 0 ? typeSel.options[typeSel.selectedIndex].text : none;
 
-  var L = en
-    ? { sub: "Website review request", name: "Name", comp: "Type of business", site: "Website", mail: "Email", tel: "Phone", msg: "What they want from the site", none: "Not stated", foot: "Sent from the contact form on fawa.dk" }
-    : { sub: "Anmodning om gennemgang", name: "Navn", comp: "Type af virksomhed", site: "Hjemmeside", mail: "E-mail", tel: "Telefon", msg: "Hvad de gerne vil have ud af siden", none: "Ikke angivet", foot: "Sendt fra kontaktformularen på fawa.dk" };
+  var payload = {
+    access_key: FORM_KEY,
+    subject: (en ? "Website review request" : "Anmodning om gennemgang") + " — " + val("f-name"),
+    from_name: "fawa.dk",
+    name: val("f-name"),
+    email: val("f-mail"),
+    replyto: val("f-mail"),
+    botcheck: document.getElementById("f-bot").checked
+  };
+  payload[en ? "Type of business" : "Type af virksomhed"] = type;
+  payload[en ? "Website" : "Hjemmeside"] = val("f-site");
+  payload[en ? "Phone" : "Telefon"] = val("f-phone") || none;
+  payload[en ? "What they want from the site" : "Hvad de vil have ud af siden"] = val("f-msg") || none;
+  payload[en ? "Language" : "Sprog"] = en ? "English" : "Dansk";
 
-  var body = [
-    L.name + ": " + val("f-name"),
-    L.comp + ": " + type,
-    L.site + ": " + val("f-site"),
-    L.mail + ": " + val("f-mail"),
-    L.tel  + ": " + (val("f-phone") || L.none),
-    "",
-    L.msg + ":",
-    val("f-msg") || L.none,
-    "",
-    "—",
-    L.foot
-  ].join("\r\n");
+  var original = lab.innerHTML;
+  f.classList.add("sending");
+  lab.textContent = en ? "Sending…" : "Sender…";
 
-  var href = "mailto:" + FORM_TO
-    + "?subject=" + encodeURIComponent(L.sub + " — " + val("f-name"))
-    + "&body=" + encodeURIComponent(body);
+  var done = false;
+  var giveUp = setTimeout(function(){ if (!done) fail(); }, 15000);
 
-  f.classList.add("sent");
-  try { window.location.href = href; } catch (err) {}
+  function fail(){
+    done = true;
+    clearTimeout(giveUp);
+    f.classList.remove("sending");
+    lab.innerHTML = original;
+    err.hidden = false;
+    err.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  }
+
+  fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "Accept": "application/json" },
+    body: JSON.stringify(payload)
+  })
+  .then(function(r){ return r.json(); })
+  .then(function(d){
+    if (done) return;
+    done = true;
+    clearTimeout(giveUp);
+    f.classList.remove("sending");
+    lab.innerHTML = original;
+    if (d && d.success) { f.classList.add("sent"); window.scrollTo({ top: f.getBoundingClientRect().top + window.scrollY - 120, behavior: "smooth" }); }
+    else fail();
+  })
+  .catch(function(){ if (!done) fail(); });
 });
 </script>
 </body>

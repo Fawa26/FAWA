@@ -413,6 +413,11 @@ html.fonts-ready .hero-foot{animation:softIn .9s ease both;animation-delay:1.24s
 .w > span{display:inline-block;transform:translateY(118%)}
 html.fonts-ready .w > span{animation:wordUp .85s cubic-bezier(.22,1,.36,1) forwards;animation-delay:calc(var(--d) * 1s)}
 
+html.hero-done .w > span,
+html.hero-done .hero-eyebrow,
+html.hero-done .hero .lede,
+html.hero-done .hero-cta,
+html.hero-done .hero-foot{animation:none !important;transform:none !important;opacity:1 !important}
 html.js-reveal .rv{opacity:0;transform:translateY(20px)}
 html.js-reveal .rv.in{opacity:1;transform:none;transition:opacity .9s ease,transform .9s cubic-bezier(.22,1,.36,1);transition-delay:calc(var(--i,0) * .1s)}
 
@@ -1115,7 +1120,6 @@ footer{
           <li><b data-i18n="k.l1b">Svartid</b><span data-i18n="k.l1s">Inden for 24 timer</span></li>
           <li><b data-i18n="k.l2b">Pris</b><span data-i18n="k.l2s">Opkaldet er uforpligtende</span></li>
           <li><b data-i18n="k.l3b">Mail</b><span><a href="mailto:contact@fawa.dk">contact@fawa.dk</a></span></li>
-          <li><b data-i18n="k.l4b">Telefon</b><span><a href="tel:+4553652442">+45 53 65 24 42</a></span></li>
         </ul>
       </div>
 
@@ -1180,7 +1184,7 @@ footer{
       <p class="callout" data-i18n="p.p_2b">Send ikke følsomme personoplysninger, CPR-numre eller andre fortrolige oplysninger gennem kontaktformularen, medmindre det er nødvendigt og aftalt med os på forhånd.</p>
 
       <h2 data-i18n="p.h_3">3. Når du kontakter os</h2>
-      <p data-i18n="p.p_3a">Når du kontakter FAWA via kontaktformular, e-mail eller telefon, bruger vi oplysningerne til at besvare din henvendelse, forstå dit behov, udarbejde et tilbud og følge op på en mulig opgave.</p>
+      <p data-i18n="p.p_3a">Når du kontakter FAWA via kontaktformularen eller e-mail, bruger vi oplysningerne til at besvare din henvendelse, forstå dit behov, udarbejde et tilbud og følge op på en mulig opgave. Oplyser du selv et telefonnummer, bruger vi det kun til at ringe dig op om netop den henvendelse.</p>
       <p data-i18n="p.p_3b">Behandlingen sker som udgangspunkt på baggrund af vores legitime interesse i at besvare henvendelser og drive vores virksomhed, jf. databeskyttelsesforordningens artikel 6, stk. 1, litra f. Hvis henvendelsen vedrører en mulig aftale, kan behandlingen også være nødvendig for at gennemføre foranstaltninger på din anmodning, før en aftale indgås, jf. artikel 6, stk. 1, litra b.</p>
       <p data-i18n="p.p_3c">Almindelige henvendelser opbevares som udgangspunkt i 12 måneder efter afslutningen af dialogen. Oplysninger kan opbevares længere, hvis de bliver relevante for et kunde- eller aftaleforhold, eller hvis vi har behov for at dokumentere forløbet.</p>
 
@@ -1624,6 +1628,9 @@ for (var __n in EN_NUM) EN[__n] = EN_NUM[__n];
 var EN_FORM2 = {"k.micro": "We only use the details to reply. No newsletters.", "k.doneh": "Thank you — we have it.", "k.donep": "We will look at your site and come back within 24 hours to find a time for a short call.", "k.err": "The message could not be sent right now. Please write to <a href=\"mailto:contact@fawa.dk\">contact@fawa.dk</a> instead and we will come back within 24 hours."};
 for (var __f2 in EN_FORM2) EN[__f2] = EN_FORM2[__f2];
 
+var EN_FIX3 = {"p.p_3a": "When you contact FAWA through the form or by email, we use the information to answer your enquiry, understand your needs, prepare a quote and follow up on a possible project. If you give us a phone number yourself, we use it only to call you about that enquiry."};
+for (var __x3 in EN_FIX3) EN[__x3] = EN_FIX3[__x3];
+
 var DA = {};
 document.querySelectorAll("[data-i18n]").forEach(function(el){ DA[el.dataset.i18n] = el.innerHTML; });
 document.querySelectorAll("[data-i18n-ph]").forEach(function(el){ DA["ph:"+el.dataset.i18nPh] = el.getAttribute("placeholder"); });
@@ -1749,6 +1756,15 @@ go(window.__PAGE__ || pageFromPath(location.pathname), false);
         }
       });
     })(h1);
+
+    // lås overskriften fast, når intro-animationen er kørt én gang
+    var wordSpans = h1.querySelectorAll(".w > span");
+    var last = wordSpans[wordSpans.length - 1];
+    function lockHero(){ document.documentElement.classList.add("hero-done"); }
+    if (last) last.addEventListener("animationend", lockHero, { once: true });
+    setTimeout(lockHero, 4000);
+  } else {
+    document.documentElement.classList.add("hero-done");
   }
 
   // rolig reveal af sektionerne på forsiden

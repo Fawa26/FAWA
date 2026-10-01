@@ -29,7 +29,6 @@ assets/favicon.svg
 og.jpg                billedet der vises når linket deles
 sitemap.xml           listen Google læser
 robots.txt
-CNAME                 domænet, fawa.dk
 .nojekyll             beder GitHub Pages om ikke at behandle filerne
 ```
 
@@ -65,7 +64,7 @@ fawa.dk-adresse, og `sitemap.xml` nævner kun fawa.dk.
 2. Læg indholdet af denne mappe i roden af repoet og push til `main`.
 3. Gå til **Settings → Pages**. Vælg `Deploy from a branch`, branch
    `main`, mappe `/ (root)`. Gem.
-5. Efter et par minutter ligger siden på
+4. Efter et par minutter ligger siden på
    `https://<brugernavn>.github.io/<repo>/`. Den virker fuldt ud dér — links,
    undersider og sprogskifter fungerer under enhver sti, så I kan tjekke det
    hele igennem, inden domænet bliver sat om.

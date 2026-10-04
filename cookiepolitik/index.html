@@ -3,12 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<!-- Midlertidig spaerring, mens siden goeres faerdig.
+     Fjernes ved at saette LUKKET = False i build_pages.py. -->
 <script>
 /* Holder soegemaskiner vaek fra alt andet end det rigtige domaene, for eksempel
    GitHubs midlertidige adresse. Slaar sig selv fra paa fawa.dk. */
 (function(){
   var h = location.hostname;
   if (h === "fawa.dk" || h === "www.fawa.dk") return;
+  if (document.querySelector('meta[name="robots"]')) return;
   var m = document.createElement("meta");
   m.name = "robots";
   m.content = "noindex, nofollow";

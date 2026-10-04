@@ -32,6 +32,14 @@ robots.txt
 .nojekyll             beder GitHub Pages om ikke at behandle filerne
 ```
 
+Billederne ligger som separate WebP-filer og hentes først, når de skal
+bruges. Fordi alle ni sider ligger i den samme fil, henter browseren ikke
+af sig selv billeder, der står på en sektion, som er skjult. Derfor sætter
+scriptet dem i gang selv: dels når man skifter til en side, dels i baggrunden
+et øjeblik efter, at siden er indlæst. Hero-billedet bliver hentet med
+`<link rel="preload">` på hver eneste side, så forsiden aldrig står tom,
+når man klikker sig tilbage til den.
+
 Sproget styres af `data-i18n`-attributter i HTML. Dansk står direkte i
 markuppen; engelsk ligger i `EN`-objekterne i scriptet nederst i filen.
 Valget gemmes i `localStorage` under `fawa-lang`.
@@ -68,9 +76,9 @@ fawa.dk-adresse, og `sitemap.xml` nævner kun fawa.dk.
    `https://<brugernavn>.github.io/<repo>/`. Den virker fuldt ud dér — links,
    undersider og sprogskifter fungerer under enhver sti, så I kan tjekke det
    hele igennem, inden domænet bliver sat om.
-6. Under **Custom domain** skriver I `fawa.dk` og gemmer — først når DNS er
+5. Under **Custom domain** skriver I `fawa.dk` og gemmer — først når DNS er
    sat op (se nedenfor).
-7. Sæt flueben i **Enforce HTTPS**, når certifikatet er klar. Det kan tage op
+6. Sæt flueben i **Enforce HTTPS**, når certifikatet er klar. Det kan tage op
    til et par timer første gang.
 
 ## DNS hos one.com

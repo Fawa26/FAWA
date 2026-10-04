@@ -34,6 +34,7 @@
 <meta name="twitter:description" content="Sådan indsamler, bruger, opbevarer og beskytter FAWA personoplysninger på fawa.dk.">
 <meta name="twitter:image" content="https://fawa.dk/og.jpg">
 <link rel="icon" href="../assets/favicon.svg">
+<link rel="preload" as="image" href="../assets/img/hero.webp" fetchpriority="high">
 <meta name="theme-color" content="#2E251F">
 <link rel="preload" href="../assets/fonts/cormorant-garamond-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../assets/fonts/archivo-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -202,7 +203,7 @@ header .btn{font-family:var(--f-it);font-weight:600;font-size:1.125rem;letter-sp
 .section + .section{border-top:1px solid var(--line)}
 #page-forside .section + .section{border-top:0}
 .sec-head{max-width:660px;margin-bottom:clamp(28px,4vw,46px)}
-.sec-head h2{font-size:var(--s3);margin-block:14px 16px}
+.sec-head h1,.sec-head h2{font-size:var(--s3);margin-block:14px 16px}
 .sec-head p{color:var(--ink-2)}
 .sec-head p + p{margin-top:14px}
 
@@ -335,7 +336,7 @@ header .btn{font-family:var(--f-it);font-weight:600;font-size:1.125rem;letter-sp
 .hero-photo{min-height:min(92vh,calc(100vw / 1.479));padding-block:clamp(40px,6vw,74px) clamp(30px,4vw,54px);isolation:isolate}
 .hero-photo .hero-shot{
   position:absolute;inset:0;width:100%;height:100%;z-index:0;
-  background-image:url("assets/img/hero.webp");
+  background-image:url("../assets/img/hero.webp");
   background-size:cover;background-position:center center;
   -webkit-mask-image:none;mask-image:none;-webkit-mask-composite:source-over;mask-composite:add;
   animation:shotIn 1.9s cubic-bezier(.22,1,.36,1) .05s both;
@@ -452,8 +453,9 @@ html.js-reveal .rv.in{opacity:1;transform:none;transition:opacity .9s ease,trans
 .ba-stage{
   position:relative;aspect-ratio:4/3;max-width:100%;overflow:hidden;
   border:1px solid rgba(244,241,234,.14);border-radius:4px;box-shadow:var(--shadow);
-  touch-action:pan-y;background:#151109;
+  touch-action:pan-y;background:#E3DED3;
 }
+#app[data-mode="dark"] .ba-stage{background:#3A2F27}
 .ba-stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .case-card .ba-stage img{object-fit:contain;background:#E9E5DB}
 .ba-stage .after-img{clip-path:inset(0 0 0 var(--pos,50%))}
@@ -486,6 +488,7 @@ html.js-reveal .rv.in{opacity:1;transform:none;transition:opacity .9s ease,trans
   letter-spacing:.16em;text-transform:uppercase;color:var(--accent);
   border:1px solid var(--accent);border-radius:999px;padding:5px 13px;
 }
+.flag.real{color:#F4F1EA;background:var(--accent);border-color:var(--accent)}
 .changes{list-style:none;margin:22px 0 0;padding:0}
 .changes li{display:grid;grid-template-columns:auto 1fr;gap:14px;padding-block:13px;border-top:1px solid var(--line-soft);font-size:.9375rem;color:var(--ink-2);line-height:1.55}
 .changes .i{font-family:var(--f-mono);font-size:.6875rem;color:var(--accent);padding-top:.3em}
@@ -830,7 +833,7 @@ footer{
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow" data-i18n="y.eyebrow">Ydelser og priser</p>
-        <h2 data-i18n="y.h2">Fast pris, aftalt inden vi går i gang</h2>
+        <h1 data-i18n="y.h2">Fast pris, aftalt inden vi går i gang</h1>
         <p data-i18n="y.p">Vi optimerer den hjemmeside, I har. Prisen afhænger alene af, hvor mange sider siden har, og den aftales inden vi går i gang — ikke en timepris der vokser undervejs.</p>
       </div>
       <div class="tier feature wide includes">
@@ -850,13 +853,13 @@ footer{
       <div class="tiers">
         <div class="tier">
           <h3 data-i18n="y.t1h">Mindre hjemmeside</h3>
-          <p class="scope" data-i18n="y.t1s">3–4 sider</p>
+          <p class="scope" data-i18n="y.t1s">Op til 4 sider</p>
           <p class="price"><span class="pre" data-i18n="y.from">Fra</span> <span class="num" data-i18n="y.n1">4.995</span> <span data-i18n="y.cur">kr.</span></p>
           <button class="btn btn-ghost" data-go="kontakt" data-i18n="y.btn">Få et tilbud</button>
         </div>
         <div class="tier">
           <h3 data-i18n="y.t2h">Standard hjemmeside</h3>
-          <p class="scope" data-i18n="y.t2s">5–10 sider</p>
+          <p class="scope" data-i18n="y.t2s">5–9 sider</p>
           <p class="price"><span class="pre" data-i18n="y.from">Fra</span> <span class="num" data-i18n="y.n2">7.495</span> <span data-i18n="y.cur">kr.</span></p>
           <button class="btn" data-go="kontakt" data-i18n="y.btn">Få et tilbud</button>
         </div>
@@ -911,7 +914,7 @@ footer{
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow" data-i18n="c.eyebrow">Cases</p>
-        <h2 data-i18n="c.h2">Bartisan</h2>
+        <h1 data-i18n="c.h2">Bartisan</h1>
         <p data-i18n="c.p">Fra en traditionel og uinspirerende hjemmeside til en moderne, konverteringsoptimeret side, der afspejler brandets kvalitet.</p>
         <p style="margin-top:14px"><span class="flag" data-i18n="c.flagfull">Demo · ubestilt forslag</span></p>
       </div>
@@ -948,6 +951,43 @@ footer{
   </section>
 
   <section class="section">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow" data-i18n="lu.eyebrow">Rigtig kunde</p>
+      <h2 data-i18n="lu.h2">Larsen &amp; Uldbjerg</h2>
+      <p data-i18n="lu.p">Fra ingen hjemmeside til en helt ny. Malerfirmaet havde et domæne, men der lå kun en vedligeholdelsesside bag det — alle, der søgte dem frem, blev mødt af en besked om, at siden snart var klar. Nu har de en side, der viser arbejdet, fortæller hvem de er, og gør det let at bede om et tilbud.</p>
+      <p style="margin-top:14px"><span class="flag real" data-i18n="lu.flag">Rigtig kunde · malerfirma</span></p>
+    </div>
+    <div class="case-split">
+      <div class="ba rv" data-ba>
+        <div class="ba-stage" style="--pos:50%;aspect-ratio:1600/799">
+          <img class="after-img" decoding="async" loading="lazy" src="../assets/img/lu-efter.webp" alt="Larsen &amp; Uldbjergs nye forside: maler i arbejde i fuld bredde, telefonnummer og tilbudsknap øverst">
+          <img class="before-img" decoding="async" loading="lazy" src="../assets/img/lu-foer.webp" alt="Larsen &amp; Uldbjerg før: en vedligeholdelsesside med beskeden om at siden snart er klar">
+          <span class="ba-tag l" data-i18n="c.before">Før</span>
+          <span class="ba-tag r" data-i18n="c.after">Efter</span>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Træk for at sammenligne før og efter">
+          <span class="ba-handle" aria-hidden="true"></span>
+        </div>
+        <div class="ba-cap">
+          <span data-i18n="c.drag">Træk i midten for at sammenligne</span>
+          <span data-i18n="lu.cap">Forside</span>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-size:var(--s2)" data-i18n="lu.sideh">Det vi lavede</h3>
+        <ul class="changes">
+          <li><span class="i">01</span><span data-i18n="lu.c1">En forside, hvor man ser en maler i arbejde i stedet for en besked om, at siden er under opbygning.</span></li>
+          <li><span class="i">02</span><span data-i18n="lu.c2">Telefonnummer og "Få et tilbud" står øverst på hver eneste side.</span></li>
+          <li><span class="i">03</span><span data-i18n="lu.c3">Ydelser, cases og om os har fået hver sin side, så man kan finde det, man leder efter.</span></li>
+          <li><span class="i">04</span><span data-i18n="lu.c4">Egen jobside med en markering i menuen, når der er stillinger at søge.</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="note" data-i18n="lu.note">Billederne er vist med kundens tilladelse.</p>
+  </div>
+</section>
+
+<section class="section">
     <div class="wrap">
       <div class="sec-head rv">
         <p class="eyebrow" data-i18n="cd.eyebrow">Flere eksempler</p>
@@ -974,9 +1014,9 @@ footer{
         </article>
         <article class="case-card rv" style="--i:1">
           <div class="ba" data-ba>
-            <div class="ba-stage" style="--pos:50%;aspect-ratio:1000/667">
-              <img class="after-img" decoding="async" src="../assets/img/damario-efter.webp" alt="Da Mario efter redesign: stemningsbillede i fuld bredde og bordbestilling øverst" loading="lazy">
-              <img class="before-img" decoding="async" src="../assets/img/damario-foer.webp" alt="Da Mario før redesign" loading="lazy">
+            <div class="ba-stage" style="--pos:50%;aspect-ratio:1200/1217">
+              <img class="after-img" decoding="async" src="../assets/img/damario-efter.webp" alt="Bella Luna efter redesign: stemningsbillede i fuld bredde, tydeligt navnetræk og en knap til at booke bord" loading="lazy">
+              <img class="before-img" decoding="async" src="../assets/img/damario-foer.webp" alt="Bella Luna før redesign" loading="lazy">
               <span class="ba-tag l" data-i18n="c.before">Før</span>
               <span class="ba-tag r" data-i18n="c.after">Efter</span>
               <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Træk for at sammenligne før og efter">
@@ -985,8 +1025,8 @@ footer{
           </div>
           <div class="case-meta">
             <span class="k" data-i18n="cd.2k">Demo · restaurant</span>
-            <h3 data-i18n="cd.2h">Da Mario</h3>
-            <p data-i18n="cd.2p">Stemningen fra restauranten fylder skærmen, og bordbestilling står øverst i stedet for tilbudsskilte og åbningstider i tre kolonner.</p>
+            <h3 data-i18n="cd.2h">Bella Luna</h3>
+            <p data-i18n="cd.2p">Navnetrækket er tegnet om, så det kan læses, og retterne får plads i stedet for en gul tekstboks hen over maden. Book bord står øverst hele vejen igennem.</p>
           </div>
         </article>
         <article class="case-card rv" style="--i:0">
@@ -1076,7 +1116,7 @@ footer{
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow" data-i18n="o.eyebrow">Om os</p>
-        <h2 data-i18n="o.h2">To faste ansigter fra første samtale til levering</h2>
+        <h1 data-i18n="o.h2">To faste ansigter fra første samtale til levering</h1>
         <p data-i18n="o.p">FAWA er et dansk webbureau, som vi to har startet sammen. Vi arbejder med virksomheder, der allerede har en hjemmeside, men ikke får nok ud af den — og vi bygger den om, så den er til at forstå, rar at se på og nem at handle på.</p>
         <p data-i18n="o.pb">Vi er to om det hele. Der kommer ingen projektledere eller underleverandører ind over, og I taler med de samme to mennesker fra den første samtale, til siden er leveret. Vi tager kun de opgaver, vi kan nå at gøre ordentligt, og siger til, hvis vi ikke er de rigtige til opgaven.</p>
       </div>
@@ -1114,7 +1154,7 @@ footer{
     <div class="wrap contact">
       <div class="contact-side">
         <p class="eyebrow" data-i18n="k.eyebrow">Kontakt</p>
-        <h2 style="font-size:var(--s3);margin-block:14px 16px" data-i18n="k.h2">Lad os tage en snak om jeres side.</h2>
+        <h1 style="font-size:var(--s3);margin-block:14px 16px" data-i18n="k.h2">Lad os tage en snak om jeres side.</h1>
         <p class="muted" data-i18n="k.p">Skriv til os, så finder vi et tidspunkt til et kort opkald. Vi kigger på jeres side inden, så vi har noget konkret at tale om — og I forpligter jer ikke til noget.</p>
         <ul>
           <li><b data-i18n="k.l1b">Svartid</b><span data-i18n="k.l1s">Inden for 24 timer</span></li>
@@ -1135,10 +1175,10 @@ footer{
             <div class="field"><label for="f-mail" data-i18n="k.fmail">E-mail</label><input id="f-mail" type="email" autocomplete="email" required></div>
             <div class="field"><label for="f-phone" data-i18n="k.fphone">Telefon (valgfri)</label><input id="f-phone" type="tel" autocomplete="tel"></div>
           </div>
-          <div class="field"><label for="f-msg" data-i18n="k.fmsg">Hvad vil I gerne have ud af siden?</label><textarea id="f-msg"></textarea></div>
+          <div class="field"><label for="f-msg" data-i18n="k.fmsg">Dine ønsker til forbedring af hjemmesiden</label><textarea id="f-msg"></textarea></div>
           <button class="btn" type="submit" id="f-submit" style="width:100%"><span data-i18n="k.submit">Send besked</span></button>
           <p class="form-err" id="form-err" hidden data-i18n="k.err">Beskeden kunne ikke sendes lige nu. Skriv i stedet direkte til <a href="mailto:contact@fawa.dk">contact@fawa.dk</a>, så vender vi tilbage inden for 24 timer.</p>
-          <p class="micro" data-i18n="k.micro">Vi bruger kun oplysningerne til at svare jer. Ingen nyhedsbreve.</p>
+          <p class="micro" data-i18n="k.micro">Vi bruger kun oplysningerne til at svare jer. Ingen nyhedsbreve. Se <a href="../privatlivspolitik/" data-go="privatliv">privatlivspolitikken</a>.</p>
         </div>
         <div class="done" id="done">
           <h3 data-i18n="k.doneh">Tak — den er modtaget.</h3>
@@ -1159,7 +1199,6 @@ footer{
       <dl class="legal-meta">
         <dt data-i18n="p.m1">Senest opdateret</dt><dd data-i18n="p.m1v">30. september 2026</dd>
         <dt data-i18n="p.m2">Virksomhed</dt><dd>FAWA</dd>
-        <dt data-i18n="p.m3">CVR</dt><dd><mark class="todo">[UDFYLD CVR-NR.]</mark></dd>
         <dt data-i18n="p.m4">Adresse</dt><dd data-i18n="p.m4v">Falkonervænget 1, 1952 Frederiksberg C</dd>
         <dt data-i18n="p.m5">E-mail</dt><dd><a href="mailto:contact@fawa.dk">contact@fawa.dk</a></dd>
         <dt data-i18n="p.m6">Hjemmeside</dt><dd>fawa.dk</dd>
@@ -1400,7 +1439,6 @@ footer{
       <dl class="legal-meta">
         <dt data-i18n="t.m1">Senest opdateret</dt><dd data-i18n="t.m1v">16. september 2026</dd>
         <dt data-i18n="t.m2">Virksomhed</dt><dd>FAWA</dd>
-        <dt data-i18n="t.m3">CVR-nr.</dt><dd><mark class="todo">[UDFYLD CVR-NR.]</mark></dd>
         <dt data-i18n="t.m4">Adresse</dt><dd data-i18n="t.m4v">Falkonervænget 1, 1952 Frederiksberg C</dd>
         <dt data-i18n="t.m5">E-mail</dt><dd><a href="mailto:contact@fawa.dk">contact@fawa.dk</a></dd>
         <dt data-i18n="t.m6">Hjemmeside</dt><dd>fawa.dk</dd>
@@ -1485,7 +1523,6 @@ footer{
   <div class="wrap foot">
     <button class="logo" data-go="forside"><span class="wm">FA<i class="kw">W</i>A</span><span class="tg" data-i18n="brand.tag">Websites that perform</span></button>
     <small>contact@fawa.dk</small>
-    <small data-i18n="f.cvr">CVR 00 00 00 00</small>
     <small data-i18n="f.rights">© 2026 FAWA · Webbureau i Danmark</small>
   </div>
   <div class="wrap foot-links">
@@ -1537,7 +1574,7 @@ var EN = {
   "y.eyebrow":"Services and prices","y.h2":"A fixed price, agreed before we start",
   "y.p":"We optimise the website you already have. The price depends only on how many pages the site has, and it is agreed before we start — not an hourly rate that grows along the way.","y.kliptag":"Add-on","y.kliph":"A block of five changes","y.klipp":"Five changes to your site, to use whenever you need them. Write to us when something needs updating — new copy, a new image, a price that has changed — and we take one off the card. The card does not expire.","y.klipcount":"5 changes","y.klipfrom":"Total","y.inctag":"The same in every package","y.inch":"A full review of your existing website","y.incp1":"We go through the whole site and rebuild it so it is easy to understand and act on. Layout and structure, all the copy, fonts, colours, images, buttons and the order of the pages — everything is reviewed and reworked, not just the front page.","y.incp2":"The packages contain exactly the same work. The only thing that separates them is how many pages your website has.","y.incprice":"Optimisation only","y.incp3":"We work on the website you already have. Domain, hosting and other subscriptions are not part of what we deliver — they stay where they are.",
   "y.from":"From","y.cur":"DKK","y.btn":"Get a quote",
-  "y.t1h":"Smaller website","y.t1s":"3–4 pages",
+  "y.t1h":"Smaller website","y.t1s":"Up to 4 pages",
   "y.t1a":"Home, services, about, contact","y.t1b":"Built mobile first","y.t1c":"A contact form that works","y.t1d":"Ready in 2–3 weeks",
   "y.t0tag":"What we do most","y.t0h":"Optimising your site","y.t0s":"Your current website",
   "y.t0a":"We go through the site together with you",
@@ -1546,7 +1583,7 @@ var EN = {
   
   "y.t0price":"Price after the review",
   "y.t0p":"You rarely need a brand new site to get more customers. We fix what costs you most on the one you have.",
-  "y.t2tag":"Most chosen","y.t2h":"Standard website","y.t2s":"5–10 pages",
+  "y.t2tag":"Most chosen","y.t2h":"Standard website","y.t2s":"5–9 pages",
   
   "y.t3h":"Large website","y.t3s":"10+ pages",
   "y.t3a":"Booking, payment or webshop","y.t3b":"Multiple languages","y.t3c":"A structure that can grow with you","y.t3d":"The two of us on the whole project, start to finish",
@@ -1625,11 +1662,23 @@ for (var __p2 in EN_PRIV) EN[__p2] = EN_PRIV[__p2];
 var EN_NUM = {"y.n1": "4,995", "y.n2": "7,495", "y.n3": "9,995", "y.n4": "1,495"};
 for (var __n in EN_NUM) EN[__n] = EN_NUM[__n];
 
-var EN_FORM2 = {"k.micro": "We only use the details to reply. No newsletters.", "k.doneh": "Thank you — we have it.", "k.donep": "We will look at your site and come back within 24 hours to find a time for a short call.", "k.err": "The message could not be sent right now. Please write to <a href=\"mailto:contact@fawa.dk\">contact@fawa.dk</a> instead and we will come back within 24 hours."};
+var EN_FORM2 = {"k.micro": "We only use the details to reply. No newsletters. See our <a href=\"#privatliv\" data-go=\"privatliv\">privacy policy</a>.", "k.doneh": "Thank you — we have it.", "k.donep": "We will look at your site and come back within 24 hours to find a time for a short call.", "k.err": "The message could not be sent right now. Please write to <a href=\"mailto:contact@fawa.dk\">contact@fawa.dk</a> instead and we will come back within 24 hours."};
 for (var __f2 in EN_FORM2) EN[__f2] = EN_FORM2[__f2];
 
 var EN_FIX3 = {"p.p_3a": "When you contact FAWA through the form or by email, we use the information to answer your enquiry, understand your needs, prepare a quote and follow up on a possible project. If you give us a phone number yourself, we use it only to call you about that enquiry."};
 for (var __x3 in EN_FIX3) EN[__x3] = EN_FIX3[__x3];
+
+var EN_FIX4 = {"k.fmsg": "Your wishes for improving the website"};
+for (var __x4 in EN_FIX4) EN[__x4] = EN_FIX4[__x4];
+
+var EN_FIX5 = {"cd.2h": "Pronto Italiana", "cd.2p": "The wordmark is redrawn so it can be read, and the food gets room instead of a yellow text box across it. Book a table sits at the top throughout."};
+for (var __x5 in EN_FIX5) EN[__x5] = EN_FIX5[__x5];
+
+var EN_FIX6 = {"cd.2h": "Bella Luna"};
+for (var __x6 in EN_FIX6) EN[__x6] = EN_FIX6[__x6];
+
+var EN_LU = {"lu.eyebrow": "Real client", "lu.h2": "Larsen & Uldbjerg", "lu.p": "From no website at all to a finished one. The painting firm had a domain, but behind it sat only a maintenance page — everyone who looked them up was met by a note saying the site would be ready soon. Now they have a site that shows the work, says who they are, and makes it easy to ask for a quote.", "lu.flag": "Real client · painting firm", "lu.cap": "Home page", "lu.sideh": "What we built", "lu.c1": "A front page where you see a painter at work instead of a notice that the site is under construction.", "lu.c2": "The phone number and “Get a quote” sit at the top of every page.", "lu.c3": "Services, cases and about have a page each, so people can find what they came for.", "lu.c4": "A jobs page with a marker in the menu whenever there are positions to apply for.", "lu.note": "The images are shown with the client's permission."};
+for (var __lu in EN_LU) EN[__lu] = EN_LU[__lu];
 
 var DA = {};
 document.querySelectorAll("[data-i18n]").forEach(function(el){ DA[el.dataset.i18n] = el.innerHTML; });
@@ -1692,11 +1741,40 @@ function pageFromPath(path){
 }
 var PAGES = ["forside","ydelser","cases","om","kontakt","privatliv","cookies","faq","vilkaar"];
 
+/* Billeder i en skjult side bliver ikke hentet af browseren. Når siden vises,
+   eller når der er luft efter indlæsningen, sættes de i gang manuelt. */
+function warmPage(el){
+  if (!el) return;
+  var imgs = el.querySelectorAll('img[loading="lazy"]');
+  for (var i = 0; i < imgs.length; i++) {
+    var img = imgs[i];
+    img.removeAttribute("loading");
+    var src = img.getAttribute("src");
+    if (src && src.slice(0, 5) !== "data:" && !img.naturalWidth) img.setAttribute("src", src);
+  }
+}
+function warmAll(){
+  for (var i = 0; i < PAGES.length; i++) warmPage(document.getElementById("page-" + PAGES[i]));
+}
+(function(){
+  try {
+    var c = navigator.connection;
+    if (c && (c.saveData || /2g/.test(c.effectiveType || ""))) return;
+  } catch (e) {}
+  function start(){
+    if ("requestIdleCallback" in window) requestIdleCallback(warmAll, { timeout: 3000 });
+    else setTimeout(warmAll, 1200);
+  }
+  if (document.readyState === "complete") start();
+  else window.addEventListener("load", start, { once: true });
+})();
+
 function go(name, push){
   if (PAGES.indexOf(name) < 0) name = "forside";
   PAGES.forEach(function(p){
     document.getElementById("page-" + p).classList.toggle("active", p === name);
   });
+  warmPage(document.getElementById("page-" + name));
   app.dataset.mode = name === "forside" ? "dark" : "light";
   menu.querySelectorAll("button,a").forEach(function(b){
     b.setAttribute("aria-current", String(b.dataset.go === name));
@@ -1847,7 +1925,7 @@ document.getElementById("audit-form").addEventListener("submit", function(e){
   payload[en ? "Type of business" : "Type af virksomhed"] = type;
   payload[en ? "Website" : "Hjemmeside"] = val("f-site");
   payload[en ? "Phone" : "Telefon"] = val("f-phone") || none;
-  payload[en ? "What they want from the site" : "Hvad de vil have ud af siden"] = val("f-msg") || none;
+  payload[en ? "Wishes for the site" : "Ønsker til forbedring af hjemmesiden"] = val("f-msg") || none;
   payload[en ? "Language" : "Sprog"] = en ? "English" : "Dansk";
 
   var original = lab.innerHTML;

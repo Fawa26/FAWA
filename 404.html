@@ -37,5 +37,19 @@ p{color:var(--ink-2);line-height:1.65;margin:0 0 30px;font-size:1.0625rem}
     <a href="/faq/">FAQ</a>
   </div>
 </main>
+<script>
+/* På fawa.dk ligger siderne i roden. På en GitHub-adresse som
+   brugernavn.github.io/REPO/ skal projektmappen med foran, ellers
+   peger linkene ud af projektet. */
+(function(){
+  if (!/\.github\.io$/.test(location.hostname)) return;
+  var repo = location.pathname.split("/")[1];
+  if (!repo) return;
+  var links = document.querySelectorAll('a[href^="/"]');
+  for (var i = 0; i < links.length; i++) {
+    links[i].setAttribute("href", "/" + repo + links[i].getAttribute("href"));
+  }
+})();
+</script>
 </body>
 </html>

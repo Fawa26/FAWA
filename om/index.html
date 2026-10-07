@@ -3,9 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<!-- Midlertidig spaerring, mens siden goeres faerdig.
-     Fjernes ved at saette LUKKET = False i build_pages.py. -->
 <script>
 /* Holder soegemaskiner vaek fra alt andet end det rigtige domaene, for eksempel
    GitHubs midlertidige adresse. Slaar sig selv fra paa fawa.dk. */
@@ -518,6 +515,24 @@ html.js-reveal .rv.in{opacity:1;transform:none;transition:opacity .9s ease,trans
 .tier .btn{margin-top:auto}
 .includes p + p{margin-top:12px}
 .tier.wide.klip{margin-top:18px;margin-bottom:0}
+.info-link{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;
+  background:none;border:0;padding:0 0 2px;margin-top:2px;font-family:var(--f-ui);
+  font-size:.8125rem;line-height:1.5;color:var(--ink-3);cursor:pointer;text-align:left;
+  border-bottom:1px solid var(--line);transition:color .2s}
+.info-link::before{content:"?";flex:none;display:inline-grid;place-items:center;
+  width:17px;height:17px;border-radius:999px;border:1px solid currentColor;
+  font-family:var(--f-mono);font-size:.625rem;line-height:1}
+.info-link:hover,.info-link[aria-expanded="true"]{color:var(--ink);border-bottom-color:var(--ink-3)}
+.info-panel{grid-column:1/-1;border-top:1px solid var(--line);margin-top:24px;padding-top:24px;gap:10px}
+.info-panel[hidden]{display:none}
+.info-panel h4{font-family:var(--f-ui);font-weight:600;font-size:.9375rem;color:var(--ink);margin:0}
+.info-panel ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.info-panel li{position:relative;padding-left:20px;color:var(--ink-2);font-size:.9375rem;line-height:1.6}
+.info-panel li::before{content:"";position:absolute;left:2px;top:.72em;width:5px;height:5px;border-radius:50%;background:var(--accent)}
+.info-panel .cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,44px)}
+.info-panel .cols > div{display:grid;gap:10px;align-content:start}
+.info-panel .foot{color:var(--ink-3);font-size:.875rem;line-height:1.6;margin:0}
+@media (max-width:720px){.info-panel .cols{grid-template-columns:1fr;gap:24px}}
 .tier.wide .wide-side .klip-price{color:var(--ink);font-size:2.1rem;line-height:1;margin-top:4px;display:flex;align-items:baseline;gap:9px}
 .tier.wide .wide-side .klip-price span{color:var(--ink-3);font-family:var(--f-mono);font-size:.75rem;letter-spacing:.04em}
 .tier.wide .wide-side .klip-price .pre{text-transform:uppercase;letter-spacing:.14em;font-size:.6875rem}
@@ -884,7 +899,30 @@ footer{
         <div class="wide-side">
           <p class="price-note" data-i18n="y.klipcount">5 ændringer</p>
           <p class="price klip-price"><span class="pre" data-i18n="y.klipfrom">Samlet</span> <span class="num" data-i18n="y.n4">1.495</span> <span data-i18n="y.cur">kr.</span></p>
+          <button class="info-link" type="button" id="klip-trigger" aria-expanded="false" aria-controls="klip-def" data-i18n="y.klipinfo">Hvad tæller som en ændring?</button>
           <button class="btn btn-ghost" data-go="kontakt" data-i18n="y.btn">Få et tilbud</button>
+        </div>
+        <div class="info-panel" id="klip-def" hidden>
+          <div class="cols">
+            <div>
+              <h4 data-i18n="y.defja">Det tæller som én ændring</h4>
+              <ul>
+                <li data-i18n="y.defja1">En tekst, der skal rettes eller skrives om</li>
+                <li data-i18n="y.defja2">Et billede, der skal skiftes ud</li>
+                <li data-i18n="y.defja3">En pris, en åbningstid eller en kontaktoplysning, der skal opdateres</li>
+                <li data-i18n="y.defja4">Et punkt, der skal tilføjes eller fjernes i en liste eller i menuen</li>
+              </ul>
+            </div>
+            <div>
+              <h4 data-i18n="y.defnej">Det er ikke et klip</h4>
+              <ul>
+                <li data-i18n="y.defnej1">Nye sider — dem aftaler vi for sig</li>
+                <li data-i18n="y.defnej2">Et nyt design eller en ny opbygning af en side</li>
+                <li data-i18n="y.defnej3">Nye funktioner, for eksempel booking eller webshop</li>
+              </ul>
+            </div>
+          </div>
+          <p class="foot" data-i18n="y.deffoot">Hænger flere små rettelser sammen — for eksempel tre tekster på den samme side — tæller vi det som ét klip. Er vi i tvivl, spørger vi jer, inden vi trækker det.</p>
         </div>
       </div>
       <p class="note" data-i18n="y.note">Alle priser er ekskl. moms. Den endelige pris aftales, når vi har været siden igennem, så I ved præcis hvad den lyder på, inden vi går i gang. Ekstra justeringer efter levering kan tilkøbes og indgår ikke i priserne.</p>
@@ -1684,6 +1722,21 @@ for (var __x6 in EN_FIX6) EN[__x6] = EN_FIX6[__x6];
 var EN_LU = {"lu.eyebrow": "Real client", "lu.h2": "Larsen & Uldbjerg", "lu.p": "From no website at all to a finished one. The painting firm had a domain, but behind it sat only a maintenance page — everyone who looked them up was met by a note saying the site would be ready soon. Now they have a site that shows the work, says who they are, and makes it easy to ask for a quote.", "lu.flag": "Real client · painting firm", "lu.cap": "Home page", "lu.sideh": "What we built", "lu.c1": "A front page where you see a painter at work instead of a notice that the site is under construction.", "lu.c2": "The phone number and “Get a quote” sit at the top of every page.", "lu.c3": "Services, cases and about have a page each, so people can find what they came for.", "lu.c4": "A jobs page with a marker in the menu whenever there are positions to apply for.", "lu.note": "The images are shown with the client's permission."};
 for (var __lu in EN_LU) EN[__lu] = EN_LU[__lu];
 
+var EN_KLIP = {
+  "y.klipinfo": "What counts as a change?",
+  "y.defja": "This counts as one change",
+  "y.defja1": "A piece of text to be corrected or rewritten",
+  "y.defja2": "An image to be swapped out",
+  "y.defja3": "A price, an opening hour or a contact detail to be updated",
+  "y.defja4": "An item to be added to or removed from a list or the menu",
+  "y.defnej": "This is not a change",
+  "y.defnej1": "New pages \u2014 we agree those separately",
+  "y.defnej2": "A new design or a new structure for a page",
+  "y.defnej3": "New features, for example booking or a web shop",
+  "y.deffoot": "When several small corrections belong together \u2014 three pieces of text on the same page, say \u2014 we count them as one. If we are in doubt, we ask you before using one."
+};
+for (var k in EN_KLIP) EN[k] = EN_KLIP[k];
+
 var DA = {};
 document.querySelectorAll("[data-i18n]").forEach(function(el){ DA[el.dataset.i18n] = el.innerHTML; });
 document.querySelectorAll("[data-i18n-ph]").forEach(function(el){ DA["ph:"+el.dataset.i18nPh] = el.getAttribute("placeholder"); });
@@ -1881,6 +1934,18 @@ document.querySelectorAll("[data-ba]").forEach(function(ba){
   range.addEventListener("input", apply);
   apply();
 });
+
+/* ================= klippekort: hvad er en ændring ================= */
+(function(){
+  var t = document.getElementById("klip-trigger");
+  var panel = document.getElementById("klip-def");
+  if (!t || !panel) return;
+  t.addEventListener("click", function(){
+    var open = t.getAttribute("aria-expanded") === "true";
+    t.setAttribute("aria-expanded", String(!open));
+    panel.hidden = open;
+  });
+})();
 
 /* ================= form ================= */
 var FORM_KEY = "c94f11d0-4f47-4fc5-a648-71ee97062bb4";

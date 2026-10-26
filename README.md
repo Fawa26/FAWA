@@ -1,7 +1,6 @@
 # fawa.dk
 
-Kildekoden til FAWAs hjemmeside. Ren HTML, CSS og JavaScript — ingen
-byggeproces, ingen afhængigheder. Filerne kan åbnes direkte i en editor.
+Kildekoden til FAWAs hjemmeside. Ren HTML, CSS og JavaScript. Ingen byggeproces, ingen afhængigheder. Filerne kan åbnes direkte i en editor.
 
 ## Sådan er det skruet sammen
 
@@ -9,7 +8,7 @@ Hver side i menuen har sin egen mappe med en `index.html`. De er alle den
 samme hjemmeside, men hver fil har sin egen titel, beskrivelse og
 `canonical`-adresse, så Google kan indeksere dem hver for sig. Når man
 klikker rundt, skifter JavaScript bare hvilken sektion der er synlig og
-opdaterer adressen — der bliver ikke hentet en ny fil.
+opdaterer adressen. Der bliver ikke hentet en ny fil.
 
 ```
 /                     forsiden
@@ -47,7 +46,7 @@ Valget gemmes i `localStorage` under `fawa-lang`.
 ## Når du retter noget
 
 Retter du tekst eller design, skal ændringen ind i **alle ni
-`index.html`-filer** — de er kopier af hinanden. Det nemmeste er at rette
+`index.html`-filer**, for de er kopier af hinanden. Det nemmeste er at rette
 i `index.html` i roden og derefter kopiere `<body>`-indholdet over i de
 andre, eller bede om en ny generering.
 
@@ -59,7 +58,7 @@ Open Font License 1.1.
 
 Øverst i hver `index.html` ligger fem linjers JavaScript, der beder Google og
 andre søgemaskiner om at holde sig væk, hvis siden bliver vist på en anden
-adresse end `fawa.dk` — for eksempel GitHubs midlertidige
+adresse end `fawa.dk`, for eksempel GitHubs midlertidige
 `<brugernavn>.github.io`-adresse. På fawa.dk gør den ingenting.
 
 Den slår altså sig selv fra, når domænet er på plads. Der er intet, I skal
@@ -70,13 +69,13 @@ fawa.dk-adresse, og `sitemap.xml` nævner kun fawa.dk.
 
 1. Opret et nyt repository på GitHub, for eksempel `fawa-dk`.
 2. Læg indholdet af denne mappe i roden af repoet og push til `main`.
-3. Gå til **Settings → Pages**. Vælg `Deploy from a branch`, branch
+3. Gå til **Settings > Pages**. Vælg `Deploy from a branch`, branch
    `main`, mappe `/ (root)`. Gem.
 4. Efter et par minutter ligger siden på
-   `https://<brugernavn>.github.io/<repo>/`. Den virker fuldt ud dér — links,
+   `https://<brugernavn>.github.io/<repo>/`. Den virker fuldt ud dér. Links,
    undersider og sprogskifter fungerer under enhver sti, så I kan tjekke det
    hele igennem, inden domænet bliver sat om.
-5. Under **Custom domain** skriver I `fawa.dk` og gemmer — først når DNS er
+5. Under **Custom domain** skriver I `fawa.dk` og gemmer, men først når DNS er
    sat op (se nedenfor).
 6. Sæt flueben i **Enforce HTTPS**, når certifikatet er klar. Det kan tage op
    til et par timer første gang.
@@ -96,7 +95,7 @@ ligger. Under DNS-indstillinger for fawa.dk skal der stå:
 | CNAME | www   | `<brugernavn>.github.io.` |
 
 `<brugernavn>` er jeres GitHub-brugernavn. Slet eventuelle eksisterende
-A-records på `@`, der peger på one.coms egne servere — ellers rammer
+A-records på `@`, der peger på one.coms egne servere, ellers rammer
 domænet det forkerte sted.
 
 **Mailen bliver ikke berørt.** Rør ikke MX-records eller noget med

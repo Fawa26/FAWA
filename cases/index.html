@@ -16,29 +16,30 @@
   document.head.appendChild(m);
 })();
 </script>
-<title>Cases | FAWA</title>
-<meta name="description" content="Før og efter: se hvad en gennemgang gør ved en hjemmeside. Eksempler fra seks brancher, fra forsiden til vejen til kontakt.">
+<title>Cases · FAWA</title>
+<meta name="description" content="Larsen &amp; Uldbjerg: fra tom side til ny hjemmeside. Se før og efter, og se hele hjemmesiden blive bygget op.">
+<meta name="theme-color" content="#2E251F">
 <link rel="canonical" href="https://fawa.dk/cases/">
+<link rel="icon" href="../assets/favicon.svg">
+<link rel="apple-touch-icon" href="../assets/favicon.svg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="FAWA">
 <meta property="og:locale" content="da_DK">
 <meta property="og:locale:alternate" content="en_GB">
 <meta property="og:url" content="https://fawa.dk/cases/">
-<meta property="og:title" content="Cases | FAWA">
-<meta property="og:description" content="Før og efter: se hvad en gennemgang gør ved en hjemmeside. Eksempler fra seks brancher, fra forsiden til vejen til kontakt.">
+<meta property="og:title" content="Cases · FAWA">
+<meta property="og:description" content="Larsen &amp; Uldbjerg: fra tom side til ny hjemmeside. Se før og efter, og se hele hjemmesiden blive bygget op.">
 <meta property="og:image" content="https://fawa.dk/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="FAWA, hjemmesider der performer">
+<meta property="og:image:alt" content="FAWA · hjemmesider der performer">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cases | FAWA">
-<meta name="twitter:description" content="Før og efter: se hvad en gennemgang gør ved en hjemmeside. Eksempler fra seks brancher, fra forsiden til vejen til kontakt.">
+<meta name="twitter:title" content="Cases · FAWA">
+<meta name="twitter:description" content="Larsen &amp; Uldbjerg: fra tom side til ny hjemmeside. Se før og efter, og se hele hjemmesiden blive bygget op.">
 <meta name="twitter:image" content="https://fawa.dk/og.jpg">
-<link rel="icon" href="../assets/favicon.svg">
-<link rel="preload" as="image" href="../assets/img/hero.webp" fetchpriority="high">
-<meta name="theme-color" content="#2E251F">
 <link rel="preload" href="../assets/fonts/cormorant-garamond-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../assets/fonts/archivo-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="../assets/img/hero.webp" fetchpriority="high">
 <link rel="stylesheet" href="../assets/fonts.css">
 <script>
 (function(){
@@ -145,11 +146,10 @@ header .logo .tg{font-family:var(--f-it);font-weight:600;font-size:.6875rem;lett
 .logo .tg{font-family:var(--f-ui);font-weight:400;font-size:.5rem;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-3)}
 @media (max-width:560px){.logo .wm{font-size:1.25rem;letter-spacing:.28em}.logo .tg{display:none}}
 .menu{display:flex;gap:34px;align-items:baseline}
-.menu a{text-decoration:none;display:inline-block;line-height:normal}
 .menu button,.menu a{
   background:none;border:0;padding:6px 0;cursor:pointer;color:var(--ink-2);
   font-family:var(--f-it);font-size:1.3125rem;font-weight:500;letter-spacing:.005em;
-  border-bottom:1px solid transparent;
+  border-bottom:1px solid transparent;text-decoration:none;display:inline-block;line-height:normal;
 }
 .menu button:hover,.menu a:hover{color:var(--ink)}
 .menu button[aria-current="true"],.menu a[aria-current="true"]{color:var(--ink);border-bottom-color:var(--accent)}
@@ -164,8 +164,7 @@ header .logo .tg{font-family:var(--f-it);font-weight:600;font-size:.6875rem;lett
     background:#EFECE4;border-bottom:1px solid var(--line);padding:8px 24px 18px;
   }
   .menu.open{display:flex}
-  .menu a{display:block;width:100%}
-  .menu button,.menu a{padding:14px 0;border-bottom:1px solid var(--line-soft);text-align:left;font-size:1.375rem}
+  .menu button,.menu a{padding:14px 0;border-bottom:1px solid var(--line-soft);text-align:left;font-size:1.375rem;display:block;width:100%}
   .burger{display:block;order:3}
   .hd .btn{display:none}
   .logo{font-size:1.2rem;letter-spacing:.3em}
@@ -469,15 +468,21 @@ html.js-reveal .rv.in{opacity:1;transform:none;transition:opacity .9s ease,trans
 .ba-tag.l{left:14px}
 .ba-tag.r{right:14px;color:#F4F1EA;border-color:rgba(244,241,234,.4)}
 .ba-range{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;z-index:4;-webkit-appearance:none;appearance:none;background:transparent}
-.ba-handle{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:1px;background:rgba(244,241,234,.9);z-index:3;pointer-events:none}
+.ba-handle{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:2px;margin-left:-1px;z-index:3;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.25),rgba(255,255,255,.85) 18%,rgba(255,255,255,.85) 82%,rgba(255,255,255,.25));box-shadow:0 0 22px rgba(255,255,255,.45),0 0 2px rgba(0,0,0,.25)}
 .ba-handle::after{
   content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-  width:46px;height:46px;border-radius:50%;background:rgba(30,27,23,.55);
-  border:1px solid rgba(244,241,234,.7);backdrop-filter:blur(6px);
+  width:58px;height:58px;border-radius:999px;
+  background:linear-gradient(145deg,rgba(255,255,255,.34),rgba(255,255,255,.10) 42%,rgba(255,255,255,.26));
+  border:1px solid rgba(255,255,255,.55);
+  -webkit-backdrop-filter:blur(16px) saturate(190%);backdrop-filter:blur(16px) saturate(190%);
+  box-shadow:0 14px 40px rgba(0,0,0,.34),inset 0 1px 0 rgba(255,255,255,.85),inset 0 -10px 22px rgba(255,255,255,.18),inset 0 0 0 1px rgba(255,255,255,.12);
+  transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s ease;
 }
+.ba:hover .ba-handle::after{transform:translate(-50%,-50%) scale(1.07);box-shadow:0 18px 50px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.95),inset 0 -10px 22px rgba(255,255,255,.22)}
 .ba-handle::before{
   content:"‹ ›";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;
-  font-family:var(--f-ui);font-size:.9rem;color:#F4F1EA;letter-spacing:.06em;line-height:1;
+  font-family:var(--f-ui);font-size:1rem;color:#fff;letter-spacing:.1em;line-height:1;
+  text-shadow:0 1px 10px rgba(0,0,0,.5);
 }
 .ba-range:focus-visible ~ .ba-handle::after{outline:2px solid var(--accent);outline-offset:3px}
 .ba-cap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin-top:12px;font-family:var(--f-mono);font-size:.6875rem;color:var(--ink-3)}
@@ -489,10 +494,10 @@ html.js-reveal .rv.in{opacity:1;transform:none;transition:opacity .9s ease,trans
   letter-spacing:.16em;text-transform:uppercase;color:var(--accent);
   border:1px solid var(--accent);border-radius:999px;padding:5px 13px;
 }
-.flag.real{color:#F4F1EA;background:var(--accent);border-color:var(--accent)}
+.flag.real{color:var(--btn-fg);background:var(--accent);border-color:var(--accent);font-size:.6875rem;font-weight:500}
 .changes{list-style:none;margin:22px 0 0;padding:0}
-.changes li{display:grid;grid-template-columns:auto 1fr;gap:14px;padding-block:13px;border-top:1px solid var(--line-soft);font-size:.9375rem;color:var(--ink-2);line-height:1.55}
-.changes .i{font-family:var(--f-mono);font-size:.6875rem;color:var(--accent);padding-top:.3em}
+.changes li{padding-block:13px;border-top:1px solid var(--line-soft);font-size:.9375rem;color:var(--ink-2);line-height:1.55}
+.changes .i{font-family:var(--f-mono);font-size:.6875rem;color:var(--accent);padding-top:.3em}.case-top{padding-top:clamp(26px,3.2vw,46px);padding-bottom:clamp(14px,2vw,22px)}.case-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}.case-head h1{margin:6px 0 0}.reel-tags{list-style:none;display:flex;gap:8px;margin:0;padding:0;flex-wrap:wrap}.reel-tags li{font-family:var(--f-mono);font-size:.625rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);border:1px solid var(--line);border-radius:999px;padding:6px 13px}.reel-sec{padding:0 0 clamp(18px,2.4vw,30px)}.facts-sec{padding-top:clamp(14px,2vw,26px)}.reel{max-width:920px;margin-inline:auto}.reel-screen{position:relative;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--surface-2);box-shadow:0 40px 90px -46px rgba(32,29,25,.5);transform:perspective(1800px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .6s cubic-bezier(.22,1,.36,1),box-shadow .6s ease,scale .75s cubic-bezier(.22,1,.36,1)}.reel:hover .reel-screen,.reel.is-live .reel-screen{scale:1.032}.reel.is-live .reel-screen{box-shadow:0 54px 110px -44px rgba(32,29,25,.58)}.reel-view{position:relative;aspect-ratio:1500/803;overflow:hidden;background:var(--surface-2)}.reel-shot{position:absolute;inset:0;opacity:0;pointer-events:none;transform:scale(1.035);filter:blur(12px) saturate(1.1);transition:opacity 1.15s cubic-bezier(.4,0,.2,1),transform 1.5s cubic-bezier(.22,1,.36,1),filter 1.15s cubic-bezier(.4,0,.2,1)}.reel-shot.is-on{opacity:1;transform:scale(1);filter:blur(0) saturate(1)}.reel-shot.is-out{opacity:0;transform:scale(.988);filter:blur(9px) saturate(1);transition:opacity 1s cubic-bezier(.4,0,.2,1),transform 1.4s cubic-bezier(.22,1,.36,1),filter 1s cubic-bezier(.4,0,.2,1)}.reel-shot img{display:block;width:100%;height:auto;transform:translateY(0)}.build{position:absolute;left:0;right:0;top:0;z-index:2;pointer-events:none}.build .bl{position:absolute;left:0;top:0;width:100%;height:auto;display:block;opacity:0}.reel.is-live .reel-shot.is-on.has-build .b1{animation:bl1 4s linear}.reel.is-live .reel-shot.is-on.has-build .b2{animation:bl2 4s linear}.reel.is-live .reel-shot.is-on.has-build .b3{animation:bl3 4s linear}.reel.is-live .reel-shot.is-on.has-build > img{animation:blmain 4s linear}@keyframes bl1{0%,68%{opacity:1}78%,100%{opacity:0}}@keyframes bl2{0%,31%{opacity:0}39%,68%{opacity:1}78%,100%{opacity:0}}@keyframes bl3{0%,50%{opacity:0}58%,68%{opacity:1}78%,100%{opacity:0}}@keyframes blmain{0%,68%{opacity:0}78%,100%{opacity:1}}.reel-screen::after{content:"";position:absolute;inset:0;z-index:6;pointer-events:none;border-radius:inherit;box-shadow:inset 0 1px 0 rgba(255,255,255,.5),inset 0 0 90px rgba(32,29,25,.16);background:radial-gradient(135% 95% at 50% 48%,rgba(32,29,25,0) 56%,rgba(32,29,25,.16) 100%)}.reel-grain{position:absolute;inset:0;z-index:5;pointer-events:none;opacity:.055;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");background-size:160px 160px}.reel.is-live .reel-shot:first-child img{animation:kenburns 3.6s cubic-bezier(.22,1,.36,1) both}@keyframes kenburns{from{scale:1.055}to{scale:1}}.reel-shot.is-on.reel-devices{animation:devscene 1.4s cubic-bezier(.22,1,.36,1) both}@keyframes devscene{from{scale:1.035}to{scale:1}}.case-head{transition:opacity .8s ease}.reel-on .case-head{opacity:.4}.reel-on .reel-screen{box-shadow:0 70px 150px -50px rgba(32,29,25,.68)}@media(prefers-reduced-motion:reduce){.reel-grain{display:none}.reel.is-live .reel-shot:first-child img,.reel-shot.is-on.reel-devices{animation:none}.reel-on .case-head{opacity:1}}.reel-sweep{position:absolute;left:0;right:0;top:0;height:190px;z-index:3;pointer-events:none;opacity:0;background:linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.30) 62%,rgba(255,255,255,.62) 92%,rgba(255,255,255,0))}.reel-sweep.go{animation:sweep 1.25s cubic-bezier(.33,0,.18,1)}@keyframes sweep{0%{opacity:0;transform:translateY(-190px)}22%{opacity:.85}78%{opacity:.5}100%{opacity:0;transform:translateY(100%)}}.reel-devices{position:absolute;inset:0;background:var(--surface-2)}.reel-devices .dev{position:absolute;border:1px solid var(--line);overflow:hidden;background:#fff;opacity:0;transform:translateY(18px)}.reel-devices .dev img{display:block;width:100%;height:auto}.reel-devices .dev-d{left:3%;top:50%;width:72%;border-radius:7px;box-shadow:0 30px 60px -28px rgba(32,29,25,.6);transform:translateY(calc(-50% + 18px))}.reel-devices .dev-t{right:12%;bottom:9%;width:33%;border-radius:10px;box-shadow:0 24px 50px -22px rgba(32,29,25,.55)}.reel-devices .dev-m{right:2.5%;bottom:5%;width:15.5%;border-radius:16px;box-shadow:0 20px 44px -18px rgba(32,29,25,.55)}.reel-shot.is-on.reel-devices .dev-t,.reel-shot.is-on.reel-devices .dev-m{animation:devin .62s cubic-bezier(.22,1,.36,1) forwards}.reel-shot.is-on.reel-devices .dev-d{animation:devind .62s cubic-bezier(.22,1,.36,1) forwards}.reel-shot.is-on.reel-devices .dev-t{animation-delay:.14s}.reel-shot.is-on.reel-devices .dev-m{animation-delay:.28s}@keyframes devin{to{opacity:1;transform:translateY(0)}}@keyframes devind{to{opacity:1;transform:translateY(-50%)}}.reel-rail{display:flex;align-items:center;gap:16px;margin-top:16px;flex-wrap:wrap}.reel-steps{list-style:none;display:flex;gap:2px;margin:0;padding:0;flex-wrap:wrap}.reel-steps button{font-family:var(--f-mono);font-size:.6875rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);background:none;border:1px solid transparent;border-radius:999px;padding:7px 12px;cursor:pointer;transition:color .25s ease,background .25s ease}.reel-steps button:hover{color:var(--ink)}.reel-steps .is-live button{color:var(--btn-fg);background:var(--btn-bg)}.reel-prog{flex:1 1 80px;min-width:60px;height:1px;background:transparent;position:relative;display:block;overflow:hidden}.reel-prog i{display:none}.reel-url{font-family:var(--f-mono);font-size:.6875rem;color:var(--ink-3);letter-spacing:.03em;white-space:nowrap}.reel-hint{position:absolute;right:12px;bottom:12px;margin:0;z-index:4;font-family:var(--f-mono);font-size:.625rem;letter-spacing:.1em;text-transform:uppercase;color:#F4F1EA;background:rgba(26,22,18,.52);border:1px solid rgba(255,255,255,.18);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-radius:999px;padding:6px 12px;transition:opacity .35s ease}.reel.is-live .reel-hint{opacity:0}.facts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--line)}.facts li{padding:30px 26px 34px;border-left:1px solid var(--line-soft);display:flex;flex-direction:column;gap:12px}.facts li:first-child{border-left:0;padding-left:0}.facts .n{font-family:var(--f-mono);font-size:.6875rem;letter-spacing:.16em;color:var(--ink-3)}.facts h2{margin:0;font-size:var(--s2)}.case-link{margin-top:26px}.case-link a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px;font-size:1.0625rem}.case-link a:hover{border-color:var(--ink)}@media(max-width:820px){.facts{grid-template-columns:1fr}.facts li{border-left:0;border-top:1px solid var(--line-soft);padding:24px 0 26px}.facts li:first-child{border-top:0}.reel-url{display:none}}@media(prefers-reduced-motion:reduce){.build{display:none}.reel-shot,.reel-shot.is-on,.reel-shot.is-out{transition:none;filter:none;transform:none}.reel-shot img{transition:none!important}.reel-sweep{display:none}.reel-screen{transform:none}.reel-devices .dev{opacity:1;animation:none!important}.reel-devices .dev-d{transform:translateY(-50%)}.reel-devices .dev-t,.reel-devices .dev-m{transform:none}}
 
 /* ============ pricing ============ */
 .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -504,7 +509,7 @@ html.js-reveal .rv.in{opacity:1;transform:none;transition:opacity .9s ease,trans
 .tier.feature{border-color:var(--accent)}
 .tier .tag{align-self:flex-start;font-family:var(--f-mono);font-size:.625rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:3px 11px}
 .tier h3{font-size:var(--s2)}
-.tier .scope{font-family:var(--f-mono);font-size:.75rem;color:var(--ink-3)}
+.tier .scope{font-family:var(--f-mono);font-size:.75rem;color:var(--ink-3)}.trio-cta{margin-top:26px}
 .price{font-family:var(--f-serif);font-weight:400;font-size:2.5rem;line-height:1;letter-spacing:-.01em;font-variant-numeric:tabular-nums;display:flex;align-items:baseline;gap:9px}
 .price span{font-family:var(--f-mono);font-size:.75rem;color:var(--ink-3);letter-spacing:.04em}
 .price .pre{text-transform:uppercase;letter-spacing:.14em;font-size:.6875rem}
@@ -527,8 +532,8 @@ html.js-reveal .rv.in{opacity:1;transform:none;transition:opacity .9s ease,trans
 .info-panel[hidden]{display:none}
 .info-panel h4{font-family:var(--f-ui);font-weight:600;font-size:.9375rem;color:var(--ink);margin:0}
 .info-panel ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
-.info-panel li{position:relative;padding-left:20px;color:var(--ink-2);font-size:.9375rem;line-height:1.6}
-.info-panel li::before{content:"";position:absolute;left:2px;top:.72em;width:5px;height:5px;border-radius:50%;background:var(--accent)}
+.info-panel li{position:relative;padding-left:15px;color:var(--ink-2);font-size:.9375rem;line-height:1.6}
+.info-panel li::before{content:"";position:absolute;left:0;top:.5em;width:5px;height:5px;border-radius:50%;background:var(--accent)}
 .info-panel .cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,44px)}
 .info-panel .cols > div{display:grid;gap:10px;align-content:start}
 .info-panel .foot{color:var(--ink-3);font-size:.875rem;line-height:1.6;margin:0}
@@ -723,15 +728,16 @@ footer{
 .foot-links a{font-family:var(--f-mono);font-size:.6875rem;letter-spacing:.06em;color:var(--ink-3);text-decoration:none}
 .foot-links a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
 
-</style>
-<script>window.__PAGE__="cases";window.__META__={"forside": {"da": ["FAWA | Hjemmesider der performer", "FAWA optimerer eksisterende hjemmesider, så de bliver hurtigere, tydeligere og konverterer bedre. Design, struktur og tekst med udgangspunkt i, hvad der skaber kunder."], "en": ["FAWA | Websites that perform", "FAWA optimises existing websites so they load faster, read clearer and convert better. Design, structure and copy built around what actually brings in customers."]}, "ydelser": {"da": ["Ydelser og priser | FAWA", "Fast pris, aftalt inden vi går i gang. Vi optimerer den hjemmeside, I har. Prisen afhænger alene af, hvor mange sider siden har. Fra 4.995 kr."], "en": ["Services and prices | FAWA", "A fixed price, agreed before we start. We optimise the website you already have. The price depends only on how many pages it has. From 4,995 DKK."]}, "cases": {"da": ["Cases | FAWA", "Før og efter: se hvad en gennemgang gør ved en hjemmeside. Eksempler fra seks brancher, fra forsiden til vejen til kontakt."], "en": ["Cases | FAWA", "Before and after: see what a review does to a website. Examples from six industries, from the front page to the path to contact."]}, "om": {"da": ["Om FAWA: to faste ansigter fra start til levering", "FAWA er et dansk webbureau drevet af Melissa og Sofia. Ingen projektledere eller underleverandører. I taler med de samme to mennesker hele vejen."], "en": ["About FAWA: two people, start to delivery", "FAWA is a Danish web studio run by Melissa and Sofia. No project managers or subcontractors. You talk to the same two people throughout."]}, "kontakt": {"da": ["Kontakt FAWA", "Skriv til os, så finder vi et tidspunkt til et kort opkald. Vi kigger på jeres side inden, så vi har noget konkret at tale om. I forpligter jer ikke til noget."], "en": ["Contact FAWA", "Write to us and we'll find a time for a short call. We look at your site beforehand, so we have something concrete to talk about. You commit to nothing."]}, "privatliv": {"da": ["Privatlivspolitik | FAWA", "Sådan indsamler, bruger, opbevarer og beskytter FAWA personoplysninger på fawa.dk."], "en": ["Privacy policy | FAWA", "How FAWA collects, uses, stores and protects personal data on fawa.dk."]}, "cookies": {"da": ["Cookiepolitik | FAWA", "fawa.dk sætter ingen cookies og bruger hverken statistik eller markedsføring. Se den fulde oversigt over lagring på siden."], "en": ["Cookie policy | FAWA", "fawa.dk sets no cookies and uses neither analytics nor marketing. See the full overview of storage on the site."]}, "faq": {"da": ["Ofte stillede spørgsmål | FAWA", "Svar på de spørgsmål, virksomheder typisk har om optimering og redesign af deres eksisterende hjemmeside."], "en": ["Frequently asked questions | FAWA", "Answers to the questions companies usually have about optimising and redesigning an existing website."]}, "vilkaar": {"da": ["Handelsbetingelser | FAWA", "FAWAs handelsbetingelser for erhvervskunder om optimering og redesign af eksisterende hjemmesider."], "en": ["Terms of business | FAWA", "FAWA's terms of business for business customers on optimising and redesigning existing websites."]}};</script>
+.hero-photo .hero-shot{scale:var(--hz,1)}.hero-photo .hero-in{translate:0 var(--hy,0px);opacity:var(--ho,1)}.hero-screen{position:absolute;left:0;top:0;width:1000px;height:700px;transform-origin:0 0;z-index:0;pointer-events:none;opacity:0;transition:opacity .45s ease}.hero-screen.on{opacity:1}.scr-win{position:absolute;inset:0;overflow:hidden;border-radius:9px/7px;background:#17120F}.scr-page{display:block;width:100%;height:auto;filter:brightness(.95) contrast(1.03);animation:scrPan 110s linear infinite}@keyframes scrPan{0%,1.2%{transform:translateY(0)}1.2%,63%{animation-timing-function:cubic-bezier(.4,0,.5,1)}63%,70%{transform:translateY(calc(700px - 100%))}87%,100%{transform:translateY(0)}}@media(max-width:1000px){.hero-screen{display:none}}@media(prefers-reduced-motion:reduce){.scr-page{animation:none}}.hero-scrim{position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(90deg,rgba(28,21,15,.58) 0%,rgba(28,21,15,.40) 26%,rgba(28,21,15,.10) 44%,rgba(28,21,15,0) 53%),linear-gradient(180deg,rgba(28,21,15,.30) 0%,rgba(28,21,15,0) 26%,rgba(28,21,15,0) 80%,rgba(28,21,15,.32) 100%)}.hero-warm{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(104deg,rgba(255,198,126,.05) 8%,rgba(255,196,120,.12) 34%,rgba(255,186,110,.04) 48%,rgba(255,186,110,0) 56%),radial-gradient(40% 46% at 30% 10%,rgba(255,210,150,.10),rgba(255,210,150,0) 72%)}.hero-photo .hero-shot{filter:none}.hero-grain{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");background-size:150px 150px}.hero-cta .btn{transition:transform .55s cubic-bezier(.22,1,.36,1),background .3s ease,color .3s ease,border-color .3s ease}.hero-cta .btn .ar{transition:transform .6s cubic-bezier(.22,1,.36,1)}@media(prefers-reduced-motion:reduce){.hero-light,.hero-grain{display:none}.hero-photo .hero-shot,.hero-photo .hero-in{transform:none;scale:1;translate:none;opacity:1;transition:none}}</style>
+
+<script>window.__PAGE__="cases";window.__META__={"forside": {"da": ["FAWA · Hjemmesider der performer", "FAWA optimerer eksisterende hjemmesider, så de bliver hurtigere, tydeligere og konverterer bedre. Design, struktur og tekst med udgangspunkt i, hvad der skaber kunder."], "en": ["FAWA · Websites that perform", "FAWA optimises existing websites so they load faster, read clearer and convert better. Design, structure and copy built around what actually brings in customers."]}, "ydelser": {"da": ["Ydelser og priser · FAWA", "Fast pris, aftalt inden vi går i gang. Vi optimerer den hjemmeside I har · prisen afhænger alene af hvor mange sider hjemmesiden har. Fra 4.995 kr."], "en": ["Services and prices · FAWA", "A fixed price, agreed before we start. We optimise the website you already have · the price depends only on how many pages it has. From 4,995 DKK."]}, "cases": {"da": ["Cases · FAWA", "Larsen & Uldbjerg: fra tom side til ny hjemmeside. Se før og efter, og se hele hjemmesiden blive bygget op."], "en": ["Cases · FAWA", "Larsen & Uldbjerg: from an empty page to a new website. See before and after, and watch the whole site being built."]}, "om": {"da": ["Om FAWA: to faste ansigter fra start til levering", "FAWA er et dansk webbureau drevet af Melissa og Sofia. Ingen projektledere eller underleverandører. I taler med de samme to mennesker hele vejen."], "en": ["About FAWA: two people, start to delivery", "FAWA is a Danish web studio run by Melissa and Sofia. No project managers or subcontractors. You talk to the same two people throughout."]}, "kontakt": {"da": ["Kontakt FAWA", "Skriv til os, så finder vi et tidspunkt til et kort opkald. Vi kigger på jeres hjemmeside inden, så vi har noget konkret at tale om. I forpligter jer ikke til noget."], "en": ["Contact FAWA", "Write to us and we'll find a time for a short call. We look at your website beforehand, so we have something concrete to talk about. You commit to nothing."]}, "privatliv": {"da": ["Privatlivspolitik · FAWA", "Sådan indsamler, bruger, opbevarer og beskytter FAWA personoplysninger på fawa.dk."], "en": ["Privacy policy · FAWA", "How FAWA collects, uses, stores and protects personal data on fawa.dk."]}, "cookies": {"da": ["Cookiepolitik · FAWA", "fawa.dk sætter ingen cookies og bruger hverken statistik eller markedsføring. Se den fulde oversigt over lagring på siden."], "en": ["Cookie policy · FAWA", "fawa.dk sets no cookies and uses neither analytics nor marketing. See the full overview of storage on the site."]}, "faq": {"da": ["Ofte stillede spørgsmål · FAWA", "Svar på de spørgsmål virksomheder typisk har om optimering og redesign af deres eksisterende hjemmeside."], "en": ["Frequently asked questions · FAWA", "Answers to the questions companies usually have about optimising and redesigning an existing website."]}, "vilkaar": {"da": ["Handelsbetingelser · FAWA", "FAWAs handelsbetingelser for erhvervskunder om optimering og redesign af eksisterende hjemmesider."], "en": ["Terms of business · FAWA", "FAWA's terms of business for business customers on optimising and redesigning existing websites."]}};</script>
 </head>
 <body>
 <div id="app" data-mode="dark">
 
 <header>
   <div class="wrap hd">
-    <button class="logo" data-go="forside" aria-label="FAWA, forside"><span class="wm">FA<i class="kw">W</i>A</span><span class="tg" data-i18n="brand.tag">Websites that perform</span></button>
+    <button class="logo" data-go="forside" aria-label="FAWA · forside"><span class="wm">FA<i class="kw">W</i>A</span><span class="tg" data-i18n="brand.tag">Websites that perform</span></button>
     <nav class="menu" id="menu">
       <a href="../ydelser/" data-go="ydelser" data-i18n="n.services">Ydelser</a>
       <a href="../cases/" data-go="cases" data-i18n="n.cases">Cases</a>
@@ -752,11 +758,18 @@ footer{
 <div class="page active" id="page-forside">
 
   <section class="hero tone-1 hero-photo">
-    <div class="hero-shot" aria-hidden="true"></div>
+    <div class="hero-shot" aria-hidden="true"><div class="hero-screen" aria-hidden="true"><div class="scr-win"><img class="scr-page" decoding="async" src="../assets/img/skaerm.webp" alt=""></div></div></div>
+    
+    
+    
+    <span class="hero-scrim" aria-hidden="true"></span>
+    <span class="hero-warm" aria-hidden="true"></span>
+    
+    <span class="hero-grain" aria-hidden="true"></span>
     <div class="wrap hero-in">
       <p class="hero-eyebrow" data-i18n="brand.tag">Websites that perform</p>
       <h1 data-i18n="h.h1">Hjemmesider<br><span class="nb">der <i>performer</i></span></h1>
-      <p class="lede" data-i18n="h.lede">Vi hjælper virksomheder med at optimere deres hjemmesider og omsætte besøgende til kunder gennem skarpere budskaber, kompromisløst design og en tydelig vej til kontakt.</p>
+      <p class="lede" data-i18n="h.lede">Vi hjælper virksomheder med at optimere deres hjemmesider og omsætte besøgende til kunder. Det sker gennem skarpere budskaber, kompromisløst design og en tydelig vej til kontakt.</p>
       <div class="hero-cta">
         <button class="btn" data-go="kontakt"><span data-i18n="cta.free">Book et opkald</span> <span class="ar">→</span></button>
         <button class="btn btn-ghost" data-go="cases" data-i18n="h.seecases">Se vores arbejde</button>
@@ -770,42 +783,38 @@ footer{
 
   <section class="section tone-2">
     <div class="wrap sec-head rv">
-      <p class="eyebrow" data-i18n="h.o.eyebrow">Det vi laver</p>
-      <h2 data-i18n="h.o.h2">Tre måder at arbejde sammen på</h2>
+      <h2 data-i18n="h.o.h2">Tre ting vi kan tage os af</h2>
     </div>
     <div class="trio">
       <div class="rv">
-        <span class="n">01</span>
-        <h3 data-i18n="h.o1h">Optimering af jeres side</h3>
-        <p data-i18n="h.o1p">Det vi oftest laver: vi tager den side, I har, og gør den bedre. Tydeligere budskab, færre benspænd, hurtigere på mobil.</p>
-        <p><button class="link" data-go="ydelser"><span data-i18n="h.o.link">Se priser</span> <span class="ar">→</span></button></p>
+        <h3 data-i18n="h.o1h">Optimering af jeres hjemmeside</h3>
+        <p data-i18n="h.o1p">Vi går hele siden igennem og bygger den om. Tekster, opbygning, farver, billeder og knapper.</p>
       </div>
       <div class="rv">
-        <span class="n">02</span>
         <h3 data-i18n="h.o2h">Ny hjemmeside</h3>
-        <p data-i18n="h.o2p">Skal der bygges nyt, gør vi det, men kun hvis det er dét, der flytter mest for jer.</p>
-        <p><button class="link" data-go="ydelser"><span data-i18n="h.o.link">Se priser</span> <span class="ar">→</span></button></p>
+        <p data-i18n="h.o2p">Skal der bygges en ny side, tager vi udgangspunkt i jeres idéer. Har I ingen, laver vi et oplæg til brand og udtryk.</p>
       </div>
       <div class="rv">
-        <span class="n">03</span>
-        <h3 data-i18n="h.o3h">Ekstra justeringer</h3>
-        <p data-i18n="h.o3p">Efter levering kan I tilkøbe ekstra justeringer, hvis der er noget, I gerne vil have ændret eller med på siden.</p>
-        <p><button class="link" data-go="ydelser"><span data-i18n="h.o.link">Se priser</span> <span class="ar">→</span></button></p>
+        <h3 data-i18n="h.o3h">Ændringer efter levering</h3>
+        <p data-i18n="h.o3p">Skal en tekst rettes eller et billede skiftes senere, laver vi det løbende.</p>
       </div>
+    </div>
+    <div class="wrap rv">
+      <p class="trio-cta"><button class="link" data-go="ydelser"><span data-i18n="h.o.link">Se ydelser og priser</span> <span class="ar">→</span></button></p>
     </div>
   </section>
 
   <section class="section tone-3">
     <div class="wrap">
       <div class="sec-head rv">
-        <span class="flag" data-i18n="c.flag">Demo</span>
-        <h2 style="margin-top:16px" data-i18n="h.c.h2">Bartisan: samme brand, ny hjemmeside</h2>
-        <p data-i18n="h.c.p">En demo, vi selv har lavet for at vise metoden. Træk i midten og se forskellen.</p>
+        <span class="flag real" data-i18n="h.c.flag">Rigtig kunde</span>
+        <h2 style="margin-top:16px" data-i18n="h.c.h2">Larsen &amp; Uldbjerg: fra tom side til ny hjemmeside</h2>
+        <p data-i18n="h.c.p">Malerfirmaet havde et domæne, men der lå kun en vedligeholdelsesside bag det.</p>
       </div>
       <div class="ba rv" data-ba>
-        <div class="ba-stage" style="--pos:50%">
-          <img class="after-img" decoding="async" loading="lazy" src="../assets/img/bartisan-efter.webp" alt="Forslag til ny forside for Bartisan: mørkt, billedbåret design med produktet i fokus og én tydelig handling">
-          <img class="before-img" decoding="async" loading="lazy" src="../assets/img/bartisan-foer.webp" alt="Bartisans nuværende forside: lys, tekstbaseret, med blå links og uden tydelig handling">
+        <div class="ba-stage glass" style="--pos:50%;aspect-ratio:1500/803">
+          <img class="after-img" decoding="async" loading="lazy" src="../assets/img/lu-efter.webp" alt="Larsen &amp; Uldbjergs nye forside: en maler i arbejde, telefonnummer og tilbudsknap øverst">
+          <img class="before-img" decoding="async" loading="lazy" src="../assets/img/lu-foer.webp" alt="Larsen &amp; Uldbjerg før: en vedligeholdelsesside med beskeden om at siden snart er klar">
           <span class="ba-tag l" data-i18n="c.before">Før</span>
           <span class="ba-tag r" data-i18n="c.after">Efter</span>
           <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Træk for at sammenligne før og efter">
@@ -813,34 +822,32 @@ footer{
         </div>
         <div class="ba-cap">
           <span data-i18n="c.drag">Træk i midten for at sammenligne</span>
-          <span data-i18n="c.cap">Demo · forside</span>
+          <span data-i18n="lu.cap">Forside</span>
         </div>
-        <p style="margin-top:26px;text-align:center"><button class="link" data-go="cases"><span data-i18n="h.c.link">Se hele casen</span> <span class="ar">→</span></button></p>
       </div>
+      <p style="margin-top:22px"><button class="link" data-go="cases"><span data-i18n="h.c.link">Se casen</span> <span class="ar">→</span></button></p>
     </div>
   </section>
-
-  <div class="tone-fade" aria-hidden="true"></div>
 
   <section class="section tone-4 on-light">
     <div class="wrap sec-head rv">
       <p class="eyebrow" data-i18n="p.eyebrow">Sådan foregår det</p>
-      <h2 data-i18n="p.h2">Fire skridt, i den rækkefølge</h2>
-      <p data-i18n="p.p">I ved hele vejen hvad der sker, hvad det koster, og hvornår I hører fra os igen.</p>
+      <h2 data-i18n="p.h2">Fire skridt i den rækkefølge</h2>
+      <p data-i18n="p.p">I ved hele vejen hvad der sker, hvad det koster og hvornår I hører fra os igen.</p>
     </div>
     <div class="wrap">
       <div class="steps">
-        <div class="step rv"><span class="n">01</span><h3 data-i18n="p.1h">Vi ringer sammen</h3><p data-i18n="p.1p">Vi laver en gennemgang af jeres side og ringer jer op, så vi kan tale den igennem sammen. Uforpligtende.</p></div>
-        <div class="step rv"><span class="n">02</span><h3 data-i18n="p.2h">Møde og forslag</h3><p data-i18n="p.2p">Til mødet har vi lavet en grundig gennemgang af siden, med konkrete forslag, fast pris og deadline.</p></div>
-        <div class="step rv"><span class="n">03</span><h3 data-i18n="p.3h">Udførelse</h3><p data-i18n="p.3p">Vi bygger. I får et link at følge med på undervejs, og vi lytter løbende til jeres input. Har I ønsker eller noget, der også skal med på siden, tager vi det med, mens vi er i gang.</p></div>
-        <div class="step rv"><span class="n">04</span><h3 data-i18n="p.4h">Efter levering</h3><p data-i18n="p.4p">I kan tilkøbe mulighed for ekstra justeringer, hvis I senere får ønsker til noget, der skal ændres eller med på siden.</p></div>
+        <div class="step rv"><span class="n">01</span><h3 data-i18n="p.1h">Uforpligtende telefonopkald</h3><p data-i18n="p.1p">Vi gennemgår jeres hjemmeside og ringer jer op så vi kan tale den igennem. Helt uforpligtende.</p></div>
+        <div class="step rv"><span class="n">02</span><h3 data-i18n="p.2h">Møde og forslag</h3><p data-i18n="p.2p">Til mødet har vi lavet en grundig gennemgang af siden med konkrete forslag, fast pris og deadline.</p></div>
+        <div class="step rv"><span class="n">03</span><h3 data-i18n="p.3h">Udførelse</h3><p data-i18n="p.3p">Vi får adgang til jeres hjemmeside og bygger den om derfra så I kan følge med undervejs hvis I ønsker det. Kommer der ønsker til noget mens vi arbejder, tager vi det med.</p></div>
+        <div class="step rv"><span class="n">04</span><h3 data-i18n="p.4h">Efter levering</h3><p data-i18n="p.4p">I kan tilkøbe mulighed for ekstra justeringer hvis I senere får ønsker til noget der skal ændres eller tilføjes.</p></div>
       </div>
     </div>
   </section>
 
   <section class="band tone-5 on-light">
     <div class="wrap band-in">
-      <h2 data-i18n="band.h">Skal vi kigge på jeres side sammen?</h2>
+      <h2 data-i18n="band.h">Skal vi kigge på jeres hjemmeside sammen?</h2>
       <button class="btn" data-go="kontakt"><span data-i18n="cta.free">Book et opkald</span> <span class="ar">→</span></button>
     </div>
   </section>
@@ -853,18 +860,18 @@ footer{
       <div class="sec-head">
         <p class="eyebrow" data-i18n="y.eyebrow">Ydelser og priser</p>
         <h1 data-i18n="y.h2">Fast pris, aftalt inden vi går i gang</h1>
-        <p data-i18n="y.p">Vi optimerer den hjemmeside, I har. Prisen afhænger alene af, hvor mange sider siden har, og den aftales inden vi går i gang. Det er ikke en timepris, der vokser undervejs.</p>
+        <p data-i18n="y.p">Vi optimerer den hjemmeside I har. Prisen afhænger alene af hvor mange sider hjemmesiden har, og den aftales inden vi går i gang. Ikke en timepris der vokser undervejs.</p>
       </div>
       <div class="tier feature wide includes">
         <div>
           <span class="tag" data-i18n="y.inctag">Det samme i alle pakker</span>
           <h3 data-i18n="y.inch">En fuld gennemgang af jeres nuværende hjemmeside</h3>
-          <p data-i18n="y.incp1">Vi går hele siden igennem og bygger den om, så den er til at forstå og handle på. Layout og opbygning, alle tekster, skrifttyper, farver, billeder, knapper og rækkefølgen på siderne. Det hele bliver gennemgået og rettet, ikke kun forsiden.</p>
-          <p data-i18n="y.incp2">Pakkerne indeholder præcis det samme arbejde. Det eneste, der adskiller dem, er hvor mange sider jeres hjemmeside har.</p>
+          <p data-i18n="y.incp1">Vi går hele siden igennem og bygger den om så den er til at forstå og handle på. Layout og opbygning, alle tekster, skrifttyper, farver, billeder, knapper og rækkefølgen på siderne. Det hele bliver gennemgået og rettet, ikke kun forsiden.</p>
+          <p data-i18n="y.incp2">Pakkerne indeholder præcis det samme arbejde. Det eneste der adskiller dem, er hvor mange sider jeres hjemmeside har.</p>
         </div>
         <div class="wide-side">
           <p class="price-note" data-i18n="y.incprice">Kun optimering</p>
-          <p data-i18n="y.incp3">Vi arbejder på den hjemmeside, I har i forvejen. Domæne, hosting og andre abonnementer er ikke en del af det, vi leverer. De bliver, hvor de er.</p>
+          <p data-i18n="y.incp3">Vi arbejder på den hjemmeside I har i forvejen. Domæne, hosting og andre abonnementer er ikke en del af det vi leverer. De bliver hvor de er.</p>
           <button class="btn" data-go="kontakt"><span data-i18n="cta.free">Book et opkald</span> <span class="ar">→</span></button>
         </div>
       </div>
@@ -894,7 +901,7 @@ footer{
         <div>
           <span class="tag" data-i18n="y.kliptag">Tilkøb</span>
           <h3 data-i18n="y.kliph">Klippekort til ændringer</h3>
-          <p data-i18n="y.klipp">Fem ændringer på jeres side, som I bruger, når I har brug for dem. Skriv til os, når noget skal rettes (en ny tekst, et nyt billede, en pris der er ændret), så trækker vi én fra kortet. Kortet udløber ikke.</p>
+          <p data-i18n="y.klipp">Fem ændringer på jeres hjemmeside som I bruger når I har brug for dem. Skriv til os når noget skal rettes, for eksempel en ny tekst, et nyt billede eller en pris der er ændret, så trækker vi én fra kortet. Kortet udløber ikke.</p>
         </div>
         <div class="wide-side">
           <p class="price-note" data-i18n="y.klipcount">5 ændringer</p>
@@ -907,44 +914,44 @@ footer{
             <div>
               <h4 data-i18n="y.defja">Det tæller som én ændring</h4>
               <ul>
-                <li data-i18n="y.defja1">En tekst, der skal rettes eller skrives om</li>
-                <li data-i18n="y.defja2">Et billede, der skal skiftes ud</li>
-                <li data-i18n="y.defja3">En pris, en åbningstid eller en kontaktoplysning, der skal opdateres</li>
-                <li data-i18n="y.defja4">Et punkt, der skal tilføjes eller fjernes i en liste eller i menuen</li>
+                <li data-i18n="y.defja1">En tekst der skal rettes eller skrives om</li>
+                <li data-i18n="y.defja2">Et billede der skal skiftes ud</li>
+                <li data-i18n="y.defja3">En pris, en åbningstid eller en kontaktoplysning der skal opdateres</li>
+                <li data-i18n="y.defja4">Et punkt der skal tilføjes eller fjernes i en liste eller i menuen</li>
               </ul>
             </div>
             <div>
               <h4 data-i18n="y.defnej">Det er ikke et klip</h4>
               <ul>
-                <li data-i18n="y.defnej1">Nye sider, som vi aftaler for sig</li>
+                <li data-i18n="y.defnej1">Nye sider aftaler vi særskilt</li>
                 <li data-i18n="y.defnej2">Et nyt design eller en ny opbygning af en side</li>
                 <li data-i18n="y.defnej3">Nye funktioner, for eksempel booking eller webshop</li>
               </ul>
             </div>
           </div>
-          <p class="foot" data-i18n="y.deffoot">Hænger flere små rettelser sammen, for eksempel tre tekster på den samme side, tæller vi det som ét klip. Er vi i tvivl, spørger vi jer, inden vi trækker det.</p>
+          <p class="foot" data-i18n="y.deffoot">Hænger flere små rettelser sammen, for eksempel tre tekster på den samme side, tæller vi det som ét klip. Er vi i tvivl, spørger vi jer inden vi trækker det.</p>
         </div>
       </div>
-      <p class="note" data-i18n="y.note">Alle priser er ekskl. moms. Den endelige pris aftales, når vi har været siden igennem, så I ved præcis hvad den lyder på, inden vi går i gang. Ekstra justeringer efter levering kan tilkøbes og indgår ikke i priserne.</p>
+      <p class="note" data-i18n="y.note">Alle priser er ekskl. moms. Den endelige pris aftales når vi har været siden igennem. Så ved I præcis hvad den lyder på inden vi går i gang. Ekstra justeringer efter levering kan tilkøbes og indgår ikke i priserne.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap sec-head">
       <p class="eyebrow" data-i18n="y.f.eyebrow">Det vi hjælper med</p>
-      <h2 data-i18n="y.f.h2">Hvad en gennemgang gør ved jeres side</h2>
-      <p data-i18n="y.f.p">Vi arbejder på tre ting, hver gang vi tager fat i en hjemmeside: udtrykket, budskabet og vejen til at tage kontakt.</p>
+      <h2 data-i18n="y.f.h2">Hvad en gennemgang gør ved jeres hjemmeside</h2>
+      <p data-i18n="y.f.p">Vi arbejder på tre ting hver gang vi tager fat i en hjemmeside: udtrykket, budskabet og vejen til at tage kontakt.</p>
     </div>
     <div class="trio">
-      <div><span class="n">01</span><h3 data-i18n="y.f1h">Et skarpere udtryk</h3><p data-i18n="y.f1p">Vi opdaterer design, farver, skrifttyper og billeder, så siden er behagelig at se på og signalerer den kvalitet, I leverer.</p></div>
-      <div><span class="n">02</span><h3 data-i18n="y.f2h">Et tydeligt budskab</h3><p data-i18n="y.f2p">Vi sætter teksten op, så det står klart, hvad I sælger, hvem det er til, og hvorfor man skal vælge jer, uden at man skal lede efter det.</p></div>
-      <div><span class="n">03</span><h3 data-i18n="y.f3h">En kortere vej til kontakt</h3><p data-i18n="y.f3p">Vi rydder op i opbygning, knapper og formularer, også på mobil, så de besøgende nemt finder frem til jer, når de er klar.</p></div>
+      <div><span class="n">01</span><h3 data-i18n="y.f1h">Et skarpere udtryk</h3><p data-i18n="y.f1p">Vi opdaterer design, farver, skrifttyper og billeder så hjemmesiden er behagelig at se på og signalerer den kvalitet I leverer.</p></div>
+      <div><span class="n">02</span><h3 data-i18n="y.f2h">Et tydeligt budskab</h3><p data-i18n="y.f2p">Vi sætter teksten op så det med det samme står klart hvad I sælger, hvem det er til og hvorfor man skal vælge jer.</p></div>
+      <div><span class="n">03</span><h3 data-i18n="y.f3h">En kortere vej til kontakt</h3><p data-i18n="y.f3p">Vi rydder op i opbygning, knapper og formularer, også på mobil, så de besøgende nemt finder frem til jer når de er klar.</p></div>
     </div>
   </section>
 
   <section class="band">
     <div class="wrap band-in">
-      <h2 data-i18n="band.h">Skal vi kigge på jeres side sammen?</h2>
+      <h2 data-i18n="band.h">Skal vi kigge på jeres hjemmeside sammen?</h2>
       <button class="btn" data-go="kontakt"><span data-i18n="cta.free">Book et opkald</span> <span class="ar">→</span></button>
     </div>
   </section>
@@ -952,201 +959,73 @@ footer{
 
 <!-- ============================ CASES ============================ -->
 <div class="page" id="page-cases">
-  <section class="section">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow" data-i18n="c.eyebrow">Cases</p>
-        <h1 data-i18n="c.h2">Bartisan</h1>
-        <p data-i18n="c.p">Fra en traditionel og uinspirerende hjemmeside til en moderne, konverteringsoptimeret side, der afspejler brandets kvalitet.</p>
-        <p style="margin-top:14px"><span class="flag" data-i18n="c.flagfull">Demo · ubestilt forslag</span></p>
-      </div>
 
-      <div class="case-split">
-        <div class="ba" data-ba>
-          <div class="ba-stage" style="--pos:50%">
-            <img class="after-img" decoding="async" loading="lazy" src="../assets/img/bartisan-efter.webp" alt="Forslag til ny forside for Bartisan: mørkt, billedbåret design med produktet i fokus og én tydelig handling">
-            <img class="before-img" decoding="async" loading="lazy" src="../assets/img/bartisan-foer.webp" alt="Bartisans nuværende forside: lys, tekstbaseret, med blå links og uden tydelig handling">
-            <span class="ba-tag l" data-i18n="c.before">Før</span>
-            <span class="ba-tag r" data-i18n="c.after">Efter</span>
-            <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Træk for at sammenligne før og efter">
-            <span class="ba-handle" aria-hidden="true"></span>
-          </div>
-          <div class="ba-cap">
-            <span data-i18n="c.drag">Træk i midten for at sammenligne</span>
-            <span data-i18n="c.cap">Demo · forside</span>
-          </div>
-        </div>
-        <div>
-          <h3 style="font-size:var(--s2)" data-i18n="c.sideh">Hvad vi ville ændre</h3>
-          <ul class="changes">
-            <li><span class="i">01</span><span data-i18n="c.c1">Produktet i fokus i stedet for en tekstblok: ét billede der viser hvad man køber.</span></li>
-            <li><span class="i">02</span><span data-i18n="c.c2">Én tydelig handling øverst, “Se cocktails”, i stedet for fire ligeværdige menupunkter.</span></li>
-            <li><span class="i">03</span><span data-i18n="c.c3">Mørk palet der matcher barmiljøet, produktet skal ses i.</span></li>
-            <li><span class="i">04</span><span data-i18n="c.c4">Argumenterne flyttet ned som en rolig række i stedet for tre ikoner, der stjæler pladsen.</span></li>
-            <li><span class="i">05</span><span data-i18n="c.c5">Egen indgang til barer og restauranter, som er dem der køber flest flasker.</span></li>
-          </ul>
-        </div>
+  <section class="section case-top">
+    <div class="wrap case-head">
+      <div>
+        <p class="eyebrow" data-i18n="c.eyebrow">Rigtig kunde</p>
+        <h1 data-i18n="lu.h2">Larsen &amp; Uldbjerg</h1>
       </div>
-
-      <p class="note" data-i18n="c.disclaimer">Bemærk: dette er vores eget forslag, lavet for at vise hvordan vi arbejder. Det er ikke en opgave bestilt eller godkendt af Bartisan, og der er ingen tal knyttet til det.</p>
+      <ul class="reel-tags">
+        <li data-i18n="lu.t1">Hjemmeside</li>
+        <li data-i18n="lu.t2">Design</li>
+        <li data-i18n="lu.t3">Udvikling</li>
+      </ul>
     </div>
   </section>
 
-  <section class="section">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <p class="eyebrow" data-i18n="lu.eyebrow">Rigtig kunde</p>
-      <h2 data-i18n="lu.h2">Larsen &amp; Uldbjerg</h2>
-      <p data-i18n="lu.p">Fra ingen hjemmeside til en helt ny. Malerfirmaet havde et domæne, men der lå kun en vedligeholdelsesside bag det. Alle, der søgte dem frem, blev mødt af en besked om, at siden snart var klar. Nu har de en side, der viser arbejdet, fortæller hvem de er, og gør det let at bede om et tilbud.</p>
-      <p style="margin-top:14px"><span class="flag real" data-i18n="lu.flag">Rigtig kunde · malerfirma</span></p>
-    </div>
-    <div class="case-split">
-      <div class="ba rv" data-ba>
-        <div class="ba-stage" style="--pos:50%;aspect-ratio:1600/799">
-          <img class="after-img" decoding="async" loading="lazy" src="../assets/img/lu-efter.webp" alt="Larsen &amp; Uldbjergs nye forside: maler i arbejde i fuld bredde, telefonnummer og tilbudsknap øverst">
-          <img class="before-img" decoding="async" loading="lazy" src="../assets/img/lu-foer.webp" alt="Larsen &amp; Uldbjerg før: en vedligeholdelsesside med beskeden om at siden snart er klar">
-          <span class="ba-tag l" data-i18n="c.before">Før</span>
-          <span class="ba-tag r" data-i18n="c.after">Efter</span>
-          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Træk for at sammenligne før og efter">
-          <span class="ba-handle" aria-hidden="true"></span>
-        </div>
-        <div class="ba-cap">
-          <span data-i18n="c.drag">Træk i midten for at sammenligne</span>
-          <span data-i18n="lu.cap">Forside</span>
-        </div>
-      </div>
-      <div>
-        <h3 style="font-size:var(--s2)" data-i18n="lu.sideh">Det vi lavede</h3>
-        <ul class="changes">
-          <li><span class="i">01</span><span data-i18n="lu.c1">En forside, hvor man ser en maler i arbejde i stedet for en besked om, at siden er under opbygning.</span></li>
-          <li><span class="i">02</span><span data-i18n="lu.c2">Telefonnummer og "Få et tilbud" står øverst på hver eneste side.</span></li>
-          <li><span class="i">03</span><span data-i18n="lu.c3">Ydelser, cases og om os har fået hver sin side, så man kan finde det, man leder efter.</span></li>
-          <li><span class="i">04</span><span data-i18n="lu.c4">Egen jobside med en markering i menuen, når der er stillinger at søge.</span></li>
-        </ul>
-      </div>
-    </div>
-    <p class="note" data-i18n="lu.note">Billederne er vist med kundens tilladelse.</p>
-  </div>
-</section>
-
-<section class="section">
+  <section class="reel-sec">
     <div class="wrap">
-      <div class="sec-head rv">
-        <p class="eyebrow" data-i18n="cd.eyebrow">Flere eksempler</p>
-        <h2 data-i18n="cd.h2">Seks brancher, samme fremgangsmåde</h2>
-        <p data-i18n="cd.p">Opdigtede virksomheder, vi har redesignet for at vise, hvad forskellen gør. Træk i hvert enkelt billede.</p>
+      <div class="reel" data-reel>
+        <div class="reel-screen">
+          <div class="reel-view">
+            <div class="reel-shot" data-url="larsen-uldbjerg.dk"><img decoding="async" src="../assets/img/lu-foer.webp" alt="Vedligeholdelsessiden, der lå bag domænet før"></div>
+            <div class="reel-shot is-on has-build" data-url="larsen-uldbjerg.dk"><img decoding="async" src="../assets/img/lu-reel-1.webp" alt="Forsiden på den nye hjemmeside"><span class="build" aria-hidden="true"><img class="bl b1" decoding="async" src="../assets/img/lu-lag-1.webp" alt=""><img class="bl b2" decoding="async" src="../assets/img/lu-lag-2.webp" alt=""><img class="bl b3" decoding="async" src="../assets/img/lu-lag-3.webp" alt=""></span></div>
+            <div class="reel-shot" data-url="larsen-uldbjerg.dk/ydelser"><img decoding="async" loading="lazy" src="../assets/img/lu-reel-2.webp" alt="Ydelsessiden med de fem områder, firmaet maler"></div>
+            <div class="reel-shot" data-url="larsen-uldbjerg.dk/cases"><img decoding="async" loading="lazy" src="../assets/img/lu-reel-3.webp" alt="Cases-siden med før og efter fra fem rum"></div>
+            <div class="reel-shot" data-url="larsen-uldbjerg.dk/om-os"><img decoding="async" loading="lazy" src="../assets/img/lu-reel-4.webp" alt="Om os-siden med historien og de tre malere bag"></div>
+            <div class="reel-shot" data-url="larsen-uldbjerg.dk/job"><img decoding="async" loading="lazy" src="../assets/img/lu-reel-5.webp" alt="Jobsiden med ledige stillinger og ansøgningsskema"></div>
+            <div class="reel-shot reel-devices" data-url="larsen-uldbjerg.dk">
+              <div class="dev dev-d"><img decoding="async" loading="lazy" src="../assets/img/lu-efter.webp" alt="Forsiden på computer"></div>
+              <div class="dev dev-t"><img decoding="async" loading="lazy" src="../assets/img/lu-tablet.webp" alt="Forsiden på tablet"></div>
+              <div class="dev dev-m"><img decoding="async" loading="lazy" src="../assets/img/lu-mobil.webp" alt="Forsiden på telefon"></div>
+            </div>
+            <span class="reel-sweep" data-reel-scan aria-hidden="true"></span>
+            <span class="reel-grain" aria-hidden="true"></span>
+          </div>
+          <p class="reel-hint" data-i18n="lu.hint">Hold musen over for at afspille</p>
+        </div>
+        <div class="reel-rail">
+          <ol class="reel-steps">
+            <li><button type="button" data-reel-go="0"><span data-i18n="lu.s0">Før</span></button></li>
+            <li class="is-live"><button type="button" data-reel-go="1"><span data-i18n="lu.s1">Forside</span></button></li>
+            <li><button type="button" data-reel-go="2"><span data-i18n="lu.s2">Ydelser</span></button></li>
+            <li><button type="button" data-reel-go="3"><span data-i18n="lu.s3">Cases</span></button></li>
+            <li><button type="button" data-reel-go="4"><span data-i18n="lu.s4">Om os</span></button></li>
+            <li><button type="button" data-reel-go="5"><span data-i18n="lu.s5">Job</span></button></li>
+            <li><button type="button" data-reel-go="6"><span data-i18n="lu.s6">Enheder</span></button></li>
+          </ol>
+          <span class="reel-prog"><i data-reel-bar></i></span>
+          <span class="reel-url" data-reel-url>larsen-uldbjerg.dk</span>
+        </div>
       </div>
-      <div class="cases-grid">
-        <article class="case-card rv" style="--i:0">
-          <div class="ba" data-ba>
-            <div class="ba-stage" style="--pos:50%;aspect-ratio:1000/667">
-              <img class="after-img" decoding="async" src="../assets/img/maler-efter.webp" alt="Malerfirmaet Lars Jensen efter redesign: arbejdet på forsiden med før og efter" loading="lazy">
-              <img class="before-img" decoding="async" src="../assets/img/maler-foer.webp" alt="Malerfirmaet Lars Jensen før redesign" loading="lazy">
-              <span class="ba-tag l" data-i18n="c.before">Før</span>
-              <span class="ba-tag r" data-i18n="c.after">Efter</span>
-              <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Træk for at sammenligne før og efter">
-              <span class="ba-handle" aria-hidden="true"></span>
-            </div>
-          </div>
-          <div class="case-meta">
-            <span class="k" data-i18n="cd.1k">Demo · malerfirma</span>
-            <h3 data-i18n="cd.1h">Malerfirmaet Lars Jensen</h3>
-            <p data-i18n="cd.1p">Arbejdet kommer op på forsiden med før og efter, så man kan se resultatet i stedet for at læse om det. Én tydelig handling: få et tilbud.</p>
-          </div>
-        </article>
-        <article class="case-card rv" style="--i:1">
-          <div class="ba" data-ba>
-            <div class="ba-stage" style="--pos:50%;aspect-ratio:1200/1217">
-              <img class="after-img" decoding="async" src="../assets/img/damario-efter.webp" alt="Bella Luna efter redesign: stemningsbillede i fuld bredde, tydeligt navnetræk og en knap til at booke bord" loading="lazy">
-              <img class="before-img" decoding="async" src="../assets/img/damario-foer.webp" alt="Bella Luna før redesign" loading="lazy">
-              <span class="ba-tag l" data-i18n="c.before">Før</span>
-              <span class="ba-tag r" data-i18n="c.after">Efter</span>
-              <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Træk for at sammenligne før og efter">
-              <span class="ba-handle" aria-hidden="true"></span>
-            </div>
-          </div>
-          <div class="case-meta">
-            <span class="k" data-i18n="cd.2k">Demo · restaurant</span>
-            <h3 data-i18n="cd.2h">Bella Luna</h3>
-            <p data-i18n="cd.2p">Navnetrækket er tegnet om, så det kan læses, og retterne får plads i stedet for en gul tekstboks hen over maden. Book bord står øverst hele vejen igennem.</p>
-          </div>
-        </article>
-        <article class="case-card rv" style="--i:0">
-          <div class="ba" data-ba>
-            <div class="ba-stage" style="--pos:50%;aspect-ratio:1000/667">
-              <img class="after-img" decoding="async" src="../assets/img/ejendom-efter.webp" alt="København Ejendomme efter redesign: roligt overblik og tydelige ydelser" loading="lazy">
-              <img class="before-img" decoding="async" src="../assets/img/ejendom-foer.webp" alt="København Ejendomme før redesign" loading="lazy">
-              <span class="ba-tag l" data-i18n="c.before">Før</span>
-              <span class="ba-tag r" data-i18n="c.after">Efter</span>
-              <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Træk for at sammenligne før og efter">
-              <span class="ba-handle" aria-hidden="true"></span>
-            </div>
-          </div>
-          <div class="case-meta">
-            <span class="k" data-i18n="cd.3k">Demo · ejendomsadministration</span>
-            <h3 data-i18n="cd.3h">København Ejendomme</h3>
-            <p data-i18n="cd.3p">Ro og overblik i stedet for tre menulinjer og en formular i hjørnet. Ydelserne står tydeligt, og der er én vej ind.</p>
-          </div>
-        </article>
-        <article class="case-card rv" style="--i:1">
-          <div class="ba" data-ba>
-            <div class="ba-stage" style="--pos:50%;aspect-ratio:1000/667">
-              <img class="after-img" decoding="async" src="../assets/img/rens-efter.webp" alt="Nord Rens efter redesign: butikken i fokus og én knap til at booke afhentning" loading="lazy">
-              <img class="before-img" decoding="async" src="../assets/img/rens-foer.webp" alt="Nord Rens før redesign" loading="lazy">
-              <span class="ba-tag l" data-i18n="c.before">Før</span>
-              <span class="ba-tag r" data-i18n="c.after">Efter</span>
-              <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Træk for at sammenligne før og efter">
-              <span class="ba-handle" aria-hidden="true"></span>
-            </div>
-          </div>
-          <div class="case-meta">
-            <span class="k" data-i18n="cd.4k">Demo · renseri</span>
-            <h3 data-i18n="cd.4h">Nord Rens</h3>
-            <p data-i18n="cd.4p">Tilbudsbokse og ikoner ryddet væk til fordel for butikken selv og én knap: book afhentning.</p>
-          </div>
-        </article>
-        <article class="case-card rv" style="--i:0">
-          <div class="ba" data-ba>
-            <div class="ba-stage" style="--pos:50%;aspect-ratio:900/888">
-              <img class="after-img" decoding="async" src="../assets/img/tandlaege-efter.webp" alt="Nova Smil efter redesign: mennesker i stedet for udstyr og online tidsbestilling" loading="lazy">
-              <img class="before-img" decoding="async" src="../assets/img/tandlaege-foer.webp" alt="Nova Smil før redesign" loading="lazy">
-              <span class="ba-tag l" data-i18n="c.before">Før</span>
-              <span class="ba-tag r" data-i18n="c.after">Efter</span>
-              <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Træk for at sammenligne før og efter">
-              <span class="ba-handle" aria-hidden="true"></span>
-            </div>
-          </div>
-          <div class="case-meta">
-            <span class="k" data-i18n="cd.5k">Demo · tandlæge</span>
-            <h3 data-i18n="cd.5h">Nova Smil</h3>
-            <p data-i18n="cd.5p">Mennesker i stedet for udstyr, og tidsbestilling online i stedet for telefontid.</p>
-          </div>
-        </article>
-        <article class="case-card rv" style="--i:1">
-          <div class="ba" data-ba>
-            <div class="ba-stage" style="--pos:50%;aspect-ratio:1000/1340">
-              <img class="after-img" decoding="async" src="../assets/img/salon-efter.webp" alt="Salon Belle efter redesign: arbejdet får plads og book tid som eneste handling" loading="lazy">
-              <img class="before-img" decoding="async" src="../assets/img/salon-foer.webp" alt="Salon Belle før redesign" loading="lazy">
-              <span class="ba-tag l" data-i18n="c.before">Før</span>
-              <span class="ba-tag r" data-i18n="c.after">Efter</span>
-              <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Træk for at sammenligne før og efter">
-              <span class="ba-handle" aria-hidden="true"></span>
-            </div>
-          </div>
-          <div class="case-meta">
-            <span class="k" data-i18n="cd.6k">Demo · frisør</span>
-            <h3 data-i18n="cd.6h">Salon Belle</h3>
-            <p data-i18n="cd.6p">Arbejdet får plads i stedet for rabatskilte, og "book tid" står som den ene handling hele vejen igennem.</p>
-          </div>
-        </article>
-      </div>
-      <p class="note" data-i18n="cd.note">Alle seks er vores egne eksempler, ikke rigtige kunder. De bliver skiftet ud, efterhånden som vi får arbejde ud af huset.</p>
+    </div>
+  </section>
+
+  <section class="section facts-sec">
+    <div class="wrap">
+      <ol class="facts">
+        <li><span class="n">01</span><h2 data-i18n="lu.f1">Hjemmeside fra bunden</h2></li>
+        <li><span class="n">02</span><h2 data-i18n="lu.f2">Seks sider</h2></li>
+        <li><span class="n">03</span><h2 data-i18n="lu.f3">Tydelig vej til tilbud</h2></li>
+      </ol>
+      <p class="note" data-i18n="lu.note">Billederne er vist med kundens tilladelse.</p>
     </div>
   </section>
 
   <section class="band">
     <div class="wrap band-in">
-      <h2 data-i18n="c.band">Vil I se, hvordan jeres side kunne se ud?</h2>
+      <h2 data-i18n="c.band">Vil I se hvordan jeres hjemmeside kunne se ud?</h2>
       <button class="btn" data-go="kontakt"><span data-i18n="cta.free">Book et opkald</span> <span class="ar">→</span></button>
     </div>
   </section>
@@ -1159,24 +1038,24 @@ footer{
       <div class="sec-head">
         <p class="eyebrow" data-i18n="o.eyebrow">Om os</p>
         <h1 data-i18n="o.h2">To faste ansigter fra første samtale til levering</h1>
-        <p data-i18n="o.p">FAWA er et dansk webbureau, som vi to har startet sammen. Vi arbejder med virksomheder, der allerede har en hjemmeside, men ikke får nok ud af den, og vi bygger den om, så den er til at forstå, rar at se på og nem at handle på.</p>
-        <p data-i18n="o.pb">Vi er to om det hele. Der kommer ingen projektledere eller underleverandører ind over, og I taler med de samme to mennesker fra den første samtale, til siden er leveret. Vi tager kun de opgaver, vi kan nå at gøre ordentligt, og siger til, hvis vi ikke er de rigtige til opgaven.</p>
+        <p data-i18n="o.p">FAWA er et dansk webbureau drevet af Melissa og Sofia. Vi arbejder for virksomheder der allerede har en hjemmeside, men ikke får nok ud af den. Vi bygger den om så den er til at forstå, rar at se på og nem at handle på.</p>
+        <p data-i18n="o.pb">Vi er to om det hele. Der kommer ingen projektledere eller underleverandører ind over, og I taler med de samme to mennesker fra den første samtale til siden er leveret. Vi tager kun de opgaver vi kan nå at gøre ordentligt, og siger til hvis vi ikke er de rigtige til opgaven.</p>
       </div>
       <div class="people">
         <div class="person">
-          <div class="portrait"><img src="../assets/img/portraet-melissa.webp" alt="Melissa, medstifter af FAWA" decoding="async"></div>
+          <div class="portrait"><img src="../assets/img/portraet-sofia.webp" alt="Melissa, medstifter af FAWA" decoding="async"></div>
           <h3>Melissa</h3>
           <p class="role" data-i18n="o.r1">Co-founder</p>
         </div>
         <div class="person">
-          <div class="portrait"><img src="../assets/img/portraet-sofia.webp" alt="Sofia, medstifter af FAWA" decoding="async"></div>
+          <div class="portrait"><img src="../assets/img/portraet-melissa.webp" alt="Sofia, medstifter af FAWA" decoding="async"></div>
           <h3>Sofia</h3>
           <p class="role" data-i18n="o.r2">Co-founder</p>
         </div>
       </div>
       <div class="values">
-        <div><h4 data-i18n="o.v1h">Fast pris fra start</h4><p data-i18n="o.v1p">Prisen aftales, inden vi går i gang, og den holder. Ingen regninger, I ikke har set komme.</p></div>
-        <div><h4 data-i18n="o.v2h">Ærlig rådgivning</h4><p data-i18n="o.v2p">Er en ny side ikke det, der flytter mest for jer, siger vi det, også når det koster os opgaven.</p></div>
+        <div><h4 data-i18n="o.v1h">Fast pris fra start</h4><p data-i18n="o.v1p">Prisen aftales inden vi går i gang, og den holder. Ingen regninger I ikke har set komme.</p></div>
+        <div><h4 data-i18n="o.v2h">Ærlig rådgivning</h4><p data-i18n="o.v2p">Er en ny hjemmeside ikke det der flytter mest for jer, siger vi det. Også når det koster os opgaven.</p></div>
         <div><h4 data-i18n="o.v3h">I ejer det hele</h4><p data-i18n="o.v3p">Domæne, hosting og adgange står i jeres navn. I er ikke bundet til os bagefter.</p></div>
       </div>
     </div>
@@ -1184,7 +1063,7 @@ footer{
 
   <section class="band">
     <div class="wrap band-in">
-      <h2 data-i18n="band.h">Skal vi kigge på jeres side sammen?</h2>
+      <h2 data-i18n="band.h">Skal vi kigge på jeres hjemmeside sammen?</h2>
       <button class="btn" data-go="kontakt"><span data-i18n="cta.free">Book et opkald</span> <span class="ar">→</span></button>
     </div>
   </section>
@@ -1196,8 +1075,8 @@ footer{
     <div class="wrap contact">
       <div class="contact-side">
         <p class="eyebrow" data-i18n="k.eyebrow">Kontakt</p>
-        <h1 style="font-size:var(--s3);margin-block:14px 16px" data-i18n="k.h2">Lad os tage en snak om jeres side.</h1>
-        <p class="muted" data-i18n="k.p">Skriv til os, så finder vi et tidspunkt til et kort opkald. Vi kigger på jeres side inden, så vi har noget konkret at tale om. I forpligter jer ikke til noget.</p>
+        <h1 style="font-size:var(--s3);margin-block:14px 16px" data-i18n="k.h2">Lad os tage en snak om jeres hjemmeside.</h1>
+        <p class="muted" data-i18n="k.p">Skriv til os, så finder vi et tidspunkt til et kort opkald. Vi kigger på jeres hjemmeside inden, så vi har noget konkret at tale om. I forpligter jer ikke til noget.</p>
         <ul>
           <li><b data-i18n="k.l1b">Svartid</b><span data-i18n="k.l1s">Inden for 24 timer</span></li>
           <li><b data-i18n="k.l2b">Pris</b><span data-i18n="k.l2s">Opkaldet er uforpligtende</span></li>
@@ -1419,17 +1298,17 @@ footer{
     <div class="wrap legal faq">
       <p class="eyebrow" data-i18n="q.eyebrow">FAQ</p>
       <h1 data-i18n="q.h1">Ofte stillede spørgsmål</h1>
-      <p class="lede-sm" data-i18n="q.lede">Svar på de spørgsmål, virksomheder typisk har om optimering og redesign af deres eksisterende hjemmeside.</p>
+      <p class="lede-sm" data-i18n="q.lede">Svar på de spørgsmål virksomheder typisk har om optimering og redesign af deres eksisterende hjemmeside.</p>
       <div class="faq-group">
         <p class="faq-num" data-i18n="q.g1n">01</p>
         <h2 data-i18n="q.g1h">Ydelsen og prisen</h2>
-        <p class="faq-sub" data-i18n="q.g1s">Hvad FAWA tilbyder, og hvordan tilbuddet bliver sammensat.</p>
+        <p class="faq-sub" data-i18n="q.g1s">Hvad FAWA tilbyder og hvordan tilbuddet bliver sammensat.</p>
         <div class="faq-list">
-          <details><summary data-i18n="q.q1">Hvad tilbyder FAWA?</summary><div class="faq-a"><p data-i18n="q.a1">FAWA hjælper virksomheder med at optimere og redesigne eksisterende hjemmesider. Vi forbedrer hjemmesidens visuelle udtryk, brugervenlighed og opbygning, så den fremstår mere moderne og professionel.</p></div></details>
-          <details><summary data-i18n="q.q2">Laver I helt nye hjemmesider?</summary><div class="faq-a"><p data-i18n="q.a2">Vores primære ydelse er optimering og redesign af eksisterende hjemmesider. Kontakt os gerne, hvis du er i tvivl om, hvorvidt vi kan hjælpe med din hjemmeside.</p></div></details>
-          <details><summary data-i18n="q.q3">Hvad koster det at få optimeret en hjemmeside?</summary><div class="faq-a"><p data-i18n="q.a3">Prisen afhænger af hjemmesidens størrelse, nuværende tilstand og omfanget af de ønskede ændringer. Vi arbejder med faste priser for forskellige typer og størrelser af projekter. Du får altid et konkret tilbud, inden arbejdet begynder, så du ved, hvad der er inkluderet i prisen.</p></div></details>
-          <details><summary data-i18n="q.q4">Hvordan foregår betalingen?</summary><div class="faq-a"><p data-i18n="q.a4">Betalingen foregår som udgangspunkt via faktura. De konkrete betalingsbetingelser vil fremgå af det tilbud, du modtager fra FAWA.</p></div></details>
-          <details><summary data-i18n="q.q5">Skal jeg betale et depositum?</summary><div class="faq-a"><p data-i18n="q.a5">Det afhænger af projektets størrelse og aftalens omfang. Eventuel forudbetaling eller depositum vil altid fremgå tydeligt af tilbuddet, inden projektet sættes i gang.</p></div></details>
+          <details><summary data-i18n="q.q1">Hvad tilbyder FAWA?</summary><div class="faq-a"><p data-i18n="q.a1">FAWA hjælper virksomheder med at optimere og redesigne eksisterende hjemmesider. Vi forbedrer hjemmesidens visuelle udtryk, brugervenlighed og opbygning så den fremstår mere moderne og professionel.</p></div></details>
+          <details><summary data-i18n="q.q2">Laver I helt nye hjemmesider?</summary><div class="faq-a"><p data-i18n="q.a2">Vores primære ydelse er optimering og redesign af eksisterende hjemmesider. Kontakt os gerne hvis du er i tvivl om vi kan hjælpe med din hjemmeside.</p></div></details>
+          <details><summary data-i18n="q.q3">Hvad koster det at få optimeret en hjemmeside?</summary><div class="faq-a"><p data-i18n="q.a3">Prisen afhænger af hjemmesidens størrelse, nuværende tilstand og omfanget af de ønskede ændringer. Vi arbejder med faste priser for forskellige typer og størrelser af projekter. Du får altid et konkret tilbud inden arbejdet begynder. Så ved du hvad der er inkluderet i prisen.</p></div></details>
+          <details><summary data-i18n="q.q4">Hvordan foregår betalingen?</summary><div class="faq-a"><p data-i18n="q.a4">Betalingen foregår som udgangspunkt via faktura. De konkrete betalingsbetingelser fremgår af det tilbud du modtager fra FAWA.</p></div></details>
+          <details><summary data-i18n="q.q5">Skal jeg betale et depositum?</summary><div class="faq-a"><p data-i18n="q.a5">Det afhænger af projektets størrelse og aftalens omfang. Eventuel forudbetaling eller depositum fremgår altid tydeligt af tilbuddet inden projektet sættes i gang.</p></div></details>
           <details><summary data-i18n="q.q6">Er hosting og domæne inkluderet?</summary><div class="faq-a"><p data-i18n="q.a6">Nej. Hosting og domæne er som udgangspunkt ikke inkluderet i vores priser. Da vi arbejder med eksisterende hjemmesider, fortsætter hjemmesiden normalt hos kundens nuværende hosting- og domæneudbyder.</p></div></details>
         </div>
       </div>
@@ -1438,11 +1317,11 @@ footer{
         <h2 data-i18n="q.g2h">Projektet og samarbejdet</h2>
         <p class="faq-sub" data-i18n="q.g2s">Sådan foregår processen fra den første gennemgang til den færdige levering.</p>
         <div class="faq-list">
-          <details><summary data-i18n="q.q7">Hvordan foregår et typisk projekt?</summary><div class="faq-a"><p data-i18n="q.a7">Vi begynder med at gennemgå hjemmesiden og aftale, hvad der skal forbedres. Herefter modtager du et tilbud med en tydelig beskrivelse af opgaven. Når tilbuddet er godkendt, og vi har fået den nødvendige adgang, går vi i gang. Inden projektet afsluttes, gennemgår vi resultatet og foretager de nødvendige rettelser, som er omfattet af tilbuddet.</p></div></details>
-          <details><summary data-i18n="q.q8">Hvor lang tid tager et projekt?</summary><div class="faq-a"><p data-i18n="q.a8">De fleste projekter forventes at kunne færdiggøres inden for cirka to uger, efter vi har modtaget den nødvendige adgang og alle relevante oplysninger. Leveringstiden afhænger af hjemmesidens størrelse, opgavens kompleksitet og svartiden undervejs. Den forventede leveringstid vil fremgå af tilbuddet.</p></div></details>
-          <details><summary data-i18n="q.q9">Hvor mange rettelser er inkluderet?</summary><div class="faq-a"><p data-i18n="q.a9">Vi foretager de rettelser, der er nødvendige for at levere det resultat, som er aftalt i tilbuddet. Nye ønsker eller opgaver uden for det aftalte omfang betragtes som ekstraarbejde. Vi aftaler altid pris og omfang, inden ekstraarbejde udføres.</p></div></details>
-          <details><summary data-i18n="q.q10">Hvad skal jeg levere, før I kan begynde?</summary><div class="faq-a"><p data-i18n="q.a10">Vi skal have den nødvendige adgang til din hjemmeside og de systemer, der skal arbejdes i. Det kan eksempelvis være adgang til WordPress, Shopify eller et andet hjemmesidesystem. Du skal også fortælle os om særlige ønsker, krav eller elementer, som ikke må ændres. Vi beder aldrig om flere adgange end nødvendigt, og adgangsoplysninger skal deles sikkert.</p></div></details>
-          <details><summary data-i18n="q.q11">Kan jeg selv redigere hjemmesiden bagefter?</summary><div class="faq-a"><p data-i18n="q.a11">Ja. Når projektet er afsluttet, kan du fortsat selv redigere hjemmesiden, hvis du har den nødvendige adgang og kendskab til systemet. FAWA leverer den færdige løsning, som er beskrevet i tilbuddet. Efterfølgende ændringer, som kunden selv eller andre foretager, er ikke omfattet af den oprindelige levering.</p></div></details>
+          <details><summary data-i18n="q.q7">Hvordan foregår et typisk projekt?</summary><div class="faq-a"><p data-i18n="q.a7">Vi begynder med at gennemgå hjemmesiden og aftale hvad der skal forbedres. Herefter modtager du et tilbud med en tydelig beskrivelse af opgaven. Når tilbuddet er godkendt, og vi har fået den nødvendige adgang, går vi i gang. Inden projektet afsluttes, gennemgår vi resultatet og foretager de nødvendige rettelser som er omfattet af tilbuddet.</p></div></details>
+          <details><summary data-i18n="q.q8">Hvor lang tid tager et projekt?</summary><div class="faq-a"><p data-i18n="q.a8">De fleste projekter forventes at kunne færdiggøres inden for cirka to uger efter vi har modtaget den nødvendige adgang og alle relevante oplysninger. Leveringstiden afhænger af hjemmesidens størrelse, opgavens kompleksitet og svartiden undervejs. Den forventede leveringstid vil fremgå af tilbuddet.</p></div></details>
+          <details><summary data-i18n="q.q9">Hvor mange rettelser er inkluderet?</summary><div class="faq-a"><p data-i18n="q.a9">Vi foretager de rettelser der er nødvendige for at levere det resultat som er aftalt i tilbuddet. Nye ønsker eller opgaver uden for det aftalte omfang betragtes som ekstraarbejde. Vi aftaler altid pris og omfang inden ekstraarbejde udføres.</p></div></details>
+          <details><summary data-i18n="q.q10">Hvad skal jeg levere før I kan begynde?</summary><div class="faq-a"><p data-i18n="q.a10">Vi skal have den nødvendige adgang til din hjemmeside og de systemer der skal arbejdes i. Det kan eksempelvis være adgang til WordPress, Shopify eller et andet hjemmesidesystem. Du skal også fortælle os om særlige ønsker, krav eller elementer som ikke må ændres. Vi beder aldrig om flere adgange end nødvendigt, og adgangsoplysninger skal deles sikkert.</p></div></details>
+          <details><summary data-i18n="q.q11">Kan jeg selv redigere hjemmesiden bagefter?</summary><div class="faq-a"><p data-i18n="q.a11">Ja. Når projektet er afsluttet, kan du fortsat selv redigere hjemmesiden hvis du har den nødvendige adgang og kendskab til systemet. FAWA leverer den færdige løsning som er beskrevet i tilbuddet. Efterfølgende ændringer som kunden selv eller andre foretager, er ikke omfattet af den oprindelige levering.</p></div></details>
         </div>
       </div>
       <div class="faq-group">
@@ -1450,16 +1329,16 @@ footer{
         <h2 data-i18n="q.g3h">Efter levering</h2>
         <p class="faq-sub" data-i18n="q.g3s">Justeringer, ekstraarbejde og den næste kontakt med FAWA.</p>
         <div class="faq-list">
-          <details><summary data-i18n="q.q12">Tilbyder I hjælp efter levering?</summary><div class="faq-a"><p data-i18n="q.a12">Ja. Efter projektets afslutning kan du tilkøbe justeringer og hjælp fra FAWA. Den efterfølgende hjælp er ikke inkluderet i den oprindelige projektpris, medmindre det specifikt fremgår af tilbuddet. Pris og omfang aftales separat.</p></div></details>
-          <details><summary data-i18n="q.q13">Hvad sker der, hvis jeg ønsker noget, der ikke står i tilbuddet?</summary><div class="faq-a"><p data-i18n="q.a13">Hvis du får nye ønsker undervejs, vurderer vi, om de ligger inden for det aftalte projekt. Hvis ønsket ændrer projektets omfang, sender vi en pris på ekstraarbejdet. Vi udfører ikke ekstraarbejde uden en forudgående aftale.</p></div></details>
+          <details><summary data-i18n="q.q12">Tilbyder I hjælp efter levering?</summary><div class="faq-a"><p data-i18n="q.a12">Ja. Efter projektets afslutning kan du tilkøbe justeringer og hjælp fra FAWA. Den efterfølgende hjælp er ikke inkluderet i den oprindelige projektpris medmindre det specifikt fremgår af tilbuddet. Pris og omfang aftales separat.</p></div></details>
+          <details><summary data-i18n="q.q13">Hvad sker der hvis jeg ønsker noget der ikke står i tilbuddet?</summary><div class="faq-a"><p data-i18n="q.a13">Hvis du får nye ønsker undervejs, vurderer vi om de ligger inden for det aftalte projekt. Hvis ønsket ændrer projektets omfang, sender vi en pris på ekstraarbejdet. Vi udfører ikke ekstraarbejde uden en forudgående aftale.</p></div></details>
           <details><summary data-i18n="q.q14">Arbejder I kun med virksomheder?</summary><div class="faq-a"><p data-i18n="q.a14">Ja. FAWA henvender sig primært til virksomheder og arbejder som udgangspunkt B2B.</p></div></details>
-          <details><summary data-i18n="q.q15">Hvordan kommer jeg i gang?</summary><div class="faq-a"><p data-i18n="q.a15">Kontakt FAWA og send et link til din nuværende hjemmeside sammen med en kort beskrivelse af, hvad du gerne vil have forbedret. Vi gennemgår hjemmesiden og vender tilbage med vores vurdering af opgaven og et konkret tilbud.</p></div></details>
+          <details><summary data-i18n="q.q15">Hvordan kommer jeg i gang?</summary><div class="faq-a"><p data-i18n="q.a15">Kontakt FAWA og send et link til din nuværende hjemmeside sammen med en kort beskrivelse af hvad du gerne vil have forbedret. Vi gennemgår hjemmesiden og vender tilbage med vores vurdering af opgaven og et konkret tilbud.</p></div></details>
         </div>
       </div>
 
       <div class="faq-cta">
         <h3 data-i18n="q.ctah">Er dit spørgsmål ikke med?</h3>
-        <p data-i18n="q.ctap">Send et link til din nuværende hjemmeside og en kort beskrivelse af, hvad du gerne vil have forbedret. Så gennemgår vi siden og vender tilbage.</p>
+        <p data-i18n="q.ctap">Send et link til din nuværende hjemmeside og en kort beskrivelse af hvad du gerne vil have forbedret. Så gennemgår vi siden og vender tilbage.</p>
         <button class="btn" data-go="kontakt" data-i18n="q.ctab">Book et opkald</button>
       </div>
 
@@ -1582,14 +1461,14 @@ var EN = {
   "n.services":"Services","n.cases":"Cases","n.about":"About","n.contact":"Contact",
   "brand.tag":"Websites that perform",
   "cta.start":"Get started",
-  "h.s1t":"Audit","h.s1d":"Ten points about your site, free, with a reply within 24 hours",
+  "h.s1t":"Audit","h.s1d":"Ten points about your site, free, reply within 24 hours",
   "h.s2t":"Price","h.s2d":"From DKK 4,995, agreed before we start",
-  "h.s3t":"Team","h.s3d":"Two people, and you talk to both of us",
+  "h.s3t":"Team","h.s3d":"Two people, you talk to both of us",
   "h.k1":"Strategy","h.k2":"Design","h.k3":"Optimisation","h.k4":"Growth",
   "cta.free":"Book a call",
   "h.tagline":"Strategy · Design · Optimisation",
   "h.h1":"Websites<br><span class=\"nb\">that <i>perform</i></span>",
-  "h.lede":"We help businesses optimise their websites and turn visitors into customers through sharper messaging, uncompromising design and a clear path to getting in touch.",
+  "h.lede":"We help businesses optimise their websites and turn visitors into customers. We do it through sharper messaging, uncompromising design and a clear path to getting in touch.",
   "h.scroll":"Scroll to explore",
   "h.quote":"\u201cA great website doesn\u2019t just look good. It performs.\u201d",
   "h.seecases":"See our work",
@@ -1598,23 +1477,23 @@ var EN = {
   "h.f2k":"From DKK 4,995","h.f2h":"A fixed price",
   "h.f2p":"The price is agreed before we start, and it holds. No hourly invoices you didn't see coming.",
   "h.f3k":"Two people","h.f3h":"You talk to both of us",
-  "h.f3p":"No project managers and no waiting for answers. Melissa builds the site, Sofia keeps track of everything else.",
-  "h.o.eyebrow":"What we do","h.o.h2":"Three ways to work together","h.o.link":"See prices",
-  "h.o1h":"Optimising your site","h.o1p":"What we do most: we take the site you have and make it better. A clearer message, fewer obstacles, faster on mobile.",
-  "h.o2h":"A new website","h.o2p":"If something new has to be built, we build it, but only when that is what moves the needle for you.",
-  "h.o3h":"Extra adjustments","h.o3p":"After delivery you can purchase extra adjustments, if there is something you would like changed or added to the site.",
+  "h.f3p":"No project managers and no waiting for answers. Melissa builds the site, and Sofia keeps track of everything else.",
+  "h.o.eyebrow":"What we help with","h.o.h2":"Three things we can take on","h.o.link":"See services and prices",
+  "h.o1h":"Optimising your website","h.o1p":"We go through the whole site and rebuild it. Copy, structure, colours, images and buttons.",
+  "h.o2h":"A new website","h.o2p":"If a new site needs building, we start from your ideas. If you have none, we put together a proposal for the brand and the look.",
+  "h.o3h":"Changes after delivery","h.o3p":"If a piece of text needs correcting or an image swapping later, we do it as we go.",
   "h.c.h2":"Bartisan: same brand, new website",
-  "h.c.p":"A demo we made ourselves to show the method. Drag the middle to see the difference.",
+  "h.c.p":"A demo we made ourselves to show the method.",
   "h.c.link":"See the full case",
   "p.eyebrow":"How it works","p.h2":"Four steps, in that order",
-  "p.p":"You know at every point what is happening, what it costs, and when you'll hear from us next.",
-  "p.1h":"We call you","p.1p":"We go through your site and call you, so we can talk it through together. No obligation.",
+  "p.p":"You know at every point what is happening, what it costs and when you'll hear from us next.",
+  "p.1h":"A call, with no obligation","p.1p":"We review your website and call you so we can talk it through. No obligation at all.",
   "p.2h":"Meeting and proposal","p.2p":"For the meeting we have been through the site in depth, with concrete proposals, a fixed price and a deadline.",
-  "p.3h":"Build","p.3p":"We build. You get a link to follow along, and we listen to your input as we go. If you have wishes or something else that should be on the site, we bring it in while we are working.",
-  "p.4h":"After delivery","p.4p":"You can purchase the option of extra adjustments, if you later have wishes for something to be changed or added to the site.",
-  "band.h":"Shall we take a look at your site together?",
+  "p.3h":"Build","p.3p":"We are given access to your website and rebuild it from there so you can follow along as we go if you want to. If anything comes up while we work, we take it on board.",
+  "p.4h":"After delivery","p.4p":"You can purchase the option of extra adjustments if you later want something changed or added to the site.",
+  "band.h":"Shall we take a look at your website together?",
   "y.eyebrow":"Services and prices","y.h2":"A fixed price, agreed before we start",
-  "y.p":"We optimise the website you already have. The price depends only on how many pages the site has, and it is agreed before we start. It is not an hourly rate that grows along the way.","y.kliptag":"Add-on","y.kliph":"A block of five changes","y.klipp":"Five changes to your site, to use whenever you need them. Write to us when something needs updating (new copy, a new image, a price that has changed), and we take one off the card. The card does not expire.","y.klipcount":"5 changes","y.klipfrom":"Total","y.inctag":"The same in every package","y.inch":"A full review of your existing website","y.incp1":"We go through the whole site and rebuild it so it is easy to understand and act on. Layout and structure, all the copy, fonts, colours, images, buttons and the order of the pages. Everything is reviewed and reworked, not just the front page.","y.incp2":"The packages contain exactly the same work. The only thing that separates them is how many pages your website has.","y.incprice":"Optimisation only","y.incp3":"We work on the website you already have. Domain, hosting and other subscriptions are not part of what we deliver. They stay where they are.",
+  "y.p":"We optimise the website you already have. The price depends only on how many pages the website has, and it is agreed before we start. Not an hourly rate that grows along the way.","y.kliptag":"Add-on","y.kliph":"A block of five changes","y.klipp":"Five changes to your website, to use whenever you need them. Write to us when something needs updating, for example new copy, a new image or a price that has changed, and we take one off the card. The card does not expire.","y.klipcount":"5 changes","y.klipfrom":"Total","y.inctag":"The same in every package","y.inch":"A full review of your existing website","y.incp1":"We go through the whole site and rebuild it so it is easy to understand and act on. Layout and structure, all the copy, fonts, colours, images, buttons and the order of the pages. Everything is reviewed and reworked, not just the front page.","y.incp2":"The packages contain exactly the same work. The only thing that separates them is how many pages your website has.","y.incprice":"Optimisation only","y.incp3":"We work on the website you already have. Domain, hosting and other subscriptions are not part of what we deliver. They stay where they are.",
   "y.from":"From","y.cur":"DKK","y.btn":"Get a quote",
   "y.t1h":"Smaller website","y.t1s":"Up to 4 pages",
   "y.t1a":"Home, services, about, contact","y.t1b":"Built mobile first","y.t1c":"A contact form that works","y.t1d":"Ready in 2–3 weeks",
@@ -1629,21 +1508,21 @@ var EN = {
   
   "y.t3h":"Large website","y.t3s":"10+ pages",
   "y.t3a":"Booking, payment or webshop","y.t3b":"Multiple languages","y.t3c":"A structure that can grow with you","y.t3d":"The two of us on the whole project, start to finish",
-  "y.note":"All prices exclude VAT. The final price is agreed once we have been through the site, so you know exactly what it comes to before we begin. Extra adjustments after delivery can be purchased and are not included in the prices.",
-  "y.f.eyebrow":"What we help with","y.f.h2":"What a review does for your site","y.f.p":"We work on three things every time we take on a website: the look, the message and the path to getting in touch.",
-  "y.f1h":"A sharper look","y.f1p":"We update the design, colours, fonts and images, so the site is a pleasure to look at and signals the quality you deliver.",
-  "y.f2h":"A clear message","y.f2p":"We set out the copy so it is clear what you sell, who it is for and why someone should choose you, without them having to look for it.",
+  "y.note":"All prices exclude VAT. The final price is agreed once we have been through the site. Then you know exactly what it comes to before we begin. Extra adjustments after delivery can be purchased and are not included in the prices.",
+  "y.f.eyebrow":"What we help with","y.f.h2":"What a review does for your website","y.f.p":"We work on three things every time we take on a website: the look, the message and the path to getting in touch.",
+  "y.f1h":"A sharper look","y.f1p":"We update the design, colours, fonts and images so the site is a pleasure to look at and signals the quality you deliver.",
+  "y.f2h":"A clear message","y.f2p":"We set out the copy so it is immediately clear what you sell, who it is for and why someone should choose you.",
   "y.f3h":"A shorter path to contact","y.f3p":"We tidy up the structure, buttons and forms, on mobile too, so visitors can reach you easily when they are ready.",
   "c.eyebrow":"Cases","c.h2":"Bartisan",
   "c.p":"From a traditional, uninspiring website to a modern, conversion-focused page that matches the quality of the brand.",
   "c.flag":"Demo","c.flagfull":"Demo · unsolicited proposal",
   "c.before":"Before","c.after":"After","c.drag":"Drag the middle to compare","c.cap":"Demo · home page",
-  "c.sideh":"What we would change",
-  "c.c1":"The product in focus instead of a block of text: one image that shows what you're buying.",
-  "c.c2":"One clear action at the top, “See cocktails”, instead of four equal menu items.",
-  "c.c3":"A dark palette that matches the bar the product is meant to be seen in.",
-  "c.c4":"The arguments moved down into a quiet row instead of three icons taking the stage.",
-  "c.c5":"A separate entrance for bars and restaurants, who buy the most bottles.",
+  "c.sideh":"What was optimised",
+  "c.c1":"The bottle and the finished drink sit at the top, so the product is the first thing you see instead of a stock photo.",
+  "c.c2":"The blue text link has become a button, so there is one action that is hard to miss.",
+  "c.c3":"A dark palette and a sharper typeface that match the bar setting the product is served in.",
+  "c.c4":"Four short arguments sit in a row below the hero image: ingredients, Danish production, professional use and taste.",
+  "c.c5":"A separate entrance for bars and restaurants, which buy the most bottles.",
   "c.disclaimer":"Note: this is our own proposal, made to show how we work. It was not commissioned or approved by Bartisan, and no figures are attached to it.",
   "cd.eyebrow":"More examples","cd.h2":"Six industries, the same method",
   "cd.p":"Invented companies we redesigned to show what the difference does. Drag each image.",
@@ -1655,34 +1534,34 @@ var EN = {
   "cd.5k":"Demo · dental clinic","cd.5h":"Nova Smil","cd.5p":"People instead of equipment, and online booking instead of phone hours.",
   "cd.6k":"Demo · hair salon","cd.6h":"Salon Belle","cd.6p":"The work gets room instead of discount signs, and booking an appointment is the single action throughout.",
   "c.m.eyebrow":"More examples","c.m.h2":"Two small projects, the same method",
-  "c.m.p":"Invented examples until the first clients are in. Then they get replaced with real ones.",
+  "c.m.p":"Invented examples until the first clients are in, then they get replaced with real ones.",
   "c.m1k":"Demo · café","c.m1h":"A table booked in three clicks",
   "c.m1p":"The menu lived in a PDF, and booking a table meant calling during opening hours. Both are now on the front page, and they work on a phone.",
   "c.m2k":"Demo · clinic","c.m2h":"Prices out in the open",
   "c.m2p":"No prices anywhere meant emails that went nowhere. A price list and online booking mean the people who call have already decided.",
   "c.band":"Want to see what your site could look like?",
   "o.eyebrow":"About us","o.h2":"Two people, from first conversation to delivery",
-  "o.p":"FAWA is a Danish web studio the two of us started together. We work with companies that already have a website but are not getting enough out of it, and we rebuild it so it is easy to understand, pleasant to look at and easy to act on.",
+  "o.p":"FAWA is a Danish web studio run by Melissa and Sofia. We work for companies that already have a website but are not getting enough out of it. We rebuild it so it is easy to understand, pleasant to look at and easy to act on.",
   "o.pb":"There are just the two of us. No project managers or subcontractors are involved, and you talk to the same two people from the first conversation until the site is delivered. We only take on the work we can do properly, and we say so if we are not the right ones for the job.",
   "o.r1":"Co-founder","o.p1":"Handles design and development. Builds the sites, runs the technical review and makes sure everything works the day the site goes live.",
   "o.r2":"Co-founder","o.p2":"Runs the review of what makes visitors act, and is your point of contact from the first conversation to delivery.",
   "o.v1h":"A fixed price from the start","o.v1p":"The price is agreed before we begin, and it holds. No invoices you didn't see coming.",
-  "o.v2h":"Honest advice","o.v2p":"If a new site isn't what will move the needle for you, we say so, even when it costs us the job.",
+  "o.v2h":"Honest advice","o.v2p":"If a new site isn't what will move the needle for you, we say so. Even when it costs us the job.",
   "o.v3h":"You own everything","o.v3p":"Domain, hosting and logins are in your name. You are not tied to us afterwards.",
   "k.eyebrow":"Contact","k.h2":"Let's talk about your site.",
-  "k.p":"Write to us and we'll find a time for a short call. We look at your site beforehand, so we have something concrete to talk about. You commit to nothing.",
+  "k.p":"Write to us and we'll find a time for a short call. We look at your website beforehand, so we have something concrete to talk about. You commit to nothing.",
   "k.l1b":"Response","k.l1s":"Within 24 hours","k.l2b":"Price","k.l2s":"The call is free, with no obligation",
   "k.l3b":"Email","k.l4b":"Phone","k.ph":"yourdomain.com",
   "k.fname":"Name","k.ftype":"Type of business","k.o0":"Choose…","k.o1":"Webshop","k.o2":"Shop or showroom","k.o3":"Restaurant, café or bar","k.o4":"Trades and construction","k.o5":"Clinic or practitioner","k.o6":"Services and consulting","k.o7":"Other","k.fsite":"Website","k.fmail":"Email","k.fphone":"Phone (optional)",
   "k.fmsg":"What do you want the site to do for you?",
   "k.submit":"Send message","k.micro":"We only use your details to reply. No newsletters.",
-  "k.doneh":"Thank you, we have it.","k.donep":"We'll look at the site and come back within 24 hours to find a time for a short call.",
+  "k.doneh":"Thank you, we have it.","k.donep":"We'll look at the website and come back within 24 hours to find a time for a short call.",
   "p.eyebrow":"Privacy policy","p.h1":"FAWA privacy policy","p.lede":"Applies to fawa.dk. The policy explains how FAWA collects, uses, stores and protects personal data when someone visits fawa.dk, contacts us or becomes a client.","p.m1":"Last updated","p.m1v":"16 September 2026","p.m2":"Company","p.m3":"Company no.","p.m4":"Address","p.m5":"Email","p.m6":"Website","p.back":"Back to the front page","f.priv":"Privacy policy","f.cookies":"Cookies","f.faq":"FAQ","f.terms":"Terms of business","f.cvr":"Company no. 00 00 00 00","f.rights":"© 2026 FAWA · Web studio in Denmark"
 };
 var EN_LEGAL = {"p.h_1": "1. Data controller","p.p_1a": "FAWA is the data controller for the processing of personal data described in this policy.","p.p_1b": "Questions about privacy or the processing of personal data can be sent to the email address shown above.","p.h_2": "2. Personal data we process","p.p_2a": "We may process the following types of personal data:","p.l2a": "Name, email address and phone number","p.l2b": "Company name and job title","p.l2c": "Information you write in a contact form or send by email","p.l2d": "Information about the task or service you want help with","p.l2e": "Client, agreement, quotation and invoicing information","p.l2f": "Correspondence between you and FAWA","p.l2g": "Technical information about visits to fawa.dk, such as IP address, browser and device","p.l2h": "Information collected through cookies and similar technologies, if you have given consent","p.p_2b": "Please do not send sensitive personal data, Danish civil registration (CPR) numbers or other confidential information through the contact form, unless it is necessary and agreed with us in advance.","p.h_3": "3. When you contact us","p.p_3a": "When you contact FAWA through the contact form, by email or by phone, we use the information to answer your enquiry, understand your needs, prepare a quotation and follow up on a possible assignment.","p.p_3b": "The processing is generally based on our legitimate interest in answering enquiries and running our business, cf. Article 6(1)(f) of the General Data Protection Regulation. If the enquiry concerns a possible agreement, the processing may also be necessary in order to take steps at your request before a contract is entered into, cf. Article 6(1)(b).","p.p_3c": "General enquiries are normally kept for 12 months after the dialogue ends. Information may be kept for longer if it becomes relevant to a client or contractual relationship, or if we need to document the course of events.","p.h_4": "4. When you become a client","p.p_4a": "When you enter into an agreement with FAWA, we process information in order to deliver the service, communicate about the project, administer the agreement, prepare quotations and invoices, receive payment, provide support and document our work.","p.p_4b": "The processing is primarily based on it being necessary for the performance of the contract, cf. Article 6(1)(b). Information we are required to process in order to comply with, for example, bookkeeping rules is processed under Article 6(1)(c).","p.p_4c": "Accounting records are kept for the period required by the applicable bookkeeping legislation. Other client and project information is deleted or anonymised once it is no longer necessary, assessed on the basis of the agreement, the need for documentation and any legal claims.","p.h_5": "5. Newsletters and marketing","p.p_5a": "If FAWA offers a newsletter or other electronic marketing, we only send it when we have a valid basis, for example your consent.","p.p_5b": "Consent is voluntary and can be withdrawn at any time through the unsubscribe link in the individual email or by contacting us. Withdrawal does not affect the lawfulness of the processing that took place before the withdrawal.","p.p_5c": "We keep documentation of the consent for as long as it is necessary to demonstrate that the marketing was sent lawfully.","p.h_6": "6. Cookies and statistics","p.p_6a": "fawa.dk may use cookies and similar technologies. Strictly necessary cookies may be used to make the website work. Statistics, functionality and marketing cookies are only used once the required consent has been obtained.","p.p_6b": "If you give consent, we may process information about IP address, device, browser, pages visited, time, duration, clicks and the referring website or campaign.","p.p_6c": "You can change or withdraw your cookie consent through the cookie settings on fawa.dk. The specific cookies, purposes, providers and lifetimes are described in the cookie overview in the <a href=\"#cookies\" data-go=\"cookies\" data-i18n=\"p.p_6link\">cookie policy</a>.","p.p_6link": "cookie policy","p.h_7": "7. Recipients and data processors","p.p_7a": "FAWA may use suppliers who help us run the business and deliver our services. This may include providers of:","p.l7a": "Hosting, website and email","p.l7b": "Contact forms, client management and project management","p.l7c": "Accounting, invoicing and payment","p.l7d": "Cloud storage, backup, analytics and cookie consent","p.l7e": "IT support and security","p.p_7b": "Suppliers who process information on our behalf may only process it on our instructions and, where this is required, on the basis of a data processing agreement. Information may also be disclosed to public authorities, auditors or advisers where this is necessary to comply with a legal obligation or to establish, exercise or defend a legal claim.","p.h_8": "8. Transfers outside the EU and the EEA","p.p_8a": "Some suppliers may process personal data in countries outside the EU and the EEA. If that happens, we ensure a lawful basis for the transfer, for example an adequacy decision from the European Commission, the European Commission's standard contractual clauses or other lawful safeguards.","p.p_8b": "You can contact us for more information about the basis for a specific transfer.","p.h_9": "9. Storage and deletion","p.p_9a": "We only keep personal data for as long as it is necessary. When we set the period, we consider, among other things, the purpose, the client or contractual relationship, statutory retention requirements, the need for documentation, possible legal claims and the nature of the information.","p.p_9b": "Once the information is no longer necessary, it is deleted or anonymised securely.","p.h_10": "10. Security","p.p_10a": "FAWA applies appropriate technical and organisational security measures to protect information against accidental or unlawful destruction, loss, alteration, disclosure, misuse and unauthorised access.","p.p_10b": "The measures may include access restrictions, strong passwords, two-factor authentication, backups, system updates and limiting the information we collect.","p.h_11": "11. Your rights","p.p_11a": "Depending on the circumstances, you have the right to:","p.l11a": "Access to the personal data we process about you","p.l11b": "Rectification of inaccurate or incomplete information","p.l11c": "Erasure or restriction of the processing","p.l11d": "Object to processing based on a balancing of interests","p.l11e": "Data portability, where the conditions are met","p.l11f": "Withdraw a consent","p.p_11b": "These rights are not absolute. In certain situations we may be entitled or obliged to continue processing the information. Contact <a href=\"mailto:contact@fawa.dk\">contact@fawa.dk</a> if you wish to exercise your rights. We may ask for the information necessary to verify your identity.","p.h_12": "12. Complaint to the Danish Data Protection Agency","p.p_12a": "If you are unhappy with how FAWA processes your personal data, we encourage you to contact us first, so that we can try to find a solution.","p.p_12b": "You also have the right to lodge a complaint with the Danish Data Protection Agency (Datatilsynet), Carl Jacobsens Vej 35, 2500 Valby, Denmark, phone +45 33 19 32 00.","p.p_12c": "Read more and lodge a complaint at <a href=\"https://www.datatilsynet.dk\" target=\"_blank\" rel=\"noopener\">datatilsynet.dk</a>","p.h_13": "13. Links to other websites","p.p_13a": "fawa.dk may contain links to other websites. FAWA is not responsible for how those websites process personal data. We recommend that you read their privacy policies.","p.h_14": "14. Changes to the privacy policy","p.p_14a": "We may update the privacy policy if our processing changes, or if rules and guidance from the authorities change. The latest version will always be available on fawa.dk. The date at the top shows when the policy was last updated.","c.eyebrow": "Cookie policy","c.h1": "FAWA cookie policy","c.lede": "Applies to fawa.dk. The policy explains how FAWA uses cookies and similar technologies on fawa.dk, why they are used, and how you as a visitor can manage your choices.","c.m1": "Last updated","c.m1v": "16 September 2026","c.m2": "Company","c.m3": "Website","c.m4": "Privacy policy","c.m4v": "Read the privacy policy","c.h_1": "1. What cookies are","c.p_1a": "Cookies are small text files that a website can store on your computer, phone or tablet. Cookies and similar technologies can be used to make the website work, to remember choices and to measure how the site is used.","c.p_1b": "Some cookies are deleted when the browser is closed, while others are stored for a set period. Cookies can be set by FAWA or by a third party if fawa.dk uses an external service.","c.h_2": "2. How FAWA uses cookies","c.p_2a": "FAWA may use cookies for the following purposes:","c.l2a": "Strictly necessary cookies that make the website and the cookie choice work","c.l2b": "Preference cookies that remember settings and choices","c.l2c": "Statistics cookies that help us understand how fawa.dk is used","c.l2d": "Marketing cookies that can be used for measurement, advertising or campaign follow-up","c.l2e": "Cookies from external features such as video, maps, booking or social media","c.h_3": "3. Strictly necessary cookies","c.p_3a": "Strictly necessary cookies may be set without consent when they are technically required to deliver a feature the visitor has expressly requested, or to make the website work as intended.","c.p_3b": "These cookies may, for example, remember cookie choices, protect forms against misuse or maintain a technical session. They may not be used for statistics or marketing under the heading of strictly necessary.","c.h_4": "4. Cookies that require consent","c.p_4a": "Statistics, preference and marketing cookies, as well as many third-party technologies, may only be activated once the required consent has been given.","c.p_4b": "Consent must be freely given, specific, informed and unambiguous. It must be as easy to refuse as to accept, and it must be possible to withdraw consent as easily as it was given.","c.h_5": "5. Your cookie choice","c.p_5a": "The first time you visit fawa.dk, you are presented with a consent solution. Until you have made your choice, fawa.dk may only activate strictly necessary cookies.","c.p_5b": "See section 5 below.","c.p_5c": "The cookie choice applies to the browser and the device where the choice was made. If you use another browser or device, delete cookies or use private browsing, you may be asked to choose again.","c.h_6": "6. Cookie overview","c.p_6a": "The overview shows the cookies and similar technologies used on fawa.dk, including local storage and pixels. It is completed on the basis of a scan of the finished website.","c.th1": "Category","c.th2": "Name","c.th3": "Provider","c.th4": "Purpose","c.th5": "Expiry","c.cat1": "Necessary","c.cat2": "Necessary","c.cat3": "Statistics","c.cat4": "Marketing","c.cat5": "Third party","c.pur1": "Remembers the visitor's cookie choice","c.pur3": "Measures the use of fawa.dk","c.h_7": "7. Third-party services","c.p_7a": "If fawa.dk embeds or connects to external services, those providers may set cookies or process information when the relevant feature is activated. This may include analytics tools, video players, maps, booking solutions or social media features. Such services are not activated before consent has been given, where consent is required.","c.h_8": "8. How to delete or block cookies","c.p_8a": "You can delete or block cookies through the settings in your browser. The procedure depends on the browser and the device. If you block strictly necessary cookies, parts of fawa.dk may work poorly or not at all.","c.p_8b": "Browser settings do not replace the option to change your consent directly on fawa.dk.","c.h_9": "9. Personal data","c.p_9a": "Information collected through cookies may in some cases be personal data. You can read more about how FAWA processes personal data, the legal basis, recipients, storage and your rights in the <a href=\"#privatliv\" data-go=\"privatliv\" data-i18n=\"c.p_9link\">privacy policy</a>.","c.p_9link": "privacy policy","c.h_10": "10. Contact","c.p_10a": "Questions about FAWA's use of cookies can be sent to <a href=\"mailto:contact@fawa.dk\">contact@fawa.dk</a>.","c.p_10b": "FAWA may update the cookie policy when the website, the technologies or the rules change. The date at the top shows when the policy was last updated.","c.back": "Back to the front page"};
 for (var __k in EN_LEGAL) EN[__k] = EN_LEGAL[__k];
 
-var EN_FAQ = {"q.eyebrow": "FAQ", "q.h1": "Frequently asked questions", "q.lede": "Answers to the questions companies usually have about optimising and redesigning their existing website.", "q.g1n": "01", "q.g1h": "The service and the price", "q.g1s": "What FAWA offers, and how a quotation is put together.", "q.g2n": "02", "q.g2h": "The project and working together", "q.g2s": "How the process runs, from the first review to the finished delivery.", "q.g3n": "03", "q.g3h": "After delivery", "q.g3s": "Adjustments, additional work and your next contact with FAWA.", "q.q1": "What does FAWA offer?", "q.a1": "FAWA helps companies optimise and redesign existing websites. We improve the site's visual expression, usability and structure, so it comes across as more modern and professional.", "q.q2": "Do you build brand new websites?", "q.a2": "Our main service is optimising and redesigning existing websites. Do get in touch if you are unsure whether we can help with your site.", "q.q3": "What does it cost to have a website optimised?", "q.a3": "The price depends on the size of the site, its current condition and the scope of the changes you want. We work with fixed prices for different types and sizes of project. You always receive a specific quotation before the work begins, so you know what is included in the price.", "q.q4": "How does payment work?", "q.a4": "Payment is normally made by invoice. The specific payment terms are set out in the quotation you receive from FAWA.", "q.q5": "Do I have to pay a deposit?", "q.a5": "It depends on the size of the project and the scope of the agreement. Any advance payment or deposit is always stated clearly in the quotation, before the project begins.", "q.q6": "Are hosting and domain included?", "q.a6": "No. Hosting and domain are normally not included in our prices. As we work with existing websites, the site usually stays with the client's current hosting and domain provider.", "q.q7": "How does a typical project run?", "q.a7": "We start by reviewing the website and agreeing what should be improved. You then receive a quotation with a clear description of the work. Once the quotation is approved and we have the access we need, we get started. Before the project is completed, we go through the result and make the changes covered by the quotation.", "q.q8": "How long does a project take?", "q.a8": "Most projects are expected to be completed within about two weeks after we have received the necessary access and all relevant information. The delivery time depends on the size of the site, the complexity of the work and how quickly questions are answered along the way. The expected delivery time is stated in the quotation.", "q.q9": "How many revisions are included?", "q.a9": "We make the changes needed to deliver the result agreed in the quotation. New wishes or tasks outside the agreed scope count as additional work. We always agree the price and the scope before any additional work is carried out.", "q.q10": "What do I need to provide before you can start?", "q.a10": "We need the necessary access to your website and to the systems the work takes place in. That could be access to WordPress, Shopify or another website platform. You also need to tell us about any particular wishes, requirements or elements that must not be changed. We never ask for more access than necessary, and login details must be shared securely.", "q.q11": "Can I edit the website myself afterwards?", "q.a11": "Yes. Once the project is finished, you can still edit the website yourself if you have the necessary access and know the system. FAWA delivers the finished solution described in the quotation. Later changes made by the client or by others are not covered by the original delivery.", "q.q12": "Do you offer help after delivery?", "q.a12": "Yes. Once the project is finished, you can purchase adjustments and help from FAWA. This subsequent help is not included in the original project price unless the quotation specifically says so. The price and scope are agreed separately.", "q.q13": "What happens if I want something that is not in the quotation?", "q.a13": "If new wishes come up along the way, we assess whether they fall within the agreed project. If a wish changes the scope of the project, we send you a price for the additional work. We do not carry out additional work without an agreement in advance.", "q.q14": "Do you only work with companies?", "q.a14": "Yes. FAWA is aimed primarily at companies and works on a B2B basis.", "q.q15": "How do I get started?", "q.a15": "Contact FAWA and send a link to your current website along with a short description of what you would like improved. We review the site and come back with our assessment of the work and a specific quotation.", "q.ctah": "Is your question not here?", "q.ctap": "Send a link to your current website and a short description of what you would like improved. We will review the site and come back to you.", "q.ctab": "Book a call", "q.back": "Back to the front page"};
+var EN_FAQ = {"q.eyebrow": "FAQ", "q.h1": "Frequently asked questions", "q.lede": "Answers to the questions companies usually have about optimising and redesigning their existing website.", "q.g1n": "01", "q.g1h": "The service and the price", "q.g1s": "What FAWA offers, and how a quotation is put together.", "q.g2n": "02", "q.g2h": "The project and working together", "q.g2s": "How the process runs, from the first review to the finished delivery.", "q.g3n": "03", "q.g3h": "After delivery", "q.g3s": "Adjustments, additional work and your next contact with FAWA.", "q.q1": "What does FAWA offer?", "q.a1": "FAWA helps companies optimise and redesign existing websites. We improve the site's visual expression, usability and structure, so it comes across as more modern and professional.", "q.q2": "Do you build brand new websites?", "q.a2": "Our main service is optimising and redesigning existing websites. Do get in touch if you are unsure whether we can help with your website.", "q.q3": "What does it cost to have a website optimised?", "q.a3": "The price depends on the size of the site, its current condition and the scope of the changes you want. We work with fixed prices for different types and sizes of project. You always receive a specific quotation before the work begins, so you know what is included in the price.", "q.q4": "How does payment work?", "q.a4": "Payment is normally made by invoice. The specific payment terms are set out in the quotation you receive from FAWA.", "q.q5": "Do I have to pay a deposit?", "q.a5": "It depends on the size of the project and the scope of the agreement. Any advance payment or deposit is always stated clearly in the quotation, before the project begins.", "q.q6": "Are hosting and domain included?", "q.a6": "No. Hosting and domain are normally not included in our prices. As we work with existing websites, the site usually stays with the client's current hosting and domain provider.", "q.q7": "How does a typical project run?", "q.a7": "We start by reviewing the website and agreeing what should be improved. You then receive a quotation with a clear description of the work. Once the quotation is approved and we have the access we need, we get started. Before the project is completed, we go through the result and make the changes covered by the quotation.", "q.q8": "How long does a project take?", "q.a8": "Most projects are expected to be completed within about two weeks after we have received the necessary access and all relevant information. The delivery time depends on the size of the site, the complexity of the work and how quickly questions are answered along the way. The expected delivery time is stated in the quotation.", "q.q9": "How many revisions are included?", "q.a9": "We make the changes needed to deliver the result agreed in the quotation. New wishes or tasks outside the agreed scope count as additional work. We always agree the price and the scope before any additional work is carried out.", "q.q10": "What do I need to provide before you can start?", "q.a10": "We need the necessary access to your website and to the systems the work takes place in. That could be access to WordPress, Shopify or another website platform. You also need to tell us about any particular wishes, requirements or elements that must not be changed. We never ask for more access than necessary, and login details must be shared securely.", "q.q11": "Can I edit the website myself afterwards?", "q.a11": "Yes. Once the project is finished, you can still edit the website yourself if you have the necessary access and know the system. FAWA delivers the finished solution described in the quotation. Later changes made by the client or by others are not covered by the original delivery.", "q.q12": "Do you offer help after delivery?", "q.a12": "Yes. Once the project is finished, you can purchase adjustments and help from FAWA. This subsequent help is not included in the original project price unless the quotation specifically says so. The price and scope are agreed separately.", "q.q13": "What happens if I want something that is not in the quotation?", "q.a13": "If new wishes come up along the way, we assess whether they fall within the agreed project. If a wish changes the scope of the project, we send you a price for the additional work. We do not carry out additional work without an agreement in advance.", "q.q14": "Do you only work with companies?", "q.a14": "Yes. FAWA is aimed primarily at companies and works on a B2B basis.", "q.q15": "How do I get started?", "q.a15": "Contact FAWA and send a link to your current website along with a short description of what you would like improved. We review the site and come back with our assessment of the work and a specific quotation.", "q.ctah": "Is your question not here?", "q.ctap": "Send a link to your current website and a short description of what you would like improved. We will review the site and come back to you.", "q.ctab": "Book a call", "q.back": "Back to the front page"};
 for (var __q in EN_FAQ) EN[__q] = EN_FAQ[__q];
 
 var EN_TERMS = {"t.eyebrow": "Terms of business", "t.h1": "FAWA terms of business", "t.sub": "Business customers and website redesign", "t.lede": "These terms of business apply to FAWA's agreements with business customers on optimising and redesigning existing websites. The individual quotation, the project description and these terms together form the agreement between the parties.", "t.m1": "Last updated", "t.m1v": "16 September 2026", "t.m2": "Company", "t.m3": "Company no.", "t.m4": "Address", "t.m4v": "Falkonervænget 1, 1952 Frederiksberg C, Denmark", "t.m5": "Email", "t.m6": "Website", "t.back": "Back to the front page", "t.h_1": "1. Scope", "t.p_1a": "These terms apply only to agreements between FAWA and customers acting in the course of their trade or business. FAWA does not enter into agreements with consumers on these terms.", "t.p_1b": "If the individual quotation contains terms that differ from these terms of business, the quotation takes precedence. The customer's own purchasing or standard terms apply only if FAWA has expressly accepted them in writing.", "t.h_2": "2. Formation of the agreement", "t.p_2a": "A quotation from FAWA is valid for the period stated in the quotation. The agreement is entered into when the customer accepts the quotation in writing, unless the quotation states otherwise.", "t.p_2b": "Changes to the agreement must be made in writing. Email counts as written communication.", "t.h_3": "3. Scope of the service", "t.p_3a": "FAWA delivers the services described in the quotation. The service may include visual optimisation, redesign, changes to structure, user experience and setup on the customer's existing website.", "t.p_3b": "Hosting, domain, third-party subscriptions, licences, images, copywriting, integrations and other services are not included unless the quotation expressly says so.", "t.p_3c": "FAWA does not guarantee particular search engine rankings, a particular number of enquiries, a particular revenue or any other specific commercial results.", "t.h_4": "4. The customer's cooperation", "t.p_4a": "The customer must provide the information, decisions, materials and access that FAWA needs in good time. Access must be given securely and with the minimum necessary permissions.", "t.p_4b": "The customer is responsible for ensuring that the materials and instructions it provides are correct, lawful and do not infringe the rights of third parties. The customer must hold the necessary rights to text, images, logos, fonts and other material.", "t.p_4c": "If missing replies, materials or access from the customer delay the work, the delivery time is postponed accordingly. FAWA may invoice documented additional work caused by the delay, after giving notice in advance.", "t.h_5": "5. Delivery time", "t.p_5a": "The expected delivery time is stated in the quotation. An ordinary project is normally expected to be delivered within approximately two weeks after the agreement is entered into, the initial payment has been received and all necessary information and access have been received.", "t.p_5b": "The delivery time is an estimate unless a specific date has been expressly agreed as binding. FAWA informs the customer as soon as possible if the schedule changes.", "t.h_6": "6. Price and payment", "t.p_6a": "The price is stated in the quotation. All prices are exclusive of VAT unless otherwise stated.", "t.p_6b": "FAWA normally invoices 50 per cent of the project price when the agreement is entered into and the remaining 50 per cent on delivery. Work does not begin until the initial payment has been received, unless otherwise agreed in writing.", "t.p_6c": "The payment term is 8 days from the invoice date. In the event of late payment, FAWA may charge interest and fees in accordance with the Danish Interest Act. FAWA may suspend the work while an overdue payment is outstanding. Such a pause may affect the delivery time.", "t.h_7": "7. Changes and additional work", "t.p_7a": "Changes necessary to deliver the result described in the quotation are included. New wishes, a change of direction, new features or work outside the quotation are additional work.", "t.p_7b": "FAWA states the price or the basis of calculation for the additional work before it is carried out. Additional work is only carried out after the customer's written acceptance and may result in a new schedule.", "t.h_8": "8. Delivery and approval", "t.p_8a": "The service is considered delivered when FAWA notifies the customer that the agreed work is finished and available for review or use.", "t.p_8b": "The customer must review the delivery and report specific errors or defects within 7 working days. If the customer does not respond within the deadline, the delivery is considered approved, without this limiting the customer's right to raise hidden defects within a reasonable time.", "t.p_8c": "A defect exists only if the delivery materially deviates from what was agreed in writing. Changes of taste or new wishes are not defects.", "t.h_9": "9. Adjustments after delivery", "t.p_9a": "After delivery, the customer may purchase adjustments and help from FAWA. This help is not included in the project price unless the quotation says so.", "t.p_9b": "The price, scope and delivery time for subsequent adjustments are agreed separately. This is not a free warranty or support arrangement.", "t.h_10": "10. Changes made by the customer", "t.p_10a": "The customer may edit the website after delivery if the customer has the necessary access and the necessary knowledge.", "t.p_10b": "FAWA is not liable for errors, security problems, downtime or other consequences arising from changes made by the customer or a third party after delivery. Troubleshooting and restoration may be offered as additional work.", "t.h_11": "11. Rights", "t.p_11a": "Once all invoices relating to the project have been paid, the customer receives a perpetual right to use the customer-specific design and material that FAWA has developed as part of the delivery.", "t.p_11b": "FAWA retains the rights to its own methods, processes, templates, code libraries, tools, general know-how and material that was developed before the project or that can be reused independently of the customer's confidential information.", "t.p_11c": "Third-party material, themes, plugins, fonts, images and software are subject to the licence terms of the respective suppliers. The customer is responsible for ongoing licences and subscriptions after delivery, unless otherwise agreed.", "t.h_12": "12. Portfolio and references", "t.p_12a": "FAWA may only publish the customer's name, logo, website or project as a reference if the customer has given written permission. The parties may agree that permission in the quotation or separately.", "t.h_13": "13. Confidentiality", "t.p_13a": "The parties must treat non-public information about the other party's business, customers, systems and commercial affairs as confidential. Information may only be used to perform the agreement and must not be shared with unauthorised parties.", "t.p_13b": "The duty of confidentiality also applies after the agreement ends.", "t.h_14": "14. Personal data", "t.p_14a": "Each party is responsible for its own processing of personal data. If FAWA processes personal data on the customer's behalf as part of the work, the parties must enter into a data processing agreement before the processing begins.", "t.p_14b": "FAWA's processing of contact and customer data is described in the <a href=\"#privatliv\" data-go=\"privatliv\">privacy policy</a> on fawa.dk.", "t.h_15": "15. Defects and remedies", "t.p_15a": "If the delivery has a defect for which FAWA is responsible, FAWA has both the right and the obligation to attempt to remedy the defect within a reasonable time. The customer must give FAWA the information and access necessary for the remedy.", "t.p_15b": "The customer cannot claim a proportionate price reduction, damages or termination before FAWA has had a reasonable opportunity to remedy the defect, unless a remedy is impossible or clearly futile.", "t.h_16": "16. Limitation of liability", "t.p_16a": "FAWA is liable under the general rules of Danish law, subject to the limitations set out in this clause.", "t.p_16b": "FAWA is not liable for indirect losses, operating losses, loss of profit, loss of data, lost revenue, lost savings, loss of goodwill or third-party claims, unless the loss is caused by intent or gross negligence.", "t.p_16c": "FAWA's total liability in connection with the individual agreement is limited to the amount, excluding VAT, that the customer has paid FAWA for that particular assignment. The limitation does not apply where it cannot lawfully be relied upon.", "t.p_16d": "The customer is responsible for its own backups unless backup is expressly part of the quotation. FAWA is not liable for third-party systems, hosting, domains, plugins, integrations or changes to external services.", "t.h_17": "17. Cancellation and termination", "t.p_17a": "If the customer cancels the project after the agreement has been entered into, the customer must pay for the work FAWA has already carried out, as well as documented expenses and binding third-party commitments. The initial payment is offset against that amount and is only refunded to the extent that it exceeds FAWA's claim.", "t.p_17b": "In the event of material breach, the non-breaching party may terminate the agreement if the breach has not been remedied within a reasonable written deadline. Non-payment is considered material when payment is still outstanding after a written demand.", "t.h_18": "18. Force majeure", "t.p_18a": "Neither party is liable for failure or delay in performance caused by circumstances beyond that party's reasonable control, including major operational disruptions, cyber attacks, intervention by authorities, labour disputes, natural events, fire, war, epidemic or failure of critical suppliers.", "t.p_18b": "The affected party must inform the other party as soon as possible. Deadlines are extended to the extent the impediment affects performance.", "t.h_19": "19. Governing law and venue", "t.p_19a": "The agreement is governed by Danish law.", "t.p_19b": "The parties must first attempt to resolve any dispute through dialogue. If that fails, the dispute is to be settled by the Court of Frederiksberg (Retten på Frederiksberg) as the agreed venue, unless mandatory rules require the case to be heard by another court.", "t.h_20": "20. Contact", "t.p_20a": "Questions about quotations, projects or these terms of business can be sent to <a href=\"mailto:contact@fawa.dk\">contact@fawa.dk</a>.", "t.p_20b": "FAWA may update these terms of business for future agreements. The version in force when the customer accepted the quotation applies to that particular agreement, unless the parties agree otherwise in writing."};
@@ -1692,7 +1571,7 @@ for (var __t in EN_TERMS) EN[__t] = EN_TERMS[__t];
 var EN_COOKIES = {"c.lede": "Applies to fawa.dk. This policy explains which cookies and similar technologies fawa.dk uses, why they are used, and what you as a visitor can control. In short: fawa.dk sets no cookies and uses neither analytics nor marketing.", "c.h_2": "2. How fawa.dk uses cookies", "c.p_2a": "fawa.dk sets no cookies. The site stores a single piece of information locally in your browser, and only if you change the language yourself:", "c.l2a": "Your language choice is stored in local storage so the site remembers whether you selected Danish or English", "c.l2b": "That information stays in your browser and is sent neither to FAWA nor to any third party", "c.l2c": "No analytics or statistics tools are used, and we do not record which pages you visit", "c.l2d": "No marketing or tracking technologies are used, including no advertising pixels", "c.l2e": "There are no embedded external features such as video, maps, booking or social media", "c.h_3": "3. Strictly necessary storage", "c.p_3a": "Cookies and similar storage may be set without consent when they are technically necessary to deliver a function the visitor has explicitly requested. Remembering a language you actively selected is exactly such a case.", "c.p_3b": "This is the only form of storage fawa.dk uses. It is not used for statistics, profiling or marketing, and it contains no information about you beyond the two letters that identify the language.", "c.h_4": "4. Cookies that would require consent", "c.p_4a": "Statistics and marketing cookies, along with most third-party technologies, may only be activated once consent has been given. Consent must be freely given, specific, informed and unambiguous, and it must be as easy to refuse as to accept.", "c.p_4b": "fawa.dk uses none of these technologies, which is why no cookie banner is shown. If we later add something such as an analytics tool, we will obtain consent first, update this policy and extend the overview below.", "c.h_5": "5. Your choices", "c.p_5a": "Because fawa.dk uses strictly necessary storage only, there is no consent to give or withdraw, and you will therefore not be met by a cookie banner.", "c.p_5b": "You can remove the stored language choice at any time by clearing browsing data for fawa.dk in your browser settings. The site will then display in Danish until you select a language again.", "c.p_5c": "The language choice applies to the browser and device where it was made. If you use another browser or device, clear browsing data or browse privately, the site will display in Danish again.", "c.p_6a": "The overview shows all storage on fawa.dk. There are no cookies and no pixels, only the single entry below, which sits in your own browser and never leaves it.", "c.cat1": "Necessary", "c.pur1": "Remembers your language choice, Danish or English", "c.exp1": "Local storage. Kept until you clear browsing data", "c.p_7a": "fawa.dk embeds no external services. Fonts, images and scripts are served from the site's own domain, so your IP address is not transferred to a third party when you open the page. If we later add an external feature such as video, maps or booking, it will not be activated before you have given consent, and this policy will be updated.", "c.h_8": "8. How to delete or block storage", "c.p_8a": "You can delete or block cookies and local storage through your browser settings. The procedure depends on your browser and device.", "c.p_8b": "If you block storage on fawa.dk, the only thing you lose is the saved language choice. The rest of the site works unchanged.", "c.p_9a": "Information collected through cookies can in some cases be personal data. The stored language choice is not personal data and cannot be linked to you. You can read more about FAWA's processing of personal data, legal bases, recipients, retention and your rights in the <a href=\"#privatliv\" data-go=\"privatliv\" data-i18n=\"c.p_9link\">privacy policy</a>."};
 for (var __c in EN_COOKIES) EN[__c] = EN_COOKIES[__c];
 
-var EN_FORM = {"k.micro": "The message is sent from your own mail app. We only use the details to reply, no newsletters.", "k.doneh": "Your message is ready to send.", "k.donep": "We have opened your mail app with the message filled in. Press send and it reaches us. If nothing happened, write to <a href=\"mailto:contact@fawa.dk\">contact@fawa.dk</a> directly. We reply within 24 hours."};
+var EN_FORM = {"k.micro": "The message is sent from your own mail app. We only use the details to reply. No newsletters.", "k.doneh": "Your message is ready to send.", "k.donep": "We have opened your mail app with the message filled in. Press send and it reaches us. If nothing happened, write to <a href=\"mailto:contact@fawa.dk\">contact@fawa.dk</a> directly. We reply within 24 hours."};
 for (var __f in EN_FORM) EN[__f] = EN_FORM[__f];
 
 var EN_FIX = {"p.eyebrow": "How it works", "c.eyebrow": "Cases", "pp.eyebrow": "Privacy policy", "ck.eyebrow": "Cookie policy"};
@@ -1704,7 +1583,7 @@ for (var __p2 in EN_PRIV) EN[__p2] = EN_PRIV[__p2];
 var EN_NUM = {"y.n1": "4,995", "y.n2": "7,495", "y.n3": "9,995", "y.n4": "1,495"};
 for (var __n in EN_NUM) EN[__n] = EN_NUM[__n];
 
-var EN_FORM2 = {"k.micro": "We only use the details to reply. No newsletters. See our <a href=\"#privatliv\" data-go=\"privatliv\">privacy policy</a>.", "k.doneh": "Thank you, we have it.", "k.donep": "We will look at your site and come back within 24 hours to find a time for a short call.", "k.err": "The message could not be sent right now. Please write to <a href=\"mailto:contact@fawa.dk\">contact@fawa.dk</a> instead and we will come back within 24 hours."};
+var EN_FORM2 = {"k.micro": "We only use the details to reply. No newsletters. See our <a href=\"#privatliv\" data-go=\"privatliv\">privacy policy</a>.", "k.doneh": "Thank you, we have it.", "k.donep": "We will look at your website and come back within 24 hours to find a time for a short call.", "k.err": "The message could not be sent right now. Please write to <a href=\"mailto:contact@fawa.dk\">contact@fawa.dk</a> instead and we will come back within 24 hours."};
 for (var __f2 in EN_FORM2) EN[__f2] = EN_FORM2[__f2];
 
 var EN_FIX3 = {"p.p_3a": "When you contact FAWA through the form or by email, we use the information to answer your enquiry, understand your needs, prepare a quote and follow up on a possible project. If you give us a phone number yourself, we use it only to call you about that enquiry."};
@@ -1719,7 +1598,7 @@ for (var __x5 in EN_FIX5) EN[__x5] = EN_FIX5[__x5];
 var EN_FIX6 = {"cd.2h": "Bella Luna"};
 for (var __x6 in EN_FIX6) EN[__x6] = EN_FIX6[__x6];
 
-var EN_LU = {"lu.eyebrow": "Real client", "lu.h2": "Larsen & Uldbjerg", "lu.p": "From no website at all to a finished one. The painting firm had a domain, but behind it sat only a maintenance page. Everyone who looked them up was met by a note saying the site would be ready soon. Now they have a site that shows the work, says who they are, and makes it easy to ask for a quote.", "lu.flag": "Real client · painting firm", "lu.cap": "Home page", "lu.sideh": "What we built", "lu.c1": "A front page where you see a painter at work instead of a notice that the site is under construction.", "lu.c2": "The phone number and “Get a quote” sit at the top of every page.", "lu.c3": "Services, cases and about have a page each, so people can find what they came for.", "lu.c4": "A jobs page with a marker in the menu whenever there are positions to apply for.", "lu.note": "The images are shown with the client's permission."};
+var EN_LU = {"lu.eyebrow": "Real client", "lu.h2": "Larsen & Uldbjerg", "lu.p": "From no website at all to a finished one. The painting firm had a domain, but behind it sat only a maintenance page. Everyone who looked them up was met by a note saying the site would be ready soon. Now they have a site that shows the work, says who they are, and makes it easy to ask for a quote.", "lu.flag": "Real client · painting firm", "lu.cap": "Home page", "lu.sideh": "What was built", "lu.c1": "A front page where you see a painter at work instead of a notice that the site is under construction.", "lu.c2": "The phone number and “Get a quote” sit at the top of every page.", "lu.c3": "Services, cases and about have a page each, so people can find what they came for.", "lu.c4": "A jobs page with a marker in the menu whenever there are positions to apply for.", "lu.note": "The images are shown with the client's permission."};
 for (var __lu in EN_LU) EN[__lu] = EN_LU[__lu];
 
 var EN_KLIP = {
@@ -1730,12 +1609,29 @@ var EN_KLIP = {
   "y.defja3": "A price, an opening hour or a contact detail to be updated",
   "y.defja4": "An item to be added to or removed from a list or the menu",
   "y.defnej": "This is not a change",
-  "y.defnej1": "New pages, which we agree separately",
+  "y.defnej1": "New pages, we agree those separately",
   "y.defnej2": "A new design or a new structure for a page",
   "y.defnej3": "New features, for example booking or a web shop",
   "y.deffoot": "When several small corrections belong together, for example three pieces of text on the same page, we count them as one. If we are in doubt, we ask you before using one."
 };
 for (var k in EN_KLIP) EN[k] = EN_KLIP[k];
+
+var EN_CASE = {
+  "c.eyebrow": "Real client",
+  "c.band": "Want to see what your website could look like?",
+  "h.c.flag": "Real client",
+  "h.c.h2": "Larsen & Uldbjerg: from an empty page to a new website",
+  "h.c.p": "The painting firm had a domain, but behind it sat only a maintenance page.",
+  "h.c.link": "See the case",
+  "lu.t1": "Website", "lu.t2": "Design", "lu.t3": "Development",
+  "lu.s0": "Before", "lu.s1": "Home", "lu.s2": "Services", "lu.s3": "Cases", "lu.s4": "About", "lu.s5": "Jobs", "lu.s6": "Devices",
+  "lu.hint": "Hover to play",
+  "lu.f1": "A website built from scratch",
+  "lu.f2": "Six pages",
+  "lu.f3": "A clear path to a quote",
+  "lu.visit": "Visit the website"
+};
+for (var kCase in EN_CASE) EN[kCase] = EN_CASE[kCase];
 
 var DA = {};
 document.querySelectorAll("[data-i18n]").forEach(function(el){ DA[el.dataset.i18n] = el.innerHTML; });
@@ -1751,7 +1647,10 @@ function setLang(lang){
     if (v != null) el.setAttribute("placeholder", v);
   });
   document.documentElement.lang = lang;
-  applyMeta();
+  document.title = lang === "en" ? "FAWA · Websites that perform" : "FAWA · Hjemmesider der performer";
+  var __d = document.querySelector('meta[name="description"]');
+  if (__d) __d.setAttribute("content", lang === "en" ? "FAWA optimises existing websites so they load faster, read clearer and convert better. Design, structure and copy built around what actually brings in customers." : "FAWA optimerer eksisterende hjemmesider, så de bliver hurtigere, tydeligere og konverterer bedre. Design, struktur og tekst med udgangspunkt i, hvad der skaber kunder.");
+  if (typeof applyMeta === "function") applyMeta();
   document.getElementById("lang-da").setAttribute("aria-pressed", String(lang === "da"));
   document.getElementById("lang-en").setAttribute("aria-pressed", String(lang === "en"));
   try { localStorage.setItem("fawa-lang", lang); } catch (e) {}
@@ -1764,8 +1663,24 @@ try { if (localStorage.getItem("fawa-lang") === "en") setLang("en"); } catch (e)
 /* ================= router ================= */
 var app = document.getElementById("app");
 var menu = document.getElementById("menu");
-
 var CURPAGE = window.__PAGE__ || "forside";
+var SLUGS = {"forside": "", "ydelser": "ydelser", "cases": "cases", "om": "om", "kontakt": "kontakt", "privatliv": "privatlivspolitik", "cookies": "cookiepolitik", "faq": "faq", "vilkaar": "handelsbetingelser"};
+var BASE = (function(){
+  var p = location.pathname;
+  if (!/\/$/.test(p)) p = p.replace(/[^\/]*$/, "");
+  var slug = SLUGS[window.__PAGE__ || "forside"];
+  if (slug && p.slice(-(slug.length + 1)) === slug + "/") p = p.slice(0, p.length - slug.length - 1);
+  return p || "/";
+})();
+var PATHS = {}; for (var __s in SLUGS) PATHS[__s] = BASE + (SLUGS[__s] ? SLUGS[__s] + "/" : "");
+var PAGES = ["forside","ydelser","cases","om","kontakt","privatliv","cookies","faq","vilkaar"];
+function pageFromPath(path){
+  var rest = path.indexOf(BASE) === 0 ? path.slice(BASE.length) : path;
+  rest = rest.replace(/^\/+|\/+$/g, "");
+  for (var k in SLUGS) { if (SLUGS[k] === rest) return k; }
+  var h = (location.hash || "").replace("#", "");
+  return PAGES.indexOf(h) >= 0 ? h : "forside";
+}
 function applyMeta(){
   var m = window.__META__ && window.__META__[CURPAGE];
   if (!m) return;
@@ -1774,29 +1689,10 @@ function applyMeta(){
   var d = document.querySelector('meta[name="description"]');
   if (d) d.setAttribute("content", m[l][1]);
   var c = document.querySelector('link[rel="canonical"]');
-  if (c && typeof SLUGS !== "undefined") c.setAttribute("href", "https://fawa.dk/" + (SLUGS[CURPAGE] ? SLUGS[CURPAGE] + "/" : ""));
+  if (c) c.setAttribute("href", "https://fawa.dk/" + (SLUGS[CURPAGE] ? SLUGS[CURPAGE] + "/" : ""));
   var o = document.querySelector('meta[property="og:url"]');
   if (o && c) o.setAttribute("content", c.getAttribute("href"));
 }
-
-var SLUGS = {"forside": "", "ydelser": "ydelser", "cases": "cases", "om": "om", "kontakt": "kontakt", "privatliv": "privatlivspolitik", "cookies": "cookiepolitik", "faq": "faq", "vilkaar": "handelsbetingelser"};
-var BASE = (function(){
-  var p = location.pathname;
-  if (!/\/$/.test(p)) p = p.replace(/[^\/]*$/, "");
-  var cur = window.__PAGE__ || "forside";
-  var slug = SLUGS[cur];
-  if (slug && p.slice(-(slug.length + 1)) === slug + "/") p = p.slice(0, p.length - slug.length - 1);
-  return p || "/";
-})();
-var PATHS = {}; for (var __s in SLUGS) PATHS[__s] = BASE + (SLUGS[__s] ? SLUGS[__s] + "/" : "");
-function pageFromPath(path){
-  var rest = path.indexOf(BASE) === 0 ? path.slice(BASE.length) : path;
-  rest = rest.replace(/^\/+|\/+$/g, "");
-  for (var k in SLUGS) { if (SLUGS[k] === rest) return k; }
-  var h = (location.hash || "").replace("#", "");
-  return PAGES.indexOf(h) >= 0 ? h : "forside";
-}
-var PAGES = ["forside","ydelser","cases","om","kontakt","privatliv","cookies","faq","vilkaar"];
 
 /* Billeder i en skjult side bliver ikke hentet af browseren. Når siden vises,
    eller når der er luft efter indlæsningen, sættes de i gang manuelt. */
@@ -1935,6 +1831,280 @@ document.querySelectorAll("[data-ba]").forEach(function(ba){
   apply();
 });
 
+/* ================= levende skaerm paa laptoppen ================= */
+(function(){
+  var hero = document.querySelector("#page-forside .hero-photo");
+  var box  = hero && hero.querySelector(".hero-screen");
+  if (!hero || !box) return;
+
+  var IMG_W = 2240, IMG_H = 1514;
+  var Q = [[1231,503],[1950,515],[1895,1022],[1172,970]];
+  var W = 1000, H = 700;
+
+  function solve(dst){
+    var src = [[0,0],[W,0],[W,H],[0,H]], a = [], b = [];
+    for (var i = 0; i < 4; i++) {
+      var sp = src[i], d = dst[i];
+      a.push([sp[0],sp[1],1,0,0,0,-sp[0]*d[0],-sp[1]*d[0]]); b.push(d[0]);
+      a.push([0,0,0,sp[0],sp[1],1,-sp[0]*d[1],-sp[1]*d[1]]); b.push(d[1]);
+    }
+    for (var c = 0; c < 8; c++) {
+      var p = c;
+      for (var r = c + 1; r < 8; r++) if (Math.abs(a[r][c]) > Math.abs(a[p][c])) p = r;
+      var t = a[c]; a[c] = a[p]; a[p] = t; var tb = b[c]; b[c] = b[p]; b[p] = tb;
+      var piv = a[c][c] || 1e-9;
+      for (var r2 = 0; r2 < 8; r2++) {
+        if (r2 === c) continue;
+        var f = a[r2][c] / piv;
+        for (var k = c; k < 8; k++) a[r2][k] -= f * a[c][k];
+        b[r2] -= f * b[c];
+      }
+    }
+    var h = [];
+    for (var i2 = 0; i2 < 8; i2++) h.push(b[i2] / (a[i2][i2] || 1e-9));
+    return h;
+  }
+
+  function place(){
+    var shot = hero.querySelector(".hero-shot");
+    if (!shot) return;
+    var w = shot.offsetWidth, hh = shot.offsetHeight;
+    if (!w || !hh) return;
+    var sc = Math.max(w / IMG_W, hh / IMG_H);
+    var cs = getComputedStyle(shot);
+    var bp = (cs.backgroundPosition || "50% 50%").split(/\s+/);
+    function off(v, cont, drawn){
+      if (v == null) return (cont - drawn) * .5;
+      if (v.indexOf("%") >= 0) return (cont - drawn) * (parseFloat(v) / 100);
+      if (v === "left" || v === "top") return 0;
+      if (v === "right" || v === "bottom") return cont - drawn;
+      if (v === "center") return (cont - drawn) * .5;
+      return parseFloat(v) || 0;
+    }
+    var ox = off(bp[0], w, IMG_W * sc), oy = off(bp[1], hh, IMG_H * sc);
+    var dst = Q.map(function(p){ return [ox + p[0] * sc, oy + p[1] * sc]; });
+    var m = solve(dst);
+    box.style.transform = "matrix3d(" +
+      [m[0], m[3], 0, m[6], m[1], m[4], 0, m[7], 0, 0, 1, 0, m[2], m[5], 0, 1].join(",") + ")";
+    box.classList.add("on");
+  }
+
+  var t = 0;
+  window.addEventListener("resize", function(){ clearTimeout(t); t = setTimeout(place, 120); }, { passive: true });
+  place();
+  setTimeout(place, 500);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(place);
+})();
+
+/* ================= levende forside ================= */
+(function(){
+  var hero = document.querySelector("#page-forside .hero-photo");
+  if (!hero) return;
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  var fine = !(window.matchMedia && window.matchMedia("(hover: none)").matches);
+
+  function set(n, v){ hero.style.setProperty(n, v); }
+  /* scroll: heroen trækker sig roligt tilbage */
+  var sraf = 0;
+  function onScroll(){
+    if (sraf) return;
+    sraf = requestAnimationFrame(function(){
+      sraf = 0;
+      var h = hero.offsetHeight || 1;
+      var p = Math.min(1, Math.max(0, (window.pageYOffset || 0) / h));
+      set("--hz", (1 + p * .07).toFixed(3));
+      set("--hy", (p * 44).toFixed(1) + "px");
+      set("--ho", Math.max(0, 1 - Math.max(0, p - .12) * 1.15).toFixed(3));
+    });
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  /* magnetiske knapper i heroen */
+  if (fine) {
+    [].slice.call(hero.querySelectorAll(".hero-cta .btn")).forEach(function(btn){
+      var ar = btn.querySelector(".ar");
+      btn.addEventListener("mousemove", function(e){
+        var r = btn.getBoundingClientRect();
+        var dx = (e.clientX - (r.left + r.width / 2)) / r.width;
+        var dy = (e.clientY - (r.top + r.height / 2)) / r.height;
+        btn.style.transform = "translate(" + (dx * 8).toFixed(1) + "px," + (dy * 5).toFixed(1) + "px)";
+        if (ar) ar.style.transform = "translateX(" + (dx * 11).toFixed(1) + "px)";
+      });
+      btn.addEventListener("mouseleave", function(){
+        btn.style.transform = "";
+        if (ar) ar.style.transform = "";
+      });
+    });
+  }
+})();
+
+/* ================= case-afspilning ================= */
+(function(){
+  var reel = document.querySelector("[data-reel]");
+  if (!reel) return;
+  var view  = reel.querySelector(".reel-view");
+  var shots = [].slice.call(reel.querySelectorAll(".reel-shot"));
+  var steps = [].slice.call(reel.querySelectorAll(".reel-steps li"));
+  var urlEl = reel.querySelector("[data-reel-url]");
+  var sweep = reel.querySelector("[data-reel-scan]");
+  var bar   = reel.querySelector("[data-reel-bar]");
+  if (shots.length < 2) return;
+
+  var IDLE = 1, TOP_PAUSE = 1500, END_PAUSE = 320;
+  var slow = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var cur = IDLE, timer = null, active = false;
+
+  function isDev(i){ return shots[i].classList.contains("reel-devices"); }
+  function img(i){ return isDev(i) ? null : shots[i].querySelector("img"); }
+  function over(i){
+    var im = img(i);
+    return im ? im.offsetHeight - view.clientHeight : 0;
+  }
+  function topPause(i){ return shots[i].classList.contains("has-build") ? 3550 : TOP_PAUSE; }
+  function scrollMs(i){
+    var o = Math.max(0, over(i));
+    if (o <= 8) return 0;
+    return Math.max(1900, Math.min(7400, o * 2.15));
+  }
+  function dur(i){
+    if (isDev(i)) return 3600;
+    if (i === 0) return 1700;
+    var sc = scrollMs(i);
+    return sc ? topPause(i) + sc + END_PAUSE : 2600;
+  }
+
+  function rest(i){
+    var im = img(i);
+    if (!im) return;
+    im.style.transition = "none";
+    var gap = view.clientHeight - im.offsetHeight;
+    im.style.transform = gap > 8 ? "translateY(" + Math.round(gap/2) + "px)" : "translateY(0)";
+  }
+
+  function pan(i){
+    var im = img(i);
+    if (!im || slow) return;
+    rest(i);
+    var o = over(i);
+    if (o <= 8) return;
+    var ms = scrollMs(i);
+    void im.offsetHeight;
+    im.style.transition = "transform " + ms + "ms cubic-bezier(.4,0,.6,1) " + topPause(i) + "ms";
+    im.style.transform = "translateY(-" + o + "px)";
+  }
+
+  function progress(ms){
+    if (!bar) return;
+    bar.style.transition = "none";
+    bar.style.width = "0";
+    void bar.offsetWidth;
+    if (slow) { bar.style.width = "100%"; return; }
+    bar.style.transition = "width " + ms + "ms linear";
+    bar.style.width = "100%";
+  }
+
+  function flash(){
+    if (!sweep || slow) return;
+    sweep.classList.remove("go");
+    void sweep.offsetWidth;
+    sweep.classList.add("go");
+  }
+
+  var outTimer = null;
+  function paint(i){
+    shots.forEach(function(sh,k){
+      if (k === i) { sh.classList.remove("is-out"); sh.classList.add("is-on"); return; }
+      if (sh.classList.contains("is-on")) { sh.classList.remove("is-on"); sh.classList.add("is-out"); }
+    });
+    clearTimeout(outTimer);
+    outTimer = setTimeout(function(){
+      shots.forEach(function(sh,k){ if (k !== i) { sh.classList.remove("is-out"); rest(k); } });
+    }, 1500);
+    steps.forEach(function(st,k){ st.classList.toggle("is-live", k===i); });
+    if (urlEl) urlEl.textContent = shots[i].getAttribute("data-url") || "larsen-uldbjerg.dk";
+  }
+
+  function show(i, run){
+    if (i !== cur && i <= 1) flash();
+    cur = i;
+    paint(i);
+    shots.forEach(function(sh,k){ if (k!==i && !sh.classList.contains("is-out")) rest(k); });
+    if (!run){
+      rest(i);
+      if (bar){ bar.style.transition="none"; bar.style.width="0"; }
+      return;
+    }
+    var ms = dur(i);
+    pan(i);
+    progress(ms);
+    clearTimeout(timer);
+    timer = setTimeout(function(){
+      if (!active) return;
+      show(i + 1 < shots.length ? i + 1 : 0, true);
+    }, ms + 160);
+  }
+
+  function play(){
+    if (active) return;
+    active = true;
+    reel.classList.add("is-live");
+    document.documentElement.classList.add("reel-on");
+    show(0, true);
+  }
+  function stop(){
+    active = false;
+    reel.classList.remove("is-live");
+    document.documentElement.classList.remove("reel-on");
+    clearTimeout(timer);
+    show(IDLE, false);
+  }
+
+  reel.addEventListener("mouseenter", play);
+  reel.addEventListener("mouseleave", function(){
+    reel.style.setProperty("--rx","0deg");
+    reel.style.setProperty("--ry","0deg");
+    stop();
+  });
+  reel.addEventListener("focusin", play);
+
+  if (!slow) {
+    var raf = 0;
+    reel.addEventListener("mousemove", function(e){
+      if (raf) return;
+      raf = requestAnimationFrame(function(){
+        raf = 0;
+        var r = reel.getBoundingClientRect();
+        var px = (e.clientX - r.left) / r.width - .5;
+        var py = (e.clientY - r.top) / r.height - .5;
+        reel.style.setProperty("--ry", (px * 1.8).toFixed(2) + "deg");
+        reel.style.setProperty("--rx", (-py * 1.2).toFixed(2) + "deg");
+      });
+    });
+  }
+
+  steps.forEach(function(st,k){
+    var btn = st.querySelector("button");
+    if (!btn) return;
+    btn.addEventListener("click", function(){
+      active = false;
+      reel.classList.remove("is-live");
+      document.documentElement.classList.remove("reel-on");
+      clearTimeout(timer);
+      show(k, false);
+    });
+  });
+
+  if (window.matchMedia && window.matchMedia("(hover: none)").matches && "IntersectionObserver" in window) {
+    new IntersectionObserver(function(ents){
+      ents.forEach(function(e){ if (e.isIntersecting) play(); else stop(); });
+    }, { threshold: .5 }).observe(reel);
+  }
+
+  show(IDLE, false);
+})();
+
 /* ================= klippekort: hvad er en ændring ================= */
 (function(){
   var t = document.getElementById("klip-trigger");
@@ -1984,7 +2154,7 @@ document.getElementById("audit-form").addEventListener("submit", function(e){
 
   var payload = {
     access_key: FORM_KEY,
-    subject: (en ? "Website review request" : "Anmodning om gennemgang") + ": " + val("f-name"),
+    subject: (en ? "Website review request" : "Anmodning om gennemgang") + " · " + val("f-name"),
     from_name: "fawa.dk",
     name: val("f-name"),
     email: val("f-mail"),
@@ -2031,5 +2201,7 @@ document.getElementById("audit-form").addEventListener("submit", function(e){
   .catch(function(){ if (!done) fail(); });
 });
 </script>
+
+
 </body>
 </html>

@@ -24,7 +24,10 @@ opdaterer adressen. Der bliver ikke hentet en ny fil.
 assets/img/           billeder (WebP)
 assets/fonts/         skrifttyper (WOFF2, selvhostede)
 assets/fonts.css      @font-face-erklæringer
-assets/favicon.svg
+assets/favicon.ico     ikonet Google viser i søgeresultater
+assets/favicon-*.png   samme ikon i flere størrelser
+assets/apple-touch-icon.png
+favicon.ico           kopi i roden, som browsere selv leder efter
 og.jpg                billedet der vises når linket deles
 sitemap.xml           listen Google læser
 robots.txt
@@ -107,6 +110,17 @@ Sæt ikke DNS om, før hjemmesiden ligger på GitHub og virker på
 `<brugernavn>.github.io/<repo>/`. Så er der ikke et vindue, hvor fawa.dk
 ikke svarer. Der går typisk 15 minutter til et par timer, før ændringen
 er slået igennem.
+
+## Ikonet i søgeresultater
+
+Google viser ét ikon pr. domæne, og det hentes fra forsiden. Det ligger som
+`assets/favicon.ico` plus PNG i flere størrelser, og der er en kopi af
+`favicon.ico` i roden, fordi nogle browsere leder efter den af sig selv.
+Google understøtter ikke SVG til det her formål, derfor PNG og ICO.
+
+Adressen på filerne skal helst ligge fast. Skifter man filnavn, går der
+igen dage til uger, før Google opdager det nye ikon. Efter en ændring kan
+man bede om indeksering af forsiden i Search Console for at skubbe på.
 
 ## Når siden er live
 
